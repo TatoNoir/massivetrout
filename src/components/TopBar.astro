@@ -1,0 +1,21 @@
+---
+import type { Lang } from "../i18n/ui";
+import { siteConfig, getUi } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getUi(lang);
+---
+
+<div class="top-bar">
+  <div class="contact-info">
+    <span>{t["topbar.contact"]}</span>
+    <span><a href={`tel:${siteConfig.phoneInternational}`}>{siteConfig.phoneDisplay}</a></span>
+    <span><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></span>
+    <span>
+      <a href={siteConfig.whatsapp} class="fa fa-whatsapp" aria-label="WhatsApp"></a>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,147 @@
+---
+import type { Lang } from "../i18n/ui";
+import { getUi } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getUi(lang);
+---
+
+<form id="contact-form" class="contact-form" role="form" novalidate>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="contactNameInput">{t["contact.yourName"]}</label>
+      <input
+        type="text"
+        placeholder="Thomas Fuks"
+        name="name"
+        id="contactNameInput"
+        required
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="contactEmailInput">{t["contact.yourEmail"]}</label>
+      <input
+        type="email"
+        placeholder="thomas@mailbox.com"
+        name="email"
+        id="contactEmailInput"
+        required
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="contactPhoneInput">{t["contact.yourPhone"]}</label>
+      <input
+        type="tel"
+        placeholder="999 222 111"
+        name="phone"
+        id="contactPhoneInput"
+        pattern="[0-9\s]{10,15}"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="contactRecipientInput">{t["contact.reason"]}</label>
+      <select id="contactRecipientInput" name="recipient" required>
+        <option value="Question">{t["contact.question"]}</option>
+        <option value="Feedback">{t["contact.feedback"]}</option>
+        <option value="General Message">{t["contact.general"]}</option>
+      </select>
+    </div>
+  </div>
+
+  <label for="contactMessage">{t["contact.message"]}</label>
+  <textarea
+    placeholder="Hi …"
+    id="contactMessage"
+    name="message"
+    required
+    maxlength="500"
+  ></textarea>
+
+  <div class="row">
+    <div class="col-md-4">
+      <label>
+        <input type="checkbox" name="subscribe" id="newsletter-susc" value="1" />
+        <span class="label-body">{t["contact.newsletter"]}</span>
+      </label>
+    </div>
+    <div class="col-md-4">
+      <input
+        type="text"
+        name="company_website"
+        id="company_website"
+        class="hp-field"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+      />
+    </div>
+    <div class="col-md-4">
+      <input class="btn btn--full btn--oval" type="submit" value={t["contact.send"]} />
+      <h6 class="contact-alert" role="status"></h6>
+    </div>
+  </div>
+</form>
+
+<style>
+  .hp-field {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const alertEl = form.querySelector(".contact-alert");
+  const endpoint: string =
+    (import.meta.env.PUBLIC_FORM_ENDPOINT as string | undefined) ??
+    "/api/contact.php";
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const honeypot = (form.querySelector('[name="company_website"]') as HTMLInputElement).value;
+    if (honeypot) return;
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const payload: Record<string, string> = {};
+    new FormData(form).forEach((value, key) => {
+      payload[key] = String(value);
+    });
+
+    alertEl.textContent = "…";
+    alertEl.classList.remove("is-error");
+
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const text = await res.text();
+      if (res.ok) {
+        form.reset();
+        alertEl.textContent = text;
+        alertEl.classList.remove("is-error");
+      } else {
+        alertEl.textContent = text;
+        alertEl.classList.add("is-error");
+      }
+    } catch {
+      alertEl.textContent = "Network error. Please try again.";
+      alertEl.classList.add("is-error");
+    }
+  });
+</script>

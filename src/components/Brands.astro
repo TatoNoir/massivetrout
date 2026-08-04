@@ -1,0 +1,52 @@
+---
+interface Props {
+  heading: string;
+  subheading: string;
+  className?: string;
+}
+const { heading, subheading, className = "" } = Astro.props;
+
+const brands = [
+  "logo_01.jpg",
+  "logo_02.jpg",
+  "logo_03.jpg",
+  "logo_04.jpg",
+  "logo_05.jpg",
+  "logo_06.jpg",
+  "logo_07.jpg",
+  "logo_08.jpg",
+  "logo_09.jpg",
+  "logo_10.jpg",
+  "logo_11.jpg",
+  "logo_12.jpg",
+  "logo_13.jpg",
+  "logo_15.jpg",
+  "logo_14.jpg",
+  "logo_16.jpg",
+];
+---
+
+<section class={`brands ${className}`}>
+  <h2 class="heading--big text--center">{heading}</h2>
+  <h3 class="heading--small text--center">{subheading}</h3>
+  <img class="separador img-responsive" src="/imagenes/body/separador.png" alt="separador" />
+
+  <div class="row">
+    <div class="col-12">
+      {
+        brands.slice(0, 8).map((b) => (
+          <img src={`/images/01_home/brands/${b}`} alt="" class="img-responsive brand-logo" loading="lazy" />
+        ))
+      }
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      {
+        brands.slice(8).map((b) => (
+          <img src={`/images/01_home/brands/${b}`} alt="" class="img-responsive brand-logo" loading="lazy" />
+        ))
+      }
+    </div>
+  </div>
+</section>

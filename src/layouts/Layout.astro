@@ -1,0 +1,85 @@
+---
+import type { Lang } from "../i18n/ui";
+import { siteConfig } from "../i18n/ui";
+import TopBar from "../components/TopBar.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  /** body class, e.g. "no-js" */
+  bodyClass?: string;
+  /** extra head content */
+  head?: string;
+}
+
+const {
+  lang,
+  title,
+  description = "Fly Fishing in Patagonia Argentina",
+  bodyClass = "no-js",
+} = Astro.props;
+
+const keywords =
+  "Patagonia Fly Fishing, Fly Fishing Patagonia, Fishing, Patagonia, Fly Fishing, Fly Fishing in Patagonia, Fly-fishing, Patagonia, Outfitters Patagonia, Trout Patagonia, Fishing-trips, Fishing Trips in Patagonia, Trout, Trouts, Argentina, Patagonia Argentina";
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="handheldFriendly" content="true" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Camote Studio" />
+    <link rel="author" href="https://camotestudio.com" />
+    <link rel="icon" type="image/png" href="/imagenes/head/favicon2-1.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,700"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link id="color-options" rel="stylesheet" href="/css/color-themes/red.css" />
+
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gtagId}`}></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", import.meta.env.PUBLIC_GTAG_ID || "G-YFWWP1ZFFS");
+    </script>
+  </head>
+
+  <body class={bodyClass}>
+    <TopBar lang={lang} />
+    <div class="wrapper">
+      <Header lang={lang} />
+      <slot />
+      <Footer lang={lang} />
+    </div>
+
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script is:inline>
+      window.jQuery ||
+        document.write('<script src="/js/vendor/jquery-2.2.0.min.js"><\/script>');
+    </script>
+    <script is:inline src="/js/plugins/jquery.lazyload.v1.9.1.js"></script>
+    <script is:inline src="/js/plugins/jquery.superslides.js"></script>
+    <script is:inline src="/js/main.js"></script>
+  </body>
+</html>

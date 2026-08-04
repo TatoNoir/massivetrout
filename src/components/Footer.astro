@@ -1,0 +1,55 @@
+---
+import type { Lang } from "../i18n/ui";
+import { siteConfig, getUi } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getUi(lang);
+
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="container">
+    <img
+      src="/imagenes/footer/logo_color_comp.png"
+      class="logo_footer"
+      alt="Massive trout logo"
+    />
+
+    <div class="datos_footer">
+      <h2 class="heading--small">{siteConfig.owner.name} ({siteConfig.owner.roleEn})</h2>
+      <p>
+        {t["footer.argentineContact"]} <br />
+        {t["footer.mobile"]}: {t["footer.outsideArg"]}: {siteConfig.phoneDisplay} <br />
+        {siteConfig.phone2Display}
+      </p>
+      <p><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></p>
+
+      <h2 class="heading--small">{siteConfig.usContact.name} ({siteConfig.usContact.roleEn})</h2>
+      <p>{t["footer.phone"]}: {siteConfig.usContact.phone}</p>
+    </div>
+
+    <ul class="logos_asoc">
+      <li><img src="/imagenes/footer/logos_footer_01.png" alt="Logo Guias Patagonicos" class="img-responsive" /></li>
+      <li><img src="/imagenes/footer/logos_footer_02.png" alt="Logo Parque Nacional Nahuel Huapi" /></li>
+      <li><img src="/imagenes/footer/logos_footer_03.png" alt="Logo Parque nacional Lanin" /></li>
+      <li><img src="/imagenes/footer/logos_footer_04.png" alt="Logo Prefectura Naval Argentina" /></li>
+    </ul>
+
+    <ul class="footer__links">
+      <li><a href={siteConfig.social.facebook} class="fa fa-facebook" target="_blank" rel="nofollow noopener noreferrer" aria-label="Facebook"></a></li>
+      <li><a href={siteConfig.social.instagram} class="fa fa-instagram" target="_blank" rel="nofollow noopener noreferrer" aria-label="Instagram"></a></li>
+      <li><a href={siteConfig.social.tripadvisor} class="fa fa-tripadvisor" target="_blank" rel="nofollow noopener noreferrer" aria-label="TripAdvisor"></a></li>
+      <li><a href={siteConfig.social.linkedin} class="fa fa-linkedin" target="_blank" aria-label="LinkedIn"></a></li>
+      <li><a href={`mailto:${siteConfig.emailAlt}`} class="fa fa-envelope" aria-label="Email"></a></li>
+    </ul>
+
+    <p class="text--grey copy">
+      &copy;{year} Massive Trout Fly Fishing. {t["footer.copyright"]} <br />
+      Diseño y Desarrollo Camote Studio
+    </p>
+  </div>
+</footer>

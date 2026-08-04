@@ -1,0 +1,255 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import RiverItem from "../../components/RiverItem.astro";
+
+const mapsEmbed =
+  "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d161686.54280924637!2d-71.27370872741803!3d-41.14858153522209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1575931192946!5m2!1ses-419!2sar";
+---
+
+<Layout lang="es" title="Destinos - Massive Trout Fly Fishing, Bariloche, Patagonia Argentina" bodyClass="no-js">
+  <section class="sec__hero hero--small">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="heading--big text--center">Los ríos más salvajes</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__intro intro_sinback">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="heading--big text--center">Explore la Patagonia Argentina</h2>
+          <h3 class="heading--small text--center">15 AÑOS GUIANDO EN LA PATAGONIA</h3>
+          <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+          <p class="text--grey text--center">
+            Imagínese despertarse en un hermoso campamento en la Patagonia con los sonidos de un río que corre de forma natural y el aroma de un abundante desayuno, o despertarse con el sonido de un fuego crepitante, huevos frescos que se cocinan sobre brasas bajo el dosel de un cielo azul salvaje de la Patagonia. Después del desayuno, sus guías han empacado su bote o balsa de deriva con las provisiones para el día, donde te embarcaras para disfrutar un dia soñado de pesca con mosca: cada curva en el río revela la magnífica belleza de la Patagonia.
+            <br /><br />
+            ¡Cada viaje que ofrecemos está diseñado a medida para brindarle la mejor experiencia de pesca con mosca posible de acuerdo con sus ideas y presupuesto! Ofrecemos alojamiento, comidas, transporte, guías, equipo y todo lo que pueda necesitar para una aventura increíble. Tenemos algo increíble y personalizado para ti. Que estas esperando?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__vacation" id="parallax_destinations">
+    <div class="container">
+      <br />
+      <h2 class="heading_home_best">El paraiso en la Tierra</h2>
+      <p class="text--grey text--center">
+        La mejor opcion en Argentina - Patagonia - Bariloche, operando en 2 parques nacionales. Parque Nacional Nahuel Huapi y Parque Nacional Lanín. Mas de 8 ríos y 6 lagos, cientos de kilometros de agua y las truchas mas salvajes del planeta.
+      </p>
+    </div>
+  </section>
+
+  <section class="sec__maps">
+    <div class="container">
+      <h2 class="heading--big text--center">Dónde nos encontramos?</h2>
+      <h3 class="heading--small text--center">AMÉRICA DEL SUR - PATAGONIA ARGENTINA - SAN CARLOS DE BARILOCHE</h3>
+      <img class="separador" src="/imagenes/body/separador_maps.png" alt="separador" />
+      <img src="/images/03_destinations/mapa_massive_parques.png" alt="Mapa de parques nacionales" loading="lazy" />
+      <iframe src={mapsEmbed} width="593" height="578" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section class="sec__destination_PNNH" id="PN_nahuel_huapi">
+    <div class="container">
+      <h2 class="heading_home_best">Parque Nacional Nahuel Huapi</h2>
+      <p class="text--producto">Patagonia argentina ofrece algo distinto para cada uno de nuestros clientes</p>
+    </div>
+  </section>
+
+  <RiverItem
+    topPadding={true}
+    name="Río Limay"
+    subt="Uno de los ríos más famosos del mundo para la pesca de truchas con mosca"
+    image="/images/03_destinations/circles/limay_destinations.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde Noviembre a Mayo" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "Perca de boca chica – Perca de Boca grande" },
+      { label: "Longitud del rio: ", value: "45 km" },
+      { label: "Tipo de programas: ", value: "Excursion diaria /Expediciones / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "30 km." },
+    ]}
+    paras={[
+      "En noviembre el río Limay por lo general presenta altos niveles de agua y presenta velocidades de agua rápida. Esto niveles primaverales de principios de temporada vienen acompañados por gran cantidad de alimento y oxigeno que las truchas luego de un largo invierno y desove buscan y les es necesario. No es raro encontrar dentro del rio los últimos pools de Truchas Arco Iris reproductores que se encuentran finalizando con el desove que por lo general son bastantes agresivas, muy activas y proveen de una gran diversión para los pescadores que quieren mucha acción. Los grandes marrones también se encuentran en el rio en el comienzo de temporada, alimentándose de alevinos de truchas arco iris, recién nacidos, y recuperando fuerzas al igual que otras especies de truchas. Se utilizan líneas de hundimiento, cañas #6 y streamers como imitaciones de alevinos y cangrejos.",
+      "Diciembre el Limay todavía puede presentar altos niveles de agua, pero la velocidad de corriente comienza a disminuir. Esto generalmente marca el comienzo de grandes eclosiones de insectos y una oportunidad para la pesca con mosca seca de clase mundial.",
+      "Enero y febrero continúan brindando buenas eclosiones (Caddis, Mayflies, y Alguaciles), junto con muchas jornadas de pesca de ninfas muy productivas como también el uso de streamers o moscas de hundimiento. A medida que avanza la temporada, la pesca en el Limay se vuelve más técnica. Cada día presenta nuevas oportunidades y desafíos. En el otoño, cuando los árboles se vuelven de color naranja y rojo, es el turno de las Truchas Marrón que comienza nuevamente el ciclo de la vida, su migración por lo general la realizan del Lago Nahuel Huapi al Rio Limay, y en Abril y Mayo, los portes de peces que pueden ser capturados, son increíblemente sorprendentes para truchas que solo viven en agua dulce, algunas de ellas alcanzan más de 10 Kg.",
+    ]}
+  />
+
+  <RiverItem
+    name="Río Manso"
+    subt="La joya de Patagonia Norte"
+    image="/images/03_destinations/circles/manso_destinations.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde Diciembre a Abril" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "-" },
+      { label: "Longitud del rio: ", value: "Desde el Lago Steffen al Rio Villegas 20 km" },
+      { label: "Tipo de programas: ", value: "Excursion diaria /Expediciones / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "50 km." },
+    ]}
+    paras={[
+      "Manso significa \"tranquilo, lento\" y, a menudo, se considera uno de los ríos más hermosos de nuestra área. El Manso se encuentra en el corazón del Parque Nacional Nahuel Huapi. Nace en el volcán Tronador, que representa el pico más alto de la zona. El rio Manso nace en el glaciar Castaño Overo y fluye a través de 5 lagos para terminar su recorrido en el límite con Chile y cambiar de nombre para dirigirse hacia el Océano Pacífico. Entre los lagos, los segmentos del Manso son muy tranquilos, mientras que otros se vuelven rápidos y muy técnicos. La última sección del Manso, que fluye hacia el oeste, hacia Chile, pasa por cañones muy empinados y múltiples cascadas intransitables. Esta es una sección amada por rafters extremos.",
+      "Las aguas claras y de color esmeralda del Manso viajan a través de frondosos bosques y montañas escarpadas. Flotamos diferentes secciones del río y, en general, utilizamos cañas #5 y #6, y una variedad de moscas secas y húmedas y ninfas. Las truchas arco iris y marrones tienen un promedio de 16-17 pulgadas. A los pescadores les encanta el desafío de pescar estas truchas en condiciones de aguas rápidas y cristalinas. Los tippets son finos y las moscas bien presentadas son clave para el éxito de los pescadores.",
+    ]}
+  />
+
+  <RiverItem
+    name="Río Pichi Leufu"
+    subt="El rio más largo y divertido de la estepa Patagonica"
+    image="/images/03_destinations/circles/pichuleufu_destinations.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde Noviembre a Febrero" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "Perca de boca chica – Perca de Boca grande - Puyen Maculatus" },
+      { label: "Longitud del rio: ", value: "500 km" },
+      { label: "Tipo de programas: ", value: "Excursion diaria / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "45 km." },
+    ]}
+    paras={[
+      "Ubicado aproximadamente a una hora al este de Bariloche, el Pichi Leufu significa \"río pequeño\" ofrece lo mejor acción con mosca seca en el área. En este ambiente solo esta permitido el vadeo, la navegación no es posible, debido al tamaño de su curso de agua. Es un gran opción para pescadores principiantes e intermedios. Los pescadores pueden disfrutar de mucha acción con moscas secas durante gran parte de la temporada. Es un rio de color cobrizo, y aunque se lo considere un rio cristalino, sus nacientes en mallines de altura, y el arrastre de gran cantidad de minerales, produce una proliferación algal significativa, proporcionando un hábitat ideal para gran cantidad de ninfas que durante los meses de mayor temperatura producen eclosiones de diferentes tipos de insectos, situación ideal para truchas arco iris y marrones que habitan el ambienten y que se las encuentra muy activas durante todo el día. Por lo general se utilizan equipos livianos (cañas #3-#5) y líneas de flote. En el comienzo de la temporada, el ambiente presenta grandes niveles de agua, y con temperaturas frías el uso de streamers es muy común, como también ninfas grandes que se utilizan para producir buenos resultados. Este entorno es una de las mejores opciones para caminar y vadear a una distancia cercana de la ciudad de San Carlos de Bariloche. El rio Pichi Leufu se encuentra en el corazón de la estepa de la Patagonia Argentina y ofrece un sinfín de situaciones de pesca desde el comienzo de la temporada de pesca, noviembre, hasta mediados de Enero.",
+    ]}
+  />
+
+  <RiverItem
+    name="Lago Hess"
+    subt="La mejor pesca de truchas grandes con moscas secas"
+    image="/images/03_destinations/circles/hess_destination.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde de noviembre a Abril" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "-" },
+      { label: "Superficie del lago: ", value: "1.7 Kilometros cuadrados" },
+      { label: "Tipo de programas: ", value: "Excursion diaria /Expediciones / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "45 km." },
+    ]}
+    paras={[
+      "El lago Hess es uno de los lagos que forma el rio Manso. Se encuentra en el Parque Nacional Nahuel Huapi, a unos 45 minutos de Bariloche. Es un lago pequeño, pero ofrece muchas alternativas de pesca increíbles. El lago cuenta con canales internos y una extensa estructura de juncos que lo rodea, lo que proporciona un hábitat muy atractivo para Arco Iris, marrones y truchas de arroyo. Al ser un ambiente somero o de poca profundidad, la luz ingresa en toda la superficie del ambiente, posibilitando el desarrollo de plantas acuáticas, lo que da estructura y genera el hábitat perfecto para diferentes tipos de insectos. Este lago es conocido por sus eclosiones de alguaciles y libélulas, durante los meses de Diciembre y Enero, siempre dependiendo del clima y la temperatura del agua. También produce prolíficas eclosiones de moscas Tricopteras, mas conocida como Caddis entre otros insectos acuáticos. Durante el verano, el lago cobra vida en determinados momentos del día, con nubes de insectos únicas, que nos permiten pescar durante varias horas, e inclusive semanas enteras, con equipos livianos, líneas de flote y moscas secas. Durante la primavera y el otoño con las temperaturas de agua aun bajas, por lo general se pesca con streamers y líneas de hundimiento. Un lugar único, donde no está permitida la navegación a motor lo que hace de un ambiente, de excelente nivel, si nos referimos a cantidad y calidad de truchas.",
+    ]}
+  />
+
+  <RiverItem
+    name="Lago Fonck"
+    subt="Eclosiones de odonatos inimaginables"
+    image="/images/03_destinations/circles/fonck_destinations.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde Noviembre a Mayo" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "Perca de boca chica – Perca de Boca grande" },
+      { label: "Longitud del rio: ", value: "45 km" },
+      { label: "Tipo de programas: ", value: "Excursion diaria /Expediciones / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "45 km." },
+    ]}
+    paras={[
+      "En los límites del Parque Nacional Nahuel Huapi se encuentra el Lago Fonck. Este ambiente se encuentra a pocos kilómetros de la frontera con Chile y es también uno de los lagos por los que fluye el río Manso. Es un lago excepcional no solo por su cantidad y calidad de capturas sino debido a una combinación de paisajes impresionantes. Caracteristico por sostener grandes poblaciones de trucha de arroyo o Fontinalis las cuales usualmente presentan un tamaño promedio de 16 pulgadas, pero a menudo pueden llegar a 18-20 pulgadas. El lago es alimentado por arroyos fríos que lo convierten en un hábitat ideal para truchas de diferentes especies. Al igual que el lago Hess, durante los meses de más calor (Diciembre –Enero), es muy común poder pescar con imitaciones de libélulas y alguaciles, como también patrones de insectos terrestres (escarabajos, etc). Pero durante los meses de primavera y otoño se pueden utilizar Streamers con líneas de hundimiento, con un gran resultado si uno busca peces grandes.",
+      "Si a todo lo anterior, sumamos que en el Lago Fonck también podemos disfrutar de un dia de pesca, en muchas ocasiones a pez visto, y con imitaciones de insectos muy pequeños, con leaders finos y equipos chicos, llegamos a la conclusión que todo es posible en estas aguas, teniendo grandes chances de tener uno de nuestros mejores días de pesca de nuestras vidas.",
+    ]}
+  />
+
+  <section class="sec__destination_PNNH" id="PN_lanin">
+    <div class="container">
+      <h2 class="heading_home_best">Parque Nacional Lanín</h2>
+      <p class="text--producto">El lado salvaje de la Patagonia Norte.</p>
+    </div>
+  </section>
+
+  <RiverItem
+    name="Río Caleufú"
+    subt='La palabra Caleufu significa en idioma indio (mapuche): "Otra corriente"'
+    image="/images/03_destinations/circles/caleufu_destinations.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde de Noviembre a fines de Enero" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "Perca de boca chica – Perca de Boca grande – Puyen Maculatus." },
+      { label: "Longitud del rio: ", value: "" },
+      { label: "Tipo de programas: ", value: "Excursion diaria /Expediciones / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "120 km." },
+    ]}
+    paras={[
+      "El río Caleufu nace de la unión de dos ríos de montaña más pequeños: el río Filo Huam y el río Meliquina, que dan origen a uno de los ríos más maravillosos de la provincia del Neuquén, El Caleufu.",
+      "Dicho ambiente se encuentra en un entorno que solo puede ser pescado casi en su totalidad si se flota durante los meses de noviembre, diciembre y parte del mes de enero, debido a sus fluctuaciones de nivel. Esto hace que la presión de pesca sea muy baja durante la temporada de pesca y a lo largo del año.",
+      "Caracterizan este ambiente la cantidad y calidad de las truchas que es simplemente increíble! Muchas y de gran tamaño! Como en la mayoría de los ambientes en el comienzo de la temporada la acción que nos presenta el Caleufu se da mas con líneas de hundimientos y streamers. Es un rio también que puede presentar variaciones de color a lo largo del mes de Noviembre, ya que las nacientes de ambos de los dos pequeños ríos que dan vida al Rio Caleufu son formados a su vez por derretimiento de casquetes de nieve en las montañas circundantes.",
+      "Una vez que el color y nivel de agua se estabilizaron, y la temperatura comenzó a subir, la acción con moscas secas, ninfas, líneas de flote y numero de cañas mas chicas (#4-#5), es posible y muy efectiva.",
+      "El río de más de 45 km desagua en el embalse de Collon Cura, otro sistema de agua, bien conocido y súper productivo si hablamos de pesca y truchas, que decribimos a continuación, donde también operamos y poseemos ingresos exclusivos en muchos sectores de este ambiente.",
+      "Volvemos a nuestro querido Rio Caleufu y su descripción, para arribar donde comienza nuestra aventura, debemos conducir aproximadamente dos horas y media desde la ciudad de Bariloche. La primer parte del viaje es unos 65 km por la ruta 40 norte (Pavimento) donde bordeamos en su totalidad el Rio Limay superior para luego recorrer otros 60 km de camino de ripio, llamado Paso Córdoba. En este segundo tramo, la belleza y el paisaje son únicos. Cuando llegamos donde comenzara nuestro viaje de pesca, junto al equipo de Massive, se organizan botes, equipos, cargas y en menos de 60 minutos estamos flotando y pescando hasta el primer campamento.",
+      "Al final de estos tres días y dos noches terminaremos en un lugar llamado \"el puente roto\" cerca del embalse Collon Cura. Los choferes que son los mismos que nos dejaron en el ingreso el primer dia nos esperarán entre las 16 y las 17 hs. Una vez arrivados a la salida en otros 40 minutos se pondrá reorganizar todo, para emprender el viaje de regreso a la ciudad de Bariloche. Gracias a dios, toda la ruta es pavimento. En 2 horas estamos nuevamente en la ciudad.",
+    ]}
+  />
+
+  <RiverItem
+    name="Rio Collón Cura"
+    subt="El top 3 en rios de MTFF para excursiones con campamentos"
+    image="/images/03_destinations/circles/colloncura_destinations.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde Noviembre a Mayo" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "Perca de boca chica – Perca de Boca grande – Puyen Maculatus." },
+      { label: "Longitud del rio: ", value: "70 km" },
+      { label: "Tipo de programas: ", value: "Excursion diaria /Expediciones / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "180 km." },
+    ]}
+    paras={[
+      "La mejor manera de comenzar una descripción del Collon Cura es que está formada por los ríos Malleo, Alumine y Chimehuin. Es importante tener en cuenta que estos ríos son probablemente tres de los ríos más fértiles de Argentina, con gran calidad y cantidad de agua.",
+      "Es un ambiente con un sustrato, mas conocido como \"freestone\" o de piedras sueltas, el Collon Cura es probablemente una de los ambientes más prolífico de esta región. También presenta el tipo de pesca que más se parece a algunos de los grandes ríos occidentales.",
+      "Atraviesa gran parte de la estepa patagónica, lo que alguna vez fue un valle, con un gradiente muy suave. Se podrá pescar un sinfín de correderas y las oportunidades de pesca a medida que uno flota este ambiente, serán minuto a minuto mejor y mejor.. Como muchos de los ríos en Argentina, la mayor parte de este rio pasa a través de 2 estancias, lo que asegura un aislamiento relativo del ambiente y muy poca presión sobre el río.",
+      "Casi todas las formas de pesca con mosca pueden ser efectivas en el Collon Cura. Desde líneas de espuma grande con gran cantidad de truchas activas, hasta correderas con poderosas marrones a la espera de secas grandes, o porque no alguna imitación de cangrejos o alevinos.",
+      "Las eclosiones a primeras horas de la mañana nos alertan de gran cantidad de peces asomando fuera del agua, caddis, mayflies, gusanos del sauce, pulgones.. este río lo tiene todo.",
+      "Realmente no se pierde el tiempo en Collon Cura. El poder de las Arco iris de este rio, es casi inigualable, kilo por kilo, es uno de los peces que mas pelea y que mas poder tiene de toda la Patagonia norte.",
+      "La mayoría de las truchas aquí son arco iris, pero también hay alguns marrones grandes que que muchas ocasciones alcanzan los 6-7 kg de peso.",
+      "El Collon Cura es un rio para un viaje perfecto de 3 días en el medio de la nada, con todas las comodidades que solo Massive Trout te puede ofrecer.",
+    ]}
+  />
+
+  <RiverItem
+    name="Río Malleo"
+    subt="El mejor rio para los amantes del vadeo y la pesca de peces a la vista"
+    image="/images/03_destinations/circles/malleo_destinations.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde Noviembre a Mayo" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "Perca de boca chica – Perca de Boca grande." },
+      { label: "Longitud del rio: ", value: "50 km" },
+      { label: "Tipo de programas: ", value: "Excursion diaria /Expediciones / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "200 km." },
+    ]}
+    paras={[
+      "Río de tamaño medio a pequeño, dependiendo en las diferentes épocas del año, el paisaje y la gran cantidad de peces que lo habitan hacen de él uno de los más importantes de la Patagonia Norte. En gran parte de su recorrido es, rodeado de montañas, animales silvestres y ganado de las comunidades que viven en la a la vera del rio.",
+      "Nace en el Lago Tromen y luego de recorrer unos 60 km desemboca en río Aluminé. Estos son puntos claves para los que quieren capturar grandes marrones, sobre todo en principios y fines de temporada, cuando estas grandes reproductoras comienzan a migrar.",
+      "Luego de su nacimiento la pesca se torna más complicada, el curso se encajona corriendo a gran velocidad entrando en bosques, lo cual hace muy complicado vadearlo y lanzar con comodidad. Luego ingresa en campos privados donde la pesca es muy buena para los que desean pescar bajo la modalidad de Lodge and lodging. Más abajo del puente que nos lleva al límite con Chile el agua corre más lentamente además de disminuir la vegetación costera. A este sector se lo llama Malleo Medio y las diferencias con los otros sectores son bien marcadas, la velocidad del río, características del paisaje, la vegetación y la pesca.",
+      "Desde el puente que nos lleva hacia Aluminé hasta su desembocadura en el río del mismo nombre aparecen los tan preciados pozones. Baja mucho la velocidad de la corriente lo cual nos posibilita vadearlo y pescar con mayor tranquilidad.",
+      "En su desembocadura a principios y a fines de temporada se pueden cobrar ejemplares de muy buen tamaño, tanto de truchas marrones como arco iris, alcanzando en algunos casos los 2-3 kg de peso.",
+      "El rio Malleo, durante gran parte de la temporada, es ideal para los amantes de la pesca con moscas secas y ninfas. La pesca de peces a la vista en este ambiente es algo muy común. Durante los meses de Primavera (Noviembre-Diciembre) los niveles altos del rio nos exigen, presentar moscas tipo streamers y líneas de hundimiento, aunque no tan pesadas, más allá de que este ambiente cuenta con partes profundas, no es necesario castear pesadas líneas.",
+      "Por última, el rio Malleo es ideal para aquellos que disfrutan vadear, ya que no está permita su navegación. Sin dudas uno de los favoritos de MTFF y un rio de clase mundial.",
+    ]}
+  />
+
+  <RiverItem
+    name="Río Chimehuín"
+    subt="El templo de la pesca con mosca seca mundial"
+    image="/images/03_destinations/circles/chimehuin_destinations.png"
+    details={[
+      { label: "Temporada/Epoca del año: ", value: "Desde Noviembre a Mayo" },
+      { label: "Especies de Truchas ", value: "Truchas Marron, Arco iris y Fontinalis." },
+      { label: "Peces Nativos: ", value: "Perca de boca chica – Perca de Boca grande" },
+      { label: "Longitud del rio: ", value: "53 km" },
+      { label: "Tipo de programas: ", value: "Excursion diaria /Expediciones / Programas todo incluido" },
+      { label: "Distancia desde Bariloche: ", value: "200 km." },
+    ]}
+    paras={[
+      "El rio Chimehuín fue probablemente el primer río patagónico en ser mundialmente famoso y que puso a la Patagonia-Argentina en el mapa mundial de la pesca con mosca.",
+      "Este ambiente ha sido explorado por incontables pescadores con mosca locales e internacionales y con el tiempo le han dado un nombre a muchas secciones del rio, hoy en día conocidas por todos. El rio presenta un sinfín de estructuras que lo transforman en refugio de gran cantidad de peces. Es importante destacar que el ambiente es muy rico en minerales debido al tipo de sustrato por el que avanza, cambiando su gradiente constantemente, esto ayuda a la gran cantidad y diferentes tips de insectos que en encontramos: Varios tipos de Mayflies, stoneflies, grasshoppers, caddisflies, etc.",
+      "Lo habitan una gran cantidad de arcoíris y marrones, muy activas durante gran parte del día, este ambiente permite la pesca con dryflies de Noviembre a Mayo, sin importar la condición de clima y temperatura, es posible siempre tentar a alguna trucha a subir a la superficie. Es desafiante pero muy gratificante.",
+      "El rio en si es de un nivel técnico medio-alto a la hora de navegarlo, dependiendo el nivel de agua en la época del año que lo visitemos, presenta gran cantidad de obstáculos, como piedras que a su vez forman pequeños rapidos, que el guía deberá sortear a medida avanza el dia, o el overnight trip. En sus orillas esta cubierto por sauces que generan reparos tanto para truchas como para insectos en general.",
+      "Podemos decir que el Rio Chimehuin es el ambiente de Patagonia Norte donde el pescador con mosca sin importar su nivel, puede aplicar cualquier técnica en cualquier momento de la temporada y con seguridad rendirá sus frutas. Desde grandes streamer en busca de truchas marrones grandes trofeo, hasta pequeñas ninfas en Hopper-Dropper, para cubrir mas cantidad de agua, si pescamos desde una embaracion. El match the hatch esta presente todo el tiempo y hace que los mas avezados puedan también llevar su dia a niveles muy técnicos.",
+    ]}
+  />
+
+  <section class="sec__destinations_but">
+    <div class="container">
+      <a class="btn btn--full btn--oval" href="/es/contact/" role="button" title="Contactenos">Contactenos</a>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,93 @@
+---
+import type { Lang } from "../i18n/ui";
+import { getUi } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getUi(lang);
+---
+
+<form
+  id="contact-news"
+  role="form"
+  class="form-newsletter"
+  novalidate
+>
+  <input
+    type="email"
+    name="email"
+    id="contactEmailNews"
+    placeholder={t["newsletter.placeholder"]}
+    required
+  />
+  <input
+    type="text"
+    name="company_website"
+    class="hp-field"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+  />
+  <input class="btn btn--full btn--oval" type="submit" value={t["newsletter.subscribe"]} />
+  <h6 class="contact-alert-news" role="status"></h6>
+</form>
+
+<style>
+  .hp-field {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const form = document.getElementById("contact-news");
+  const alertEl = form.querySelector(".contact-alert-news");
+  const endpoint: string =
+    (import.meta.env.PUBLIC_NEWSLETTER_ENDPOINT as string | undefined) ??
+    "/api/newsletter.php";
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const honeypot = (form.querySelector('[name="company_website"]') as HTMLInputElement).value;
+    if (honeypot) return;
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const payload: Record<string, string> = {};
+    new FormData(form).forEach((value, key) => {
+      payload[key] = String(value);
+    });
+
+    alertEl.textContent = "…";
+
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const text = await res.text();
+      if (res.ok) {
+        form.reset();
+        alertEl.textContent = text;
+        alertEl.classList.remove("is-error");
+      } else {
+        alertEl.textContent = text;
+        alertEl.classList.add("is-error");
+      }
+    } catch {
+      alertEl.textContent = "Network error. Please try again.";
+      alertEl.classList.add("is-error");
+    }
+  });
+</script>

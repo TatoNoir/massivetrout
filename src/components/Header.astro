@@ -1,0 +1,68 @@
+---
+import type { Lang } from "../i18n/ui";
+import { siteConfig, getUi } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getUi(lang);
+
+const pathname = Astro.url.pathname;
+const isEs = pathname.startsWith("/es");
+const path = isEs ? pathname.replace(/^\/es/, "") : pathname;
+const otherLang: Lang = isEs ? "en" : "es";
+const langSwitchHref =
+  otherLang === "es" ? `/es${path === "/" ? "" : path}` : path || "/";
+
+const prefix = isEs ? "/es" : "";
+const navItems = [
+  { href: `${prefix}/programs/`, label: t["nav.programs"] },
+  { href: `${prefix}/destinations/`, label: t["nav.destinations"] },
+  { href: `${prefix}/about/`, label: t["nav.story"] },
+  { href: `${prefix}/lodges/`, label: t["nav.lodges"] },
+  { href: `${prefix}/contact/`, label: t["nav.contact"] },
+] as const;
+---
+
+<header role="banner">
+  <div class="container">
+    <nav role="navigation">
+      <div class="logo-container">
+        <a href={isEs ? "/es/" : "/"} aria-label="Massive trout logo">
+          <img src="/imagenes/head/logo_color.png" alt="Massive trout logo" />
+        </a>
+      </div>
+
+      <label class="label__nav_checkbox" for="nav_checkbox">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <ul class="up_nav">
+        <li class="up_list"><a href={isEs ? "/es/faqs/" : "/faqs/"}>{t["nav.faqs"]}</a></li>
+      </ul>
+
+      <input id="nav_checkbox" class="nav_checkbox" type="checkbox" />
+
+      <ul class="nav-list">
+        {navItems.map((item) => (
+          <li class="subnav__parent">
+            <a class="show-mobile" href={item.href}>{item.label}</a>
+            <a class="hide-mobile" href={item.href}>{item.label}</a>
+          </li>
+        ))}
+
+        <li class="subnav__parent">
+          <a class="show-mobile" href={langSwitchHref}>{t["nav.language"]}</a>
+          <a class="hide-mobile" href={langSwitchHref}>
+            <img
+              class="lang"
+              src={isEs ? "/imagenes/head/idioma_ingles.svg" : "/imagenes/head/idioma_esp.svg"}
+              alt={t["nav.language"]}
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

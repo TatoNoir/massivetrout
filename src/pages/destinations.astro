@@ -1,0 +1,258 @@
+---
+import Layout from "../layouts/Layout.astro";
+import RiverItem from "../components/RiverItem.astro";
+
+const mapsEmbed =
+  "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d161686.54280924637!2d-71.27370872741803!3d-41.14858153522209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1575931192946!5m2!1ses-419!2sar";
+---
+
+<Layout lang="en" title="Destinations - Massive Trout Fly Fishing, Bariloche, Patagonia Argentina" bodyClass="no-js">
+  <section class="sec__hero hero--small">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="heading--big text--center">The best wildest Rivers</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__intro intro_sinback">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="heading--big text--center">Explore Patagonia Argentina</h2>
+          <h3 class="heading--small text--center">15 YEARS GUIDING IN PATAGONIA</h3>
+          <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+          <p class="text--grey text--center">
+            Massive Trout Fly Fishing is located in Bariloche, Patagonia, Argentina. A unique place worldwide recognized by flyfishermen not only for the fishing itself but also for the beauty of its rivers, lakes and landscapes. For more than 120 years, this region has provided to all the different trout species a fabulous place for their growth and reproduction because of its great number of lakes, rivers and also its water quality.
+            <br /><br />
+            MTFF was born in 2009 based on three main pillars: quality, security and professionalism to provide professional and amateur flyfishermen a guiding service of excellence. All of this makes Mtff one of the best outfitters of the region.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__vacation" id="parallax_destinations">
+    <div class="container">
+      <br />
+      <h2 class="heading_home_best">Paradise on earth</h2>
+      <p class="text--grey text--center">
+        The best option in Argentina - Patagonia - Bariloche, operating in 2 National Parks. Nahuel Huapi National Park and Lanin National Park. More than 8 rivers and 6 lakes, thousands of miles of water and the wildest trout on the planet.
+      </p>
+    </div>
+  </section>
+
+  <section class="sec__maps">
+    <div class="container">
+      <h2 class="heading--big text--center">Where is located?</h2>
+      <h3 class="heading--small text--center">SOUTH AMERICA - PATAGONIA ARGENTINA - SAN CARLOS DE BARILOCHE</h3>
+      <img class="separador" src="/imagenes/body/separador_maps.png" alt="separador" />
+      <img src="/images/03_destinations/mapa_massive_parques.png" alt="National parks map" loading="lazy" />
+      <iframe src={mapsEmbed} width="593" height="578" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section class="sec__destination_PNNH" id="PN_nahuel_huapi">
+    <div class="container">
+      <h2 class="heading_home_best">Nahuel Huapi National Park</h2>
+      <p class="text--producto">Patagonia Argentina offers something for every angler</p>
+    </div>
+  </section>
+
+  <RiverItem
+    topPadding={true}
+    name="Limay River"
+    subt="One of the most famous rivers in the world for trout fishing"
+    image="/images/03_destinations/circles/limay_destinations.png"
+    details={[
+      { label: "Season: ", value: "From November to May" },
+      { label: "Trout Species: ", value: "Browns, Rainbows, and Brook Trouts." },
+      { label: "Native fish: ", value: "Largemouth Perch – smallmouth perch." },
+      { label: "River length: ", value: "45 km" },
+      { label: "Type of trips: ", value: "Daily /Overnight / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "30 km." },
+    ]}
+    paras={[
+      "The Limay River drains the Nahuel Heap Lake in Bariloche City. This famed river is know throughout the world for its large wild trout, in particular its migratory freshwater browns. The Limay flows northeast and creates a natural border between the provinces of Rio Negro and Neuquen.",
+      "Beneath the gin-clear water, anglers can find an abundance of Rainbow and Brown Trout, and an occasional Brooke Trout. Rainbows generally out-number Browns about 3 to 1. Trophy-sized fish are not uncommon, many ranging above 20 inches.",
+      "In November, the Limay river flows high and currents can be very fast. Nevertheless, the last pool of the spawning Rainbows become quite aggressive and great fun for anglers who wants a lot of action. Big Browns are also making their way into the river to feed on an abundance of small minnows.\nDecember on the Limay can still present high water levels, but the current begins to slow. This usually marks the beginning of great hatches and a chance for world-class dry fly fishing. January and February continue to provide good hatches, along with some productive nymph and streamer fishing. As the season progresses, fishing on the Limay becomes more technical. Every day presents new opportunities and challenges. In the Fall, as the trees turn orange and red, anglers can find Brown Trout migrating from the lake into the river. These monster fish range from 5 to 15 pounds!",
+    ]}
+  />
+
+  <RiverItem
+    grey={true}
+    name="Manso River"
+    subt="The jewel of northern Patagonia"
+    image="/images/03_destinations/circles/manso_destinations.png"
+    details={[
+      { label: "Season: ", value: "From December to April" },
+      { label: "Trout Species: ", value: "Browns, Rainbows, and Brook Trouts" },
+      { label: "Native fish: ", value: "- ." },
+      { label: "River length: ", value: "From Steffen Lake to Villegas River – 20 km – Desde el Lago Steffen al Rio Villegas 20 km" },
+      { label: "Type of trips: ", value: "Daily /Overnight / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "50 km." },
+    ]}
+    paras={[
+      "Manso means “quiet, slow” and is often considered one of the most beautiful rivers in our area. The Manso can be found in the heart of the Nahuel Huapi National Park. From Tronador Mountain, the Manso starts its journey, cascading down the Castano Over Glacier. The Manso flows through 5 lakes en route to the Pacific Ocean. Between the lakes, segments of the Manso are very calm, while others become fast with technical rapids. The last section of the Manso, which flows west towards Chile, passes through very steep canyons and multiple, impassable waterfalls. This is a section loved by extreme rafters.",
+      "The Manso's clear, emerald colored waters travel through lush forests and rugged mountains. We float different sections of the river and in general we used rods number 5 and 6 , a variety of dry and wet flies and nymphs. Rainbow and Brown Trout average 16-17 inches. Anglers will love the challenge of fishing for these trout in pristine, clear water conditions. Fine tippets and well presented flies are key to an anglers success.",
+    ]}
+  />
+
+  <RiverItem
+    name="Pichi Leufu River"
+    subt="The longest and funniest river in the Patagonian steppe"
+    image="/images/03_destinations/circles/pichuleufu_destinations.png"
+    details={[
+      { label: "Season: ", value: "From November to February" },
+      { label: "Trout Species: ", value: "Browns and Rainbows." },
+      { label: "Native fish: ", value: "Largemouth Perch – smallmouth perch – Puyen Maculatus" },
+      { label: "River length: ", value: "500 km" },
+      { label: "Type of trips: ", value: "Daily / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "45 km." },
+    ]}
+    paras={[
+      "Located about an hour east of Bariloche, the Pichi Leufu means “small river” and offers some of the best dry fly action in the area. This is a great river for beginners or advanced anglers. Anglers can enjoy non-stop action with Rainbows and Browns on 3-5 weight rods. In the early part of the season, micro-streamers and big nymphs are fished on light sinking lines to produce good results.",
+      "This environment is one of the best options for walk and wading, and is so small in some sections that it makes it almost impossible to float the river",
+      "Pichi Leufu is in the heart of the Patagonia Argentina steppe, and offers riffles, deep pools and slow, grassy banks. This beautiful river is suited for both beginner and intermediate anglers.",
+    ]}
+  />
+
+  <RiverItem
+    name="Hess Lake"
+    subt="Best dry fly action for big trout"
+    image="/images/03_destinations/circles/hess_destination.png"
+    details={[
+      { label: "Season: ", value: "From November to April" },
+      { label: "Trout Species: ", value: "Brown, Rainbow and Brook trouts." },
+      { label: "Native fish: ", value: ".-" },
+      { label: "Lake Area: ", value: "1.7 Km square Kilometers" },
+      { label: "Type of trips: ", value: "Daily /Overnight / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "45 km." },
+    ]}
+    paras={[
+      "Hess Lake is one of the lakes through which the Manso flows. It is located in the Nahuel Huapi National Park, about 45 minutes from Bariloche. Hess Lake is a relatively small lake, but it provides some amazing fishing opportunities. The lake features internal channels and extensive reed structure, providing some very inviting habitat for Rainbows, Browns and Brook Trout. Terrestrial patterns presented agains the reeds can produce some explosive strikes. Hess Lake is best known for prolific hatches of caddis flies, mayflies, stoneflies, dragonflies, damselflies and other aquatic insects. During the summer, the lake comes alive with massive hatches just before the sunset.",
+    ]}
+  />
+
+  <RiverItem
+    name="Fonck Lake"
+    subt="Unimaginable dragon and damsel flies hatch’s"
+    image="/images/03_destinations/circles/fonck_destinations.png"
+    details={[
+      { label: "Season: ", value: "From November to February" },
+      { label: "Trout Species: ", value: "Browns, Rainbows, and Brook Trouts." },
+      { label: "Native fish: ", value: "Largemouth Perch – smallmouth perch." },
+      { label: "Lake Area: ", value: "4.82 square kilometers" },
+      { label: "Type of trips: ", value: "Daily /Overnight / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "45 km." },
+    ]}
+    paras={[
+      "Into the Nahuel Huapi National Park limits is Fonck Lake. Fonck Lake is just a few miles from the Chilean border, and is also one of the lakes through which the Manso River flows. This is an exceptional lake due to a combination of breathtaking landscapes and outstanding fishing. Brook Trout average 16 inches, but can often reach 18-20 inches. The lake is fed by cold creeks that make it a prime habitat for beautiful Brook Trout. Much like Lake Hess, terrestrial patterns can be productive, but streamers are also very good.",
+      "Sight fishing with dry flies on Fonck Lake will also attract Rainbows and Browns that average 18 inches or more. An ugly streamer, fished in deep pools, will give an anglers surprises. Brown trouts around 28-29 inches and make for a great day of fishing!",
+    ]}
+  />
+
+  <section class="sec__destination_PNNH" id="PN_lanin">
+    <div class="container">
+      <h2 class="heading_home_best">Lanin National Park</h2>
+      <p class="text--producto">Patagonia Argentina offers something for every angler</p>
+    </div>
+  </section>
+
+  <RiverItem
+    name="Caleufu River"
+    subt='The word Caleufu means in local indian language (Mapuche): "Another stream"'
+    image="/images/03_destinations/circles/caleufu_destinations.png"
+    details={[
+      { label: "Season: ", value: "From November to end of January." },
+      { label: "Trout Species: ", value: "Browns and Rainbows." },
+      { label: "Native fish: ", value: "Largemouth Perch – smallmouth perch – Puyen Maculatus." },
+      { label: "River length: ", value: "" },
+      { label: "Type of trips: ", value: "Daily /Overnight / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "120 km." },
+    ]}
+    paras={[
+      "One of the most wonderful rivers in Lanin National Park, the Caleufu River is born by the union of two smaller mountain rivers: The Filo Huam River and the Meliquina River.",
+      "The Rio Caleufu can only be floated during the months of November, December and part of January, due to its water level fluctuations. This makes the fishing pressure very low during the fishing season and more throughout the year.",
+      "The quantity and quality of the Rainbow and Brown trout is just amazing! There are many fish including trophies!",
+      "Streamers action in the beginning of the season and dry flies and nymphs mostly in January.",
+      "The river passes through several private lands, so the only way to float and fish almost entirely, is only by overnight trips. This unique fishing condition results in low fishing pressure because there is only one access to launch the boats and just one place for take out on public land. And, not everyone wants sleep comfortably in the middle of nowhere!",
+      "The Caleufu flows for more than 45 km, ending in the Collon Cura reservoir, another water system that is well known and super productive for trout fishing.",
+      "To reach the put in location, we must drive around two and half hours from Bariloche City. We go with drivers and cargo boys who give us a hand with everything necessary for the trip. The first 65 km on the famous route 40 (Pavement) and then another 60 km on a gravel route called Paso Cordoba. In the last one, the beauty and the landscape is unique. Within an hour of arriving at the put in, we are floating and fishing towards the first camp",
+      "At the end of this three day/two night trip, we finish at a place called “the broken bridge” close to Collon Cura water reservoir, where the drivers and cargo boys greet us for the ride back to Bariloche City. The good news is the return trip takes approximately 2 hours and is entirely on pavement!",
+    ]}
+  />
+
+  <RiverItem
+    name="Collon Cura River"
+    subt="MTFF top 3 in rivers for overnight programs and quality fishing"
+    image="/images/03_destinations/circles/colloncura_destinations.png"
+    details={[
+      { label: "Season: ", value: "From November to May" },
+      { label: "Trout Species: ", value: "Browns and Rainbows ." },
+      { label: "Native fish: ", value: "Largemouth Perch – smallmouth perch – Puyen Maculatus." },
+      { label: "River length: ", value: "70 km" },
+      { label: "Type of trips: ", value: "Daily /Overnight / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "180 km." },
+    ]}
+    paras={[
+      "The best way to start a description of the Cura Collon is that it is formed by the Malleo, Alumine and Chimehuin rivers. It is important to keep in mind that these rivers are probably three of the most fertile rivers in Argentina, with great quality and quantity of water.",
+      "It is an environment with a substrate, better known as “freestone” or loose stones. The Collon Cura is probably one of the most prolific environments in this region. It also presents the type of fishing that most closely resembles some of the great western rivers of the United States.",
+      "It crosses a large part of the Patagonian steppe, which was once a valley, with a very gentle gradient. You can fish endless slides and tail waters as you float this environment, and it gets better and better by the minute. Like many of the rivers in Argentina, most of this river passes through 2 private ranches, which ensures a relative isolation of the environment and very little pressure on the river.",
+      "Almost all forms of fly fishing can be effective in the Collon Cura. From large foam lines with lots of active trout, to slides with powerful browns waiting for large dry flies, or some crab or minnow imitations.",
+      "The hatching in the early hours of the morning alert us to a large number of fish rolling on the surface of the water, taking caddis, mayflies, willow worms, or aphids ... this river has it all.",
+      "The Collon Cura is not your average river. The power of the Rainbows in this river, is almost unparalleled, kg per kg, it is one of the fish that fights the hardest and has the most power in all of northern Patagonia.",
+      "Most of the trout here are rainbows, but there are also large browns that on many occasions reach 6-7 kg in weight.",
+      "The Collon Cura is a river for a perfect 3-day trip in the middle of nowhere, with all the amenities that only Massive Trout can offer you.",
+    ]}
+  />
+
+  <RiverItem
+    name="Malleo River"
+    subt="The best river for wading and sight fishing lovers"
+    image="/images/03_destinations/circles/malleo_destinations.png"
+    details={[
+      { label: "Season: ", value: "From November to May" },
+      { label: "Trout Species: ", value: "Browns and Rainbows ." },
+      { label: "Native fish: ", value: "Largemouth Perch – smallmouth perch." },
+      { label: "River length: ", value: "50 km" },
+      { label: "Type of trips: ", value: "Daily /Overnight / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "200 km." },
+    ]}
+    paras={[
+      "The Malleo is a medium to small river, depending on the different times of the year, the landscape and the large number of fish that inhabit it make it one of the most attractive rivers in Northern Patagonia. In a large part of its route it is surrounded by mountains, wild animals and livestock from the communities that live by the river-side.",
+      "It was born in Lake Tromen and after traveling about 60 km it flows into the Aluminé river. These are key points for those who want to capture large browns, especially at the beginning and end of the season, when these large breeders begin to migrate.",
+      "The river at its start is surrounded by lush forests with fast moving water, which makes it very difficult to wade. Then it enters into private lands where fishing is very good for those who want to fish in the comfort of fine lodging. Below the bridge that takes us to the border with Chile the water runs more slowly and the natural vegetation decreases. This sector is called Malleo Medio and the the environment is very different from the previous sections of the river – water speed, landscape characteristics, vegetation and fishing all change creating a new experience.",
+      "From the bridge that leads us to Aluminé to its mouth in the river of the same name appear the deep pools. The speed of the water it is also slower and allows us to wade it and fish with greater tranquility.",
+      "At its mouth at the beginning and at the end of the season, very good size trouts can be caught, both from brown and rainbow trout, in some cases reaching 2-3 kg in weight.",
+      "The Malleo River is ideal for fishing enthusiasts with dry flies and nymphs using floating lines. sight fishing in this environment is very common. During the months of Spring (November-December) the high levels of the river require us, to present streamers using light sinking lines.",
+      "Finally, the Malleo River is ideal for those who enjoy wading, since floating is not allowed. Undoubtedly one of MTFF's favorites and a world class river.",
+    ]}
+  />
+
+  <RiverItem
+    name="Chimehuin River"
+    subt="The world dry fly temple"
+    image="/images/03_destinations/circles/chimehuin_destinations.png"
+    details={[
+      { label: "Season: ", value: "From November to May" },
+      { label: "Trout Species: ", value: "Browns and Rainbows." },
+      { label: "Native fish: ", value: "Largemouth Perch – smallmouth perch." },
+      { label: "River length: ", value: "53 km" },
+      { label: "Type of trips: ", value: "Daily /Overnight / All inclusive" },
+      { label: "Distance from Bariloche: ", value: "200 km." },
+    ]}
+    paras={[
+      "The Chimehuín River was probably the first Patagonian river to be world famous and that put Patagonia-Argentina on the world map of fly fishing.",
+      "This environment has been explored by countless local and international fly fishermen and over time they have given a name to many sections of the river, now known to all. The river has endless structures that transform it into a refuge for many fish. It is important to note that the environment is very rich in minerals due to the type of substrate through which it advances, constantly changing its gradient, this helps the large number and different tips of insects that we find: Various types of Mayflies, stoneflies, grasshoppers, caddisflies, etc.",
+      "It is inhabited by a large number of rainbows and browns, very active for much of the day, this environment allows fishing with dryflies from November to May, regardless of the weather and temperature conditions, it is always possible to tempt some trout to climb surface. It is challenging but very rewarding.",
+      "The river itself is of a medium-high technical level at the time of sailing, depending on the level of water at the time of the year we visit it, it presents a lot of obstacles, such as stones that in turn form small rapids, that the Guide must sort as the day progresses, or the overnight trip. On its banks it is covered by willows that generate repairs for both trout and insects in general. We can say that the Chimehuin River is the environment of North Patagonia where the fly fisherman, regardless of their level, can apply any technique at any time of the season and will surely yield their fruits. From large streamer in search of large brown trophy trout, to small nymphs in Hopper-Dropper, to cover more water, if we fish from a pregnancy. The match the hatch is present all the time and makes the most experienced can also take their day to very technical levels.",
+    ]}
+  />
+
+  <section class="sec__destinations_but">
+    <div class="container">
+      <a class="btn btn--full btn--oval" href="/contact/" role="button" title="Contact Us">Contact Us</a>
+    </div>
+  </section>
+</Layout>

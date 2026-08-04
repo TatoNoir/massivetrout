@@ -1,0 +1,42 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Brands from "../../components/Brands.astro";
+import { siteConfig } from "../../i18n/ui";
+---
+
+<Layout lang="es" title="Contacto - Massive Trout Fly Fishing, Bariloche, Patagonia Argentina" description="Massive Trout Fly Fishing" bodyClass="no-js">
+  <section class="sec__hero hero--small" id="hero_contact">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="heading--big text--center">Contáctenos</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__contact">
+    <h3 class="text--grey text--center">PARA ENVIAR UN SALUDO O SOLICITAR INFORMACIÓN!</h3>
+
+    <div class="text--center">
+      <h2 class="heading--small">{siteConfig.owner.name} (Propietario/Guía principal)</h2>
+      <p>
+        Contacto en Argentina <br />
+        Teléfono: +54 9 294 4442020<br />
+        Celular: +54 9 2944 574963 or <br />
+        +54 9 2944 66 55 88<br />
+        Email: <a href={`mailto:${siteConfig.owner.email}`}>{siteConfig.owner.email}</a><br />
+      </p>
+
+      <h2 class="heading--small">{siteConfig.usContact.name} (Contacto US)</h2>
+      <p>
+        Telefono: {siteConfig.usContact.phone}<br />
+        Email: <a href="mailto:williamgjohnson01@gmail.com">williamgjohnson01@gmail.com</a><br />
+      </p>
+    </div>
+  </section>
+
+  <Brands
+    className="contact-brands"
+    heading="Nos acompañan las siguientes marcas"
+    subheading="Pesque con lo mejor"
+  />
+</Layout>

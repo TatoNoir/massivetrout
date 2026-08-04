@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Brands from "../components/Brands.astro";
+import ContactForm from "../components/ContactForm.astro";
+---
+
+<Layout lang="en" title="Lodges & Lodging - Massive Trout Fly Fishing, Patagonia Argentina" description="Fly Fishing in Patagonia Argentina" bodyClass="no-js">
+  <section class="sec__hero hero--small" id="hero_lodges">
+    <div class="container">
+      <div class="hero__content"></div>
+    </div>
+  </section>
+
+  <main role="main">
+    <div class="container">
+      <div class="project-slider-container">
+        <ul class="js-project-slider project-slider" data-autoplay="true" data-autoplay-timing="2500" data-dots="true" data-controls="true">
+          <li class="js-project-slide project-slide">
+            <img src="/imagenes/body/lodges/carrusel_lodges_01.jpg" alt="Lodges in Patagonia" loading="lazy" />
+          </li>
+          <li class="js-project-slide project-slide">
+            <img src="/imagenes/body/lodges/carrusel_lodges_02.jpg" alt="Lodges in Patagonia" loading="lazy" />
+          </li>
+          <li class="js-project-slide project-slide">
+            <img src="/imagenes/body/lodges/carrusel_lodges_03.jpg" alt="Lodges in Patagonia" loading="lazy" />
+          </li>
+          <li class="js-project-slide project-slide">
+            <img src="/imagenes/body/lodges/carrusel_lodges_04.jpg" alt="Lodges in Patagonia" loading="lazy" />
+          </li>
+        </ul>
+        <nav class="js-project-slides-navigation project-slides-navigation slides-navigation">
+          <a href="#" class="js-slide-next next" aria-label="Next slide"></a>
+          <a href="#" class="js-slide-prev prev" aria-label="Previous slide"></a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <section class="sec__intro intro_sinback intro_lodges">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="heading--intro text--center">The fishing trip experience of your life time</h2>
+          <h3 class="heading--small text--center">MORE THAN 15 YEARS GUIDING FISHERMAN FROM ALL OVER THE WORLD</h3>
+          <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+          <p class="text--grey text--center">
+            Many times our clients / guests, prefer to fish in the wildest places of Patagonia, where at times it is difficult to find other fishermen or boats in any given day, but every day return to the comfort of the best lodges.
+          </p>
+          <p class="text--grey text--center">
+            Massive Trout throughout the years has established relationships all over Northern Patagonia, with some of the best lodges in the world for trout fishing and season after season uses its services as a base of operations, not only to access the best fishing places, but assuring the client all the comfort and attention they deserve.
+          </p>
+          <p class="text--grey text--center">
+            It is also common for clients from different parts of the world to hire Massive Trout all-inclusive services, that includes lodging in the best cabins, apartments or hotels in Bariloche, fine breakfast, lunch and dinners, the best wines, and everything a fisherman could need to enjoy the best fishing of their lives Massive Trout organizes it. It is always dependent upon on the requirements of our customers, which they like and want.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__lodges">
+    <div class="container padding-top2x">
+      <div class="row padding-bottom2x">
+        <div class="col-md-4 text--center">
+          <img class="team__avatar img-responsive img_river" src="/imagenes/body/lodges/lodge_01.png" alt="Lodges" loading="lazy" />
+        </div>
+        <div class="col-md-8">
+          <div class="river__content">
+            <h2 id="river__name">Lodges</h2>
+            <h3 id="river__subt">Nahuel Huapi National Park - Rio Negro Province</h3>
+            <ul>
+              <li><p class="fa fa-circle"></p> Arroyo Verde Lodge</li>
+              <li><p class="fa fa-circle"></p> Rio Manso Lodge (Orvis endorser)</li>
+              <li><p class="fa fa-circle"></p> Privates Apartments</li>
+            </ul>
+            <h3 id="river__subt">Lanin National Park - Neuquen Province</h3>
+            <ul>
+              <li><p class="fa fa-circle"></p> Tipiliuke Lodge</li>
+              <li><p class="fa fa-circle"></p> Quemquemtreu Lodge</li>
+              <li><p class="fa fa-circle"></p> San Huberto Lodge</li>
+              <li><p class="fa fa-circle"></p> Collon Cura Lodge</li>
+              <li><p class="fa fa-circle"></p> Estancia Quillén</li>
+              <li><p class="fa fa-circle"></p> Hostería Rahue (Aluminé)</li>
+            </ul>
+            <h3 id="river__subt">Los Alerces National Park - Chubut Province</h3>
+            <ul>
+              <li><p class="fa fa-circle"></p> El Encuentro Lodge</li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container padding-top2x">
+      <div class="row padding-bottom2x">
+        <div class="col-md-4 text--center">
+          <img class="team__avatar img-responsive img_river" src="/imagenes/body/lodges/lodge_02.png" alt="Lodging" loading="lazy" />
+        </div>
+        <div class="col-md-8">
+          <div class="river__content">
+            <h2 id="river__name">Lodging</h2>
+            <h3 id="river__subt">Nahuel Huapi & Lanín National Parks</h3>
+            <ul>
+              <li><p class="fa fa-circle"></p> Cabañas Arcadia (Bariloche)</li>
+              <li><p class="fa fa-circle"></p> Spring Creek Lodge (Junin de los andes)</li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Brands
+    className="lodges-brands"
+    heading="We are supported by the following brands"
+    subheading="Fish with the best"
+  />
+
+  <section class="sec__contact">
+    <div class="container">
+      <h2 class="heading--big text--center">Contact Us</h2>
+      <h3 class="text--grey text--center">FOR A SALUTATION OR FOR INFORMATION!</h3>
+      <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+      <ContactForm lang="en" />
+    </div>
+  </section>
+</Layout>

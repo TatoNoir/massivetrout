@@ -1,0 +1,18 @@
+# Pasar las variables de entorno al PHP (Hostinger / cPanel).
+# Copiá estas líneas a un .htaccess en /public, o configuralas en el panel
+# de Hostinger (PHP -> Config -> Variables de entorno). NUCA subas valores reales
+# al repo; ajusta los MTFF_* con los tuyos SOLO en el servidor.
+
+SetEnv MTFF_RECIPIENT "mtroutff@gmail.com"
+SetEnv MTFF_FROM "contact@massivetroutflyfishing.com"
+SetEnv MTFF_SMTP_HOST "smtp.hostinger.com"
+SetEnv MTFF_SMTP_PORT "465"
+SetEnv MTFF_SMTP_SECURE "ssl"
+SetEnv MTFF_SMTP_USER "contact@massivetroutflyfishing.com"
+SetEnv MTFF_SMTP_PASS "TU_CONTRASENA_AQUI"
+
+# PHP 7.4+
+<IfModule mod_rewrite.c>
+  Options -MultiViews
+  RewriteEngine On
+</IfModule>

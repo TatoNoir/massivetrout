@@ -1,0 +1,45 @@
+---
+interface Detail {
+  label: string;
+  value: string;
+}
+
+interface Props {
+  name: string;
+  subt: string;
+  image: string;
+  details: Detail[];
+  paras: string[];
+  /** wrap the block in the grey background band */
+  grey?: boolean;
+  /** add padding-top to the outer container */
+  topPadding?: boolean;
+}
+
+const { name, subt, image, details, paras, grey = false, topPadding = false } = Astro.props;
+---
+
+<div class:list={["container", topPadding && "padding-top2x"]}>
+  <div class:list={["row", "padding-top2x"]}>
+    <div class="col-md-4 text--center">
+      <img class="team__avatar img-responsive img_river" src={image} alt="Team avatar" loading="lazy" />
+    </div>
+    <div class="col-md-8">
+      <div class="river__content">
+        <h2 id="river__name">{name}</h2>
+        <h3 id="river__subt">{subt}</h3>
+        <div class="river_details">
+          <ul>
+            {details.map((d) => (
+              <li><strong>{d.label}</strong>{d.value}</li>
+            ))}
+          </ul>
+        </div>
+        {paras.map((p) => (
+          <p class="team__bio">{p}</p>
+        ))}
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
