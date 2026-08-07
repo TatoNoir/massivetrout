@@ -1,0 +1,14 @@
+---
+import BookingLayout from "../layouts/BookingLayout.astro";
+import BookingForm from "../components/BookingForm.astro";
+import { getUi } from "../i18n/ui";
+const t = getUi("en");
+---
+
+<BookingLayout
+  lang="en"
+  title="Book your trip - Massive Trout Fly Fishing, Bariloche, Patagonia Argentina"
+  description="Request your fly fishing trip in Patagonia Argentina"
+>
+  <BookingForm lang="en" />
+</BookingLayout>

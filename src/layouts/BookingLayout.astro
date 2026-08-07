@@ -1,0 +1,94 @@
+---
+import type { Lang } from "../i18n/ui";
+import { siteConfig } from "../i18n/ui";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+}
+
+const { lang, title, description = "Fly Fishing in Patagonia Argentina" } =
+  Astro.props;
+
+const homeHref = lang === "es" ? "/es/" : "/";
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/imagenes/head/favicon2-1.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,700"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link id="color-options" rel="stylesheet" href="/css/color-themes/red.css" />
+
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gtagId}`}></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", import.meta.env.PUBLIC_GTAG_ID || "G-YFWWP1ZFFS");
+    </script>
+  </head>
+
+  <body class="booking-page">
+    <div class="booking-logo">
+      <a href={homeHref} aria-label="Massive trout logo">
+        <img src="/imagenes/head/logo_color.png" alt="Massive trout logo" />
+      </a>
+    </div>
+
+    <main>
+      <slot />
+    </main>
+
+    <div class="wrapper">
+      <Footer lang={lang} />
+    </div>
+
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script is:inline>
+      window.jQuery ||
+        document.write('<script src="/js/vendor/jquery-2.2.0.min.js"><\/script>');
+    </script>
+    <script is:inline src="/js/plugins/jquery.lazyload.v1.9.1.js"></script>
+    <script is:inline src="/js/plugins/jquery.superslides.js"></script>
+    <script is:inline src="/js/main.js"></script>
+  </body>
+</html>
+
+<style is:global>
+  .booking-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    background: #0f0f0f;
+    padding: 0.9rem 0;
+  }
+
+  .booking-logo img {
+    max-width: 220px;
+    height: auto;
+  }
+
+  .booking-page .sec__booking {
+    padding-top: 0;
+  }
+</style>

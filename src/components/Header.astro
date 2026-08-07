@@ -52,6 +52,15 @@ const navItems = [
           </li>
         ))}
 
+        <li class="subnav__parent nav-cta">
+          <a class="show-mobile nav-cta__link" href={`${prefix}/booking/`}>
+            {t["nav.book"]}
+          </a>
+          <a class="hide-mobile nav-cta__link" href={`${prefix}/booking/`}>
+            {t["nav.book"]}
+          </a>
+        </li>
+
         <li class="subnav__parent">
           <a class="show-mobile" href={langSwitchHref}>{t["nav.language"]}</a>
           <a class="hide-mobile" href={langSwitchHref}>
@@ -66,3 +75,32 @@ const navItems = [
     </nav>
   </div>
 </header>
+
+<style>
+  .nav-cta__link {
+    display: inline-block;
+    background: #b5312a;
+    color: #fff !important;
+    padding: 0.5rem 1.1rem !important;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    margin-left: 0.5rem;
+    transition: background 0.2s ease;
+  }
+
+  .nav-cta__link:hover {
+    background: #8f241e;
+  }
+
+  @media (max-width: 47.99em) {
+    .nav-cta {
+      margin-top: 0.5rem;
+    }
+
+    .nav-cta__link {
+      margin-left: 0;
+    }
+  }
+</style>

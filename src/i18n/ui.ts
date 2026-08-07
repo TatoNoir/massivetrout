@@ -45,6 +45,24 @@ export const ui = {
     "nav.contact": "Contact",
     "nav.language": "Language",
     "nav.faqs": "FAQs",
+    "nav.book": "Book your trip",
+    "booking.heroTitle": "Book your trip",
+    "booking.subtitle": "REQUEST YOUR TRIP",
+    "booking.step1Title": "Choose your program",
+    "booking.step2Title": "Program details",
+    "booking.select": "Select",
+    "booking.selected": "Selected",
+    "booking.back": "Back to programs",
+    "booking.yourData": "Your details",
+    "booking.fullName": "Full name",
+    "booking.email": "Email",
+    "booking.phone": "Phone",
+    "booking.season": "Travel season",
+    "booking.passengers": "Number of passengers",
+    "booking.send": "Send booking request",
+    "booking.sent":
+      "Request received! We will get back to you shortly to confirm availability.",
+    "booking.error": "There was a problem sending your request. Please try again.",
     "topbar.contact": "Contact Us!",
     "contact.title": "Contact Us",
     "contact.subtitle": "FOR A SALUTATION OR INFORMATION!",
@@ -77,6 +95,24 @@ export const ui = {
     "nav.contact": "Contacto",
     "nav.language": "Idioma",
     "nav.faqs": "FAQs",
+    "nav.book": "Reservá tu viaje",
+    "booking.heroTitle": "Reservá tu viaje",
+    "booking.subtitle": "SOLICITÁ TU VIAJE",
+    "booking.step1Title": "Elegí tu programa",
+    "booking.step2Title": "Detalle del programa",
+    "booking.select": "Seleccionar",
+    "booking.selected": "Seleccionado",
+    "booking.back": "Volver a los programas",
+    "booking.yourData": "Tus datos",
+    "booking.fullName": "Nombre completo",
+    "booking.email": "Email",
+    "booking.phone": "Teléfono",
+    "booking.season": "Época de viaje",
+    "booking.passengers": "Cantidad de pasajeros",
+    "booking.send": "Enviar solicitud de reserva",
+    "booking.sent":
+      "¡Solicitud recibida! Te contactaremos en breve para confirmar disponibilidad.",
+    "booking.error": "Hubo un problema al enviar tu solicitud. Intentá de nuevo.",
     "topbar.contact": "¡Contáctenos!",
     "contact.title": "Contáctenos",
     "contact.subtitle": "¡PARA SALUDAR O PEDIR INFORMACIÓN!",
@@ -106,3 +142,81 @@ export const ui = {
 export function getUi(lang: Lang) {
   return ui[lang];
 }
+
+export interface BookingProgram {
+  id: string;
+  title: string;
+  img: string;
+  icon: string;
+  detail: string;
+}
+
+export const bookingPrograms: Record<Lang, BookingProgram[]> = {
+  en: [
+    {
+      id: "daily",
+      title: "Daily Programs",
+      img: "/images/02_programs/programs_01.jpg",
+      icon: "/images/02_programs/icons/daytrip_blue.svg",
+      detail:
+        "Daily or half day excursions, no more than 40 minutes from Bariloche downtown, on rivers and lakes of the Nahuel Huapi National Park with plenty of wild trout. Best bilingual guides, full and hot lunch with the best Red Wine.",
+    },
+    {
+      id: "overnight",
+      title: "Overnight Programs",
+      img: "/images/02_programs/programs_02.jpg",
+      icon: "/images/02_programs/icons/overnight_blue.svg",
+      detail:
+        "Glamping in the middle of nowhere: at least 15 km per day of wild and clear water, fishing more than 10 hours a day, luxurious camp fully prepared ahead of time. For all kinds of fishermen: beginner, intermediate, advanced.",
+    },
+    {
+      id: "allinclusive",
+      title: "All Inclusive Programs",
+      img: "/images/02_programs/programs_03.jpg",
+      icon: "/images/02_programs/icons/lodges_blue.svg",
+      detail:
+        "Fishing lodging, meals and services in one rate. We recommend places to stay depending on the needs of each group: luxurious fishing lodges, cabins or hotels. The best of each destination at your fingertips.",
+    },
+  ],
+  es: [
+    {
+      id: "daily",
+      title: "Programas Diarios",
+      img: "/images/02_programs/programs_01.jpg",
+      icon: "/images/02_programs/icons/daytrip_blue.svg",
+      detail:
+        "Excursiones diarias o de medio día, a no más de 40 minutos del centro de Bariloche, en ríos y lagos del Parque Nacional Nahuel Huapi repletos de truchas salvajes. Los mejores guías bilingües, almuerzo completo y caliente con el mejor vino tinto.",
+    },
+    {
+      id: "overnight",
+      title: "Programas con Campamento",
+      img: "/images/02_programs/programs_02.jpg",
+      icon: "/images/02_programs/icons/overnight_blue.svg",
+      detail:
+        "Glamping en el medio de la nada: al menos 15 km por día de agua salvaje y cristalina, más de 10 horas de pesca diarias, campamento de lujo preparado con anticipación. Para todo tipo de pescador: principiante, intermedio o avanzado.",
+    },
+    {
+      id: "allinclusive",
+      title: "Programas Todo Incluido",
+      img: "/images/02_programs/programs_03.jpg",
+      icon: "/images/02_programs/icons/lodges_blue.svg",
+      detail:
+        "Alojamiento, comidas y servicios de pesca en una sola tarifa. Recomendamos dónde hospedarse según las necesidades de cada grupo: lodges de pesca de lujo, cabañas u hoteles. Lo mejor de cada destino a tu alcance.",
+    },
+  ],
+};
+
+export const travelSeasons: Record<Lang, string[]> = {
+  en: [
+    "November – December (Spring)",
+    "January – February (Summer)",
+    "March – April (Autumn)",
+    "May (Late season)",
+  ],
+  es: [
+    "Noviembre – Diciembre (Primavera)",
+    "Enero – Febrero (Verano)",
+    "Marzo – Abril (Otoño)",
+    "Mayo (Fin de temporada)",
+  ],
+};

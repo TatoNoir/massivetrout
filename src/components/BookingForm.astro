@@ -1,0 +1,335 @@
+---
+import type { Lang } from "../i18n/ui";
+import { getUi, bookingPrograms, travelSeasons } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getUi(lang);
+const programs = bookingPrograms[lang];
+const seasons = travelSeasons[lang];
+---
+
+<script type="application/json" data-programs set:html={JSON.stringify({ programs })}></script>
+
+<section class="sec__booking" id="booking">
+  <div class="container">
+    <div class="booking-step" data-step="1" data-step-panel>
+      <h2 class="heading--small booking-step-title">{t["booking.step1Title"]}</h2>
+      <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+      <div class="row">
+        {programs.map((p, i) => (
+          <div class="col-md-4">
+            <div class="card--info">
+              <img src={p.img} alt={p.title} class="img-responsive" loading="lazy" />
+              <h2 class="home-programs-title programs-title">{p.title}</h2>
+              <button
+                type="button"
+                class="btn btn--oval btn--booking-select"
+                data-program-select
+                data-program-id={p.id}
+              >
+                {t["booking.select"]}
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="booking-step" data-step="2" data-step-panel hidden>
+      <button type="button" class="btn btn--oval btn--booking-back" data-program-back>
+        &larr; {t["booking.back"]}
+      </button>
+
+      <div class="row">
+        <div class="col-md-5">
+          <div class="card--info">
+            <img src="" alt="" class="img-responsive booking-program-img" data-program-img />
+            <h2 class="home-programs-title programs-title" data-program-title></h2>
+            <p class="text--grey" data-program-detail></p>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <h3 class="heading--small">{t["booking.yourData"]}</h3>
+          <form
+            id="booking-form"
+            class="contact-form"
+            role="form"
+            novalidate
+            data-sent-msg={t["booking.sent"]}
+            data-error-msg={t["booking.error"]}
+          >
+            <input type="hidden" name="program_id" data-program-id-input />
+            <input type="hidden" name="program" data-program-title-input />
+
+            <div class="row">
+              <div class="col-md-6">
+                <label for="bookingNameInput">{t["booking.fullName"]}</label>
+                <input
+                  type="text"
+                  placeholder="Thomas Fuks"
+                  name="name"
+                  id="bookingNameInput"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="bookingEmailInput">{t["booking.email"]}</label>
+                <input
+                  type="email"
+                  placeholder="thomas@mailbox.com"
+                  name="email"
+                  id="bookingEmailInput"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label for="bookingPhoneInput">{t["booking.phone"]}</label>
+                <input
+                  type="tel"
+                  placeholder="999 222 111"
+                  name="phone"
+                  id="bookingPhoneInput"
+                  pattern="[0-9\s+]{7,20}"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="bookingSeasonInput">{t["booking.season"]}</label>
+                <select id="bookingSeasonInput" name="season" required>
+                  {seasons.map((s) => (
+                    <option value={s}>{s}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label for="bookingPassengersInput">{t["booking.passengers"]}</label>
+                <input
+                  type="number"
+                  name="passengers"
+                  id="bookingPassengersInput"
+                  min="1"
+                  max="8"
+                  value="1"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  name="company_website"
+                  class="hp-field"
+                  tabindex="-1"
+                  autocomplete="off"
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+
+            <input
+              class="btn btn--full btn--oval"
+              type="submit"
+              value={t["booking.send"]}
+            />
+            <h6 class="contact-alert" role="status"></h6>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hp-field {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .booking-step[hidden] {
+    display: none;
+  }
+
+  .btn--booking-select {
+    margin-top: 0.75rem;
+    width: 100%;
+    cursor: pointer;
+    background: #db5328;
+    border: 2px solid #db5328;
+    border-radius: 2.1875rem;
+    color: #fff;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn--booking-select:hover {
+    background: #545454;
+    border-color: #545454;
+    color: #fff;
+  }
+
+  .btn--booking-back {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+
+  .card--info {
+    text-align: center;
+  }
+
+  .booking-step-title {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+
+  .booking-step[data-step="1"] .card--info img {
+    width: 100%;
+    height: auto;
+  }
+
+  .booking-step[data-step="1"] .card--info h2 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .booking-step[data-step="2"] .card--info {
+    text-align: left;
+  }
+
+  .booking-step[data-step="2"] .card--info h2 {
+    font-size: 1.3rem;
+  }
+
+  .booking-step[data-step="2"] .card--info p {
+    font-size: 1.1rem;
+  }
+
+  .booking-program-img {
+    width: 100%;
+  }
+
+  .contact-alert.is-error {
+    color: #c0392b;
+  }
+</style>
+
+<script>
+  const stepPanels = Array.from(document.querySelectorAll("[data-step-panel]"));
+  const selectButtons = Array.from(document.querySelectorAll("[data-program-select]"));
+  const backButton = document.querySelector("[data-program-back]");
+
+  const step1 = document.querySelector('[data-step-panel][data-step="1"]');
+  const step2 = document.querySelector('[data-step-panel][data-step="2"]');
+
+  const hiddenIdInput = document.querySelector("[data-program-id-input]");
+  const hiddenTitleInput = document.querySelector("[data-program-title-input]");
+  const detailImg = document.querySelector("[data-program-img]");
+  const detailTitle = document.querySelector("[data-program-title]");
+  const detailText = document.querySelector("[data-program-detail]");
+
+  function showStep(n: number) {
+    stepPanels.forEach((panel) => {
+      const el = panel as HTMLElement;
+      const step = Number(el.dataset.step);
+      if (step === n) {
+        el.hidden = false;
+      } else {
+        el.hidden = true;
+      }
+    });
+  }
+
+  selectButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const programId = (btn as HTMLElement).dataset.programId;
+      const programs: Array<{
+        id: string;
+        title: string;
+        img: string;
+        detail: string;
+      }> = JSON.parse(
+        document.querySelector("[data-programs]")?.textContent ?? "{}"
+      ).programs;
+      const program = programs.find((p) => p.id === programId);
+      if (!program) return;
+
+      hiddenIdInput?.setAttribute("value", program.id);
+      hiddenTitleInput?.setAttribute("value", program.title);
+      detailImg?.setAttribute("src", program.img);
+      detailImg?.setAttribute("alt", program.title);
+      detailTitle!.textContent = program.title;
+      detailText!.textContent = program.detail;
+
+      showStep(2);
+    });
+  });
+
+  backButton?.addEventListener("click", () => {
+    showStep(1);
+  });
+
+  const form = document.getElementById("booking-form") as HTMLFormElement;
+  const alertEl = form?.querySelector(".contact-alert") as HTMLElement | null;
+  const endpoint: string | undefined =
+    import.meta.env.PUBLIC_BOOKING_ENDPOINT as string | undefined;
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const honeypot = form.querySelector(
+      '[name="company_website"]'
+    ) as HTMLInputElement;
+    if (honeypot?.value) return;
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const payload: Record<string, string> = {};
+    new FormData(form).forEach((value, key) => {
+      payload[key] = String(value);
+    });
+
+    alertEl!.textContent = "…";
+    alertEl!.classList.remove("is-error");
+
+    if (!endpoint) {
+      form.reset();
+      alertEl!.textContent = form.dataset.sentMsg ?? "";
+      showStep(1);
+      return;
+    }
+
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const text = await res.text();
+      if (res.ok) {
+        form.reset();
+        alertEl!.textContent = text;
+        alertEl!.classList.remove("is-error");
+      } else {
+        alertEl!.textContent = text;
+        alertEl!.classList.add("is-error");
+      }
+    } catch {
+      alertEl!.textContent = form.dataset.errorMsg ?? "";
+      alertEl!.classList.add("is-error");
+    }
+  });
+</script>

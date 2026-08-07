@@ -69,6 +69,7 @@ const prefixSubdirIntegration = {
 export default defineConfig({
   site: "https://TatoNoir.github.io/massivetrout/",
   trailingSlash: "ignore",
+  devToolbar: { enabled: false },
   build: {
     inlineStylesheets: "auto",
   },
