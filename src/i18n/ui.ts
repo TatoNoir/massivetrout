@@ -72,7 +72,7 @@ export const ui = {
   es: {
     "nav.programs": "Programas",
     "nav.destinations": "Destinos",
-    "nav.story": "Historia",
+    "nav.story": "Quiénes somos",
     "nav.lodges": "Lodges y Alojamiento",
     "nav.contact": "Contacto",
     "nav.language": "Idioma",
