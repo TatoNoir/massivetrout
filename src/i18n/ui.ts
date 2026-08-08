@@ -53,7 +53,7 @@ export const ui = {
     "booking.phone": "Phone",
     "booking.season": "Travel season",
     "booking.passengers": "Number of passengers",
-    "booking.send": "Send booking request",
+    "booking.send": "Check availability",
     "booking.sent":
       "Request received! We will get back to you shortly to confirm availability.",
     "booking.error": "There was a problem sending your request. Please try again.",
@@ -103,7 +103,7 @@ export const ui = {
     "booking.phone": "Teléfono",
     "booking.season": "Época de viaje",
     "booking.passengers": "Cantidad de pasajeros",
-    "booking.send": "Enviar solicitud de reserva",
+    "booking.send": "Consultar disponibilidad",
     "booking.sent":
       "¡Solicitud recibida! Te contactaremos en breve para confirmar disponibilidad.",
     "booking.error": "Hubo un problema al enviar tu solicitud. Intentá de nuevo.",
