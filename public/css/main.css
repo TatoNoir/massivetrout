@@ -8633,39 +8633,31 @@ margin-bottom: 2%;
 
       }
 
-    }
-
-
-
-  
+    }  
 
   .slider-home .heading--big{
-
     font-family: 'Domine', serif;
-
     font-style: normal;
-
     font-weight: bold;
-
-    font-size: 56px;
-
-    line-height: 82px;
-
+    font-size: 2.25rem;
     display: flex;
-
     align-items: center;
-
     text-align: center;
-
     text-transform: none;
-
     color: #FFFFFF;
-
     margin-bottom: 0px;
 
   }
 
+   @media screen and (min-width: 768px){
 
+    .slider-home .heading--big{
+      font-size: 3rem;
+      line-height: 56px;
+
+    }
+
+  }
 
    @media screen and (max-width: 380px){
 
@@ -8676,9 +8668,6 @@ margin-bottom: 2%;
     }
 
   }
-
-
-
 
 
   .slider-home .text--center{

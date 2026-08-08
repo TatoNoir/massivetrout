@@ -37,6 +37,10 @@ const homeHref = lang === "es" ? "/es/" : "/";
     />
     <link rel="stylesheet" href="/css/main.css" />
     <link id="color-options" rel="stylesheet" href="/css/color-themes/red.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
 
     <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gtagId}`}></script>
     <script>
@@ -69,6 +73,8 @@ const homeHref = lang === "es" ? "/es/" : "/";
       window.jQuery ||
         document.write('<script src="/js/vendor/jquery-2.2.0.min.js"><\/script>');
     </script>
+    <script is:inline src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script is:inline src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
     <script is:inline src="/js/plugins/jquery.lazyload.v1.9.1.js"></script>
     <script is:inline src="/js/plugins/jquery.superslides.js"></script>
     <script is:inline src="/js/main.js"></script>

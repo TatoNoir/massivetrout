@@ -52,6 +52,8 @@ export const ui = {
     "booking.email": "Email",
     "booking.phone": "Phone",
     "booking.season": "Travel season",
+    "booking.dates": "Travel dates",
+    "booking.datesHint": "Season runs November to May.",
     "booking.passengers": "Number of passengers",
     "booking.send": "Check availability",
     "booking.sent":
@@ -102,6 +104,8 @@ export const ui = {
     "booking.email": "Email",
     "booking.phone": "Teléfono",
     "booking.season": "Época de viaje",
+    "booking.dates": "Fechas de viaje",
+    "booking.datesHint": "La temporada va de noviembre a mayo.",
     "booking.passengers": "Cantidad de pasajeros",
     "booking.send": "Consultar disponibilidad",
     "booking.sent":

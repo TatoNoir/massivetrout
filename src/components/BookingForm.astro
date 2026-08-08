@@ -111,6 +111,20 @@ const seasons = travelSeasons[lang];
               </div>
 
               <div class="row">
+                <div class="col-md-12">
+                  <label for="bookingDatesInput">{t["booking.dates"]}</label>
+                  <input
+                    type="text"
+                    name="dates"
+                    id="bookingDatesInput"
+                    placeholder="Nov 20 - Dec 02, 2026"
+                    data-lang={lang}
+                  />
+                  <small class="booking-dates-hint">{t["booking.datesHint"]}</small>
+                </div>
+              </div>
+
+              <div class="row">
                 <div class="col-md-6">
                   <label for="bookingPassengersInput">{t["booking.passengers"]}</label>
                   <input
@@ -293,6 +307,23 @@ const seasons = travelSeasons[lang];
   const alertEl = form?.querySelector(".contact-alert") as HTMLElement | null;
   const endpoint: string | undefined =
     import.meta.env.PUBLIC_BOOKING_ENDPOINT as string | undefined;
+
+  const datesInput = document.getElementById(
+    "bookingDatesInput"
+  ) as HTMLInputElement | null;
+  if (datesInput && typeof window.flatpickr === "function") {
+    const esLocale = (window as any).flatpickr?.l10ns?.es;
+    window.flatpickr(datesInput, {
+      mode: "range",
+      dateFormat: "M j, Y",
+      minDate: "today",
+      disable: [(d: Date) => {
+        const m = d.getMonth();
+        return m >= 5 && m <= 9;
+      }],
+      locale: datesInput.dataset.lang === "es" ? esLocale : undefined,
+    });
+  }
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
