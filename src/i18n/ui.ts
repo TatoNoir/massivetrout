@@ -21,12 +21,6 @@ export const siteConfig = {
     roleEs: "Dueño/Guía Principal",
     email: "mtroutff@gmail.com",
   },
-  usContact: {
-    name: "Bill Johnson",
-    roleEn: "US Contact",
-    roleEs: "Contacto en EE.UU.",
-    phone: "973-452-0115",
-  },
   social: {
     facebook: "https://www.facebook.com/massivetroutflyfishing/",
     instagram: "https://www.instagram.com/massive_trout/?hl=es-la",

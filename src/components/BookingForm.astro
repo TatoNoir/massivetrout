@@ -47,100 +47,102 @@ const seasons = travelSeasons[lang];
         <div class="col-md-5">
           <div class="card--info">
             <img src="" alt="" class="img-responsive booking-program-img" data-program-img />
-            <h2 class="home-programs-title programs-title" data-program-title></h2>
+            <h2 class="heading--small" data-program-title></h2>
             <p class="text--grey" data-program-detail></p>
           </div>
         </div>
 
         <div class="col-md-7">
-          <h3 class="heading--small">{t["booking.yourData"]}</h3>
-          <form
-            id="booking-form"
-            class="contact-form"
-            role="form"
-            novalidate
-            data-sent-msg={t["booking.sent"]}
-            data-error-msg={t["booking.error"]}
-          >
-            <input type="hidden" name="program_id" data-program-id-input />
-            <input type="hidden" name="program" data-program-title-input />
+          <div class="card--info">
+            <h2 class="heading--small">{t["booking.yourData"]}</h2>
+            <form
+              id="booking-form"
+              class="contact-form"
+              role="form"
+              novalidate
+              data-sent-msg={t["booking.sent"]}
+              data-error-msg={t["booking.error"]}
+            >
+              <input type="hidden" name="program_id" data-program-id-input />
+              <input type="hidden" name="program" data-program-title-input />
 
-            <div class="row">
-              <div class="col-md-6">
-                <label for="bookingNameInput">{t["booking.fullName"]}</label>
-                <input
-                  type="text"
-                  placeholder="Thomas Fuks"
-                  name="name"
-                  id="bookingNameInput"
-                  required
-                />
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="bookingNameInput">{t["booking.fullName"]}</label>
+                  <input
+                    type="text"
+                    placeholder="Thomas Fuks"
+                    name="name"
+                    id="bookingNameInput"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="bookingEmailInput">{t["booking.email"]}</label>
+                  <input
+                    type="email"
+                    placeholder="thomas@mailbox.com"
+                    name="email"
+                    id="bookingEmailInput"
+                    required
+                  />
+                </div>
               </div>
-              <div class="col-md-6">
-                <label for="bookingEmailInput">{t["booking.email"]}</label>
-                <input
-                  type="email"
-                  placeholder="thomas@mailbox.com"
-                  name="email"
-                  id="bookingEmailInput"
-                  required
-                />
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-md-6">
-                <label for="bookingPhoneInput">{t["booking.phone"]}</label>
-                <input
-                  type="tel"
-                  placeholder="999 222 111"
-                  name="phone"
-                  id="bookingPhoneInput"
-                  pattern="[0-9\s+]{7,20}"
-                />
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="bookingPhoneInput">{t["booking.phone"]}</label>
+                  <input
+                    type="tel"
+                    placeholder="999 222 111"
+                    name="phone"
+                    id="bookingPhoneInput"
+                    pattern="[0-9\s+]{7,20}"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="bookingSeasonInput">{t["booking.season"]}</label>
+                  <select id="bookingSeasonInput" name="season" required>
+                    {seasons.map((s) => (
+                      <option value={s}>{s}</option>
+                    ))}
+                  </select>
+                </div>
               </div>
-              <div class="col-md-6">
-                <label for="bookingSeasonInput">{t["booking.season"]}</label>
-                <select id="bookingSeasonInput" name="season" required>
-                  {seasons.map((s) => (
-                    <option value={s}>{s}</option>
-                  ))}
-                </select>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-md-6">
-                <label for="bookingPassengersInput">{t["booking.passengers"]}</label>
-                <input
-                  type="number"
-                  name="passengers"
-                  id="bookingPassengersInput"
-                  min="1"
-                  max="8"
-                  value="1"
-                  required
-                />
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="bookingPassengersInput">{t["booking.passengers"]}</label>
+                  <input
+                    type="number"
+                    name="passengers"
+                    id="bookingPassengersInput"
+                    min="1"
+                    max="8"
+                    value="1"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    name="company_website"
+                    class="hp-field"
+                    tabindex="-1"
+                    autocomplete="off"
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="col-md-6">
-                <input
-                  type="text"
-                  name="company_website"
-                  class="hp-field"
-                  tabindex="-1"
-                  autocomplete="off"
-                  aria-hidden="true"
-                />
-              </div>
-            </div>
 
-            <input
-              class="btn btn--full btn--oval"
-              type="submit"
-              value={t["booking.send"]}
-            />
-            <h6 class="contact-alert" role="status"></h6>
-          </form>
+              <input
+                class="btn btn--full btn--oval"
+                type="submit"
+                value={t["booking.send"]}
+              />
+              <h6 class="contact-alert" role="status"></h6>
+            </form>
+          </div>
         </div>
       </div>
     </div>
