@@ -5674,8 +5674,6 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 }
 
-
-
 @media screen and (min-width: 1100px){
 
   .derivador-home .container{
@@ -5687,41 +5685,20 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 }
 
 
-
-@media screen and (min-width: 1900px){
-
-  .derivador-home .container{
-
-    margin-left: 20%;
-
-  }
-
-}
-
-
-
 .derivador-home .derivadores{
-
   width: 530px;
-
   height: 600px;
-
   border-radius: 15px;
-
 }
 
 
 
 #derivador-1{
-
   background: url(../images/01_home/card_waters.jpg);
 
 }
 
-
-
 #derivador-2{
-
   background: url(../images/01_home/card_guides.jpg) right;
 
 }
@@ -5956,37 +5933,14 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 }
 
 
-
-@media screen and (min-width: 1900px){
-
-  .home-programs .container{
-
-    margin-left: 19%;
-
-  }
-
-}
-
-
-
-
-
 .home-programs .card--info{
-
  padding: 0;
-
- /*width: 90%;*/
-
 }
-
 
 
 .home-programs .icon-programs-home{
-
   display: inline;
-
   width: 10%;
-
 }
 
 
