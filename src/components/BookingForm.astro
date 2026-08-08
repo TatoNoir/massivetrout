@@ -17,11 +17,11 @@ const seasons = travelSeasons[lang];
   <div class="container">
     <div class="booking-step" data-step="1" data-step-panel>
       <h2 class="heading--small booking-step-title">{t["booking.step1Title"]}</h2>
-      <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+      
       <div class="row">
         {programs.map((p, i) => (
           <div class="col-md-4">
-            <div class="card--info">
+            <div class="card-programs">
               <img src={p.img} alt={p.title} class="img-responsive" loading="lazy" />
               <h2 class="home-programs-title programs-title">{p.title}</h2>
               <button
@@ -163,6 +163,10 @@ const seasons = travelSeasons[lang];
     display: none;
   }
 
+  .booking-step {
+    margin-bottom: 1rem;
+  }
+
   .btn--booking-select {
     margin-top: 0.75rem;
     width: 100%;
@@ -189,17 +193,21 @@ const seasons = travelSeasons[lang];
     text-align: center;
   }
 
+  .card-programs {
+    text-align: center;
+  }
+
   .booking-step-title {
-    text-align: left;
+    text-align: center;
     font-size: 1.8rem;
   }
 
-  .booking-step[data-step="1"] .card--info img {
+  .booking-step[data-step="1"] .card-programs img {
     width: 100%;
     height: auto;
   }
 
-  .booking-step[data-step="1"] .card--info h2 {
+  .booking-step[data-step="1"] .card-programs h2 {
     font-size: 1.15rem;
     margin-top: 1rem;
     margin-bottom: 1rem;

@@ -6301,6 +6301,46 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 
 
+.card-programs {
+
+  width: 100%; }
+
+  @media screen and (min-width: 380px) {
+
+    .card-programs {
+
+      float: left;
+
+      height: 100%; } }
+
+  .card-programs {
+
+    padding: 1rem; }
+
+    @media screen and (min-width: 380px) {
+
+      .card-programs {
+
+        width: 100%; } }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+
+      .card-programs {
+
+        width: 100%; } }
+
+  .card-programs p {
+
+    margin-bottom: 1rem;
+
+    font-size: 70%; }
+
+  .card-programs a {
+
+    font-weight: bold; }
+
+
+
 /* Photo */
 
 .sec__photo {
