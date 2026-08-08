@@ -5940,29 +5940,20 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 .home-programs .icon-programs-home{
   display: inline;
-  width: 10%;
+  width: 8%;
 }
 
 
 
 .home-programs .home-programs-title{
-
   font-family: 'Domine', serif;
-
   font-weight: bold;
-
   display: inline-block;
-
   height: 35px;
-
-  font-size: 24px;
-
+  font-size: 1.5rem;
   margin: 0;
-
   vertical-align: bottom;
-
   margin-left: 2%;
-
 }
 
 
@@ -5999,21 +5990,25 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 }
 
+.programs-title
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 0;
+}
 
 
-@media screen and (max-width: 1024px){
+.home-programs .home-programs-title
 
-  .home-programs .home-programs-title
-
-  {
-
-    vertical-align: 0;
-
-    font-size: 14px;    
-
-  }
+{
+  vertical-align: 0;
+  font-size: 1.5rem;    
 
 }
+
+
 
 
 
@@ -7027,63 +7022,40 @@ margin-bottom: 2%;
 
 
 
- .sec__about .heading_home_best{
-
+.sec__about .heading_home_best{
   font-family: 'Domine', serif;
-
   font-style: normal;
-
   font-weight: bold;
-
-  font-size: 48px;
-
+  font-size: 2rem;
   line-height: 109.6%;
-
-  /* or 53px */
-
   text-align: center;
-
   position: relative;
-
   color: #FFFFFF;
-
   border-bottom: none;
-
-
-
-  }
-
-
-
-.sec__about .text--best{
-
-  font-family: 'Ubuntu', sans-serif;
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  font-size: 18px;
-
-  line-height: 21px;
-
-  text-align: center;
-
-  color: #FFFFFF;
-
-  position: relative;
-
-  width: 430px;
-
-  left: 10%;
-
-
-
 }
 
+.sec__about .text--best{
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  padding: 0 10%;
+}
 
+@media screen and (min-width: 1200px) {
 
+  .sec__about .heading_home_best{
+    font-size: 3rem;
+  }
 
+  .sec__about .text--best{
+    font-size: 1.125rem;
+  }
+}
 
 .sec__about .about__btns {
 
@@ -8710,69 +8682,42 @@ margin-bottom: 2%;
 
 
   .slider-home .text--center{
-
-    font-weight: bold;
-
+    font-weight: normal;
   }
 
 
 
   .sec__activities .heading--big{
-
     font-family: 'Domine', serif;
-
     font-style: normal;
-
     font-weight: bold;
-
     font-size: 36px;
-
     line-height: 41px;
-
     text-align: center;
-
     color: #DB5328;
-
     margin-bottom: -10px;
-
-    
-
   }
 
 
 
   .sec__activities .heading--small{
-
     font-family: 'Ubuntu', sans-serif;
-
     font-style: normal;
-
     font-weight: bold;
-
     font-size: 24px;  
-
     line-height: 28px;
-
     color: #DB5328;
-
   }
 
 
 
   .sec_merch .merch__name{
-
     font-family: 'Ubuntu', sans-serif;
-
     font-style: normal;
-
     font-weight: bold;
-
     font-size: 24px;
-
     line-height: 28px;
-
     color: #DB5328;
-
   }
 
 
