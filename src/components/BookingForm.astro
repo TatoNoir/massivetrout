@@ -113,11 +113,13 @@ const seasons = travelSeasons[lang];
               <div class="row">
                 <div class="col-md-12">
                   <label for="bookingSeasonInput">{t["booking.season"]}</label>
+                  <small class="booking-dates-hint">{t["booking.datesHint"]}</small>
                   <select id="bookingSeasonInput" name="season" required>
                     {seasons.map((s) => (
                       <option value={s}>{s}</option>
                     ))}
                   </select>
+                  
                 </div>
               </div>
 
@@ -131,7 +133,6 @@ const seasons = travelSeasons[lang];
                     placeholder="Nov 20 - Dec 02, 2026"
                     data-lang={lang}
                   />
-                  <small class="booking-dates-hint">{t["booking.datesHint"]}</small>
                   <input
                     type="text"
                     name="company_website"
@@ -355,10 +356,21 @@ const seasons = travelSeasons[lang];
   ) as HTMLInputElement | null;
   if (datesInput && typeof window.flatpickr === "function") {
     const esLocale = (window as any).flatpickr?.l10ns?.es;
+
+    const today = new Date();
+    const now = new Date(
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate()
+    );
+    const inSeason = now.getMonth() < 5 || now.getMonth() > 9;
+    const firstAvailable = inSeason ? now : new Date(now.getFullYear(), 10, 1);
+
     window.flatpickr(datesInput, {
       mode: "range",
       dateFormat: "M j, Y",
-      minDate: "today",
+      minDate: firstAvailable,
+      defaultDate: firstAvailable,
       disable: [(d: Date) => {
         const m = d.getMonth();
         return m >= 5 && m <= 9;
