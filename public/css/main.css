@@ -3248,7 +3248,7 @@ footer {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  max-width: 18rem;
+  max-width: 19rem;
   font-size: 0.9rem;
   font-weight: bold;
   text-align: center;
@@ -5757,11 +5757,9 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 .sec__products,
 
 .sec__destinations_but{
-
   padding-top: 3.25rem;
-
-  padding-bottom: 7.25rem; }
-
+  padding-bottom: 4rem; 
+}
 
 
 .intro_lodges{
