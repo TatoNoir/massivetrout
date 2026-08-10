@@ -39,10 +39,6 @@ const seasons = travelSeasons[lang];
     </div>
 
     <div class="booking-step" data-step="2" data-step-panel hidden>
-      <button type="button" class="btn btn--oval btn--booking-back" data-program-back>
-        &larr; {t["booking.back"]}
-      </button>
-
       <div class="row">
         <div class="col-md-5">
           <div class="card--info">
@@ -101,6 +97,21 @@ const seasons = travelSeasons[lang];
                   />
                 </div>
                 <div class="col-md-6">
+                  <label for="bookingPassengersInput">{t["booking.passengers"]}</label>
+                  <input
+                    type="number"
+                    name="passengers"
+                    id="bookingPassengersInput"
+                    min="1"
+                    max="8"
+                    value="1"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
                   <label for="bookingSeasonInput">{t["booking.season"]}</label>
                   <select id="bookingSeasonInput" name="season" required>
                     {seasons.map((s) => (
@@ -121,23 +132,6 @@ const seasons = travelSeasons[lang];
                     data-lang={lang}
                   />
                   <small class="booking-dates-hint">{t["booking.datesHint"]}</small>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="bookingPassengersInput">{t["booking.passengers"]}</label>
-                  <input
-                    type="number"
-                    name="passengers"
-                    id="bookingPassengersInput"
-                    min="1"
-                    max="8"
-                    value="1"
-                    required
-                  />
-                </div>
-                <div class="col-md-6">
                   <input
                     type="text"
                     name="company_website"
@@ -149,11 +143,20 @@ const seasons = travelSeasons[lang];
                 </div>
               </div>
 
-              <input
-                class="btn btn--full btn--oval"
-                type="submit"
-                value={t["booking.send"]}
-              />
+              <div class="booking-form-actions">
+                <input
+                  class="btn btn--oval btn--booking-submit"
+                  type="submit"
+                  value={t["booking.send"]}
+                />
+                <button
+                  type="button"
+                  class="btn btn--oval btn--booking-back"
+                  data-program-back
+                >
+                  &larr; {t["booking.back"]}
+                </button>
+              </div>
               <h6 class="contact-alert" role="status"></h6>
             </form>
           </div>
@@ -201,6 +204,45 @@ const seasons = travelSeasons[lang];
   .btn--booking-back {
     margin-bottom: 1.5rem;
     cursor: pointer;
+    background: transparent;
+    border: 2px solid #db5328;
+    border-radius: 2.1875rem;
+    color: #db5328;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .btn--booking-back:hover {
+    background: #db5328;
+    color: #fff;
+  }
+
+  .booking-form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 16rem;
+  }
+
+  .booking-form-actions .btn--booking-submit,
+  .booking-form-actions .btn--booking-back {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .btn--booking-submit {
+    background: #db5328;
+    border: 2px solid #db5328;
+    color: #fff;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn--booking-submit:hover {
+    background: #545454;
+    border-color: #545454;
+    color: #fff;
   }
 
   .card--info {
