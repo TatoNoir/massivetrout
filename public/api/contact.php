@@ -33,7 +33,7 @@ if (strlen($message) > 5000) {
     mtff_fail(400, 'Message too long.');
 }
 
-$to = mtff_env('MTFF_RECIPIENT', 'mtroutff@gmail.com');
+$to = mtff_env('MTFF_RECIPIENT', 'marianopainefil@gmail.com');
 $from = mtff_env('MTFF_FROM', 'contact@massivetroutflyfishing.com');
 
 $html = '<h3>[Massive Trout] ' . htmlspecialchars($recipient) . '</h3>'

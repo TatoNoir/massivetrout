@@ -9,7 +9,14 @@ const { lang } = Astro.props;
 const t = getUi(lang);
 ---
 
-<form id="contact-form" class="contact-form" role="form" novalidate>
+<form
+  id="contact-form"
+  class="contact-form"
+  role="form"
+  novalidate
+  data-sent-msg={t["contact.sent"]}
+  data-error-msg={t["contact.error"]}
+>
   <div class="row">
     <div class="col-md-6">
       <label for="contactNameInput">{t["contact.yourName"]}</label>
@@ -40,7 +47,7 @@ const t = getUi(lang);
         placeholder="999 222 111"
         name="phone"
         id="contactPhoneInput"
-        pattern="[0-9\s]{10,15}"
+        pattern="[0-9+() -]{7,20}"
       />
     </div>
     <div class="col-md-6">
@@ -103,7 +110,14 @@ const t = getUi(lang);
   const alertEl = form.querySelector(".contact-alert");
   const endpoint: string =
     (import.meta.env.PUBLIC_FORM_ENDPOINT as string | undefined) ??
-    "/api/contact.php";
+    `${import.meta.env.PUBLIC_SITE_BASE ?? ""}/api/contact.php`;
+
+  function showAlert(message: string, isError: boolean) {
+    alertEl.classList.remove("contact-alert__success", "contact-alert__error");
+    alertEl.classList.add(isError ? "contact-alert__error" : "contact-alert__success");
+    alertEl.textContent = message;
+    alertEl.style.display = "block";
+  }
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -122,7 +136,8 @@ const t = getUi(lang);
     });
 
     alertEl.textContent = "…";
-    alertEl.classList.remove("is-error");
+    alertEl.classList.remove("contact-alert__success", "contact-alert__error");
+    alertEl.style.display = "block";
 
     try {
       const res = await fetch(endpoint, {
@@ -130,18 +145,15 @@ const t = getUi(lang);
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const text = await res.text();
       if (res.ok) {
         form.reset();
-        alertEl.textContent = text;
-        alertEl.classList.remove("is-error");
+        showAlert(form.dataset.sentMsg ?? "", false);
       } else {
-        alertEl.textContent = text;
-        alertEl.classList.add("is-error");
+        const text = await res.text();
+        showAlert(text, true);
       }
     } catch {
-      alertEl.textContent = "Network error. Please try again.";
-      alertEl.classList.add("is-error");
+      showAlert(form.dataset.errorMsg ?? "", true);
     }
   });
 </script>

@@ -4,4 +4,5 @@ dist/
 .env
 .env.*
 !.env.example
+public/api/.env
 .DS_Store

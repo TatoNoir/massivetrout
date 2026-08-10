@@ -72,6 +72,9 @@ export const ui = {
     "contact.feedback": "Feedback",
     "contact.general": "General Message",
     "contact.newsletter": "Subscribe for newsletter",
+    "contact.sent":
+      "Your message was sent successfully. We will get back to you shortly.",
+    "contact.error": "There was a problem sending your message. Please try again.",
     "newsletter.title": "Join Our Newsletter",
     "newsletter.text":
       "Receive information about upcoming hosted trips, scouting reports, and the latest destination updates.",
@@ -124,6 +127,8 @@ export const ui = {
     "contact.feedback": "Comentario",
     "contact.general": "Mensaje general",
     "contact.newsletter": "Suscribirme al newsletter",
+    "contact.sent": "¡Tu mensaje fue enviado correctamente! Te contactaremos en breve.",
+    "contact.error": "Hubo un problema al enviar tu mensaje. Intentá de nuevo.",
     "newsletter.title": "Únete a nuestro Newsletter",
     "newsletter.text":
       "Recibí información sobre viajes próximos, reportes de pesca y actualizaciones de destinos.",

@@ -9,9 +9,13 @@ const { lang } = Astro.props;
 const t = getUi(lang);
 const programs = bookingPrograms[lang];
 const seasons = travelSeasons[lang];
+const siteBase = import.meta.env.PUBLIC_SITE_BASE ?? "";
+const programsJson = JSON.stringify({
+  programs: programs.map((p) => ({ ...p, img: siteBase + p.img })),
+});
 ---
 
-<script type="application/json" data-programs set:html={JSON.stringify({ programs })}></script>
+<script type="application/json" data-programs set:html={programsJson}></script>
 
 <section class="sec__booking" id="booking">
   <div class="container">
@@ -93,7 +97,7 @@ const seasons = travelSeasons[lang];
                     placeholder="999 222 111"
                     name="phone"
                     id="bookingPhoneInput"
-                    pattern="[0-9\s+]{7,20}"
+                    pattern="[0-9+() -]{7,20}"
                   />
                 </div>
                 <div class="col-md-6">
@@ -285,10 +289,6 @@ const seasons = travelSeasons[lang];
   .booking-program-img {
     width: 100%;
   }
-
-  .contact-alert.is-error {
-    color: #c0392b;
-  }
 </style>
 
 <script>
@@ -397,13 +397,20 @@ const seasons = travelSeasons[lang];
       payload[key] = String(value);
     });
 
+    const showAlert = (message: string, isError: boolean) => {
+      alertEl!.classList.remove("contact-alert__success", "contact-alert__error");
+      alertEl!.classList.add(isError ? "contact-alert__error" : "contact-alert__success");
+      alertEl!.textContent = message;
+      alertEl!.style.display = "block";
+    };
+
     alertEl!.textContent = "…";
-    alertEl!.classList.remove("is-error");
+    alertEl!.classList.remove("contact-alert__success", "contact-alert__error");
+    alertEl!.style.display = "block";
 
     if (!endpoint) {
       form.reset();
-      alertEl!.textContent = form.dataset.sentMsg ?? "";
-      showStep(1);
+      showAlert(form.dataset.sentMsg ?? "", false);
       return;
     }
 
@@ -413,18 +420,15 @@ const seasons = travelSeasons[lang];
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const text = await res.text();
       if (res.ok) {
         form.reset();
-        alertEl!.textContent = text;
-        alertEl!.classList.remove("is-error");
+        showAlert(form.dataset.sentMsg ?? "", false);
       } else {
-        alertEl!.textContent = text;
-        alertEl!.classList.add("is-error");
+        const text = await res.text();
+        showAlert(text, true);
       }
     } catch {
-      alertEl!.textContent = form.dataset.errorMsg ?? "";
-      alertEl!.classList.add("is-error");
+      showAlert(form.dataset.errorMsg ?? "", true);
     }
   });
 </script>

@@ -50,7 +50,7 @@ const t = getUi(lang);
   const alertEl = form.querySelector(".contact-alert-news");
   const endpoint: string =
     (import.meta.env.PUBLIC_NEWSLETTER_ENDPOINT as string | undefined) ??
-    "/api/newsletter.php";
+    `${import.meta.env.PUBLIC_SITE_BASE ?? ""}/api/newsletter.php`;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();

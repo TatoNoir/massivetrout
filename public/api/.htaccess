@@ -1,0 +1,4 @@
+# Evita que el archivo .env (credenciales SMTP) sea accesible por web.
+<FilesMatch "^\.env$">
+  Require all denied
+</FilesMatch>
