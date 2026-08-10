@@ -60,7 +60,7 @@ import NewsletterForm from "../../components/NewsletterForm.astro";
             <img src="/images/01_home/home_programs_01.jpg" alt="Drift Pesca" class="img-responsive" loading="lazy" />
             <div class="programs-title">
               <img class="icon-programs-home" src="/images/01_home/icons/daytrip_dorado.svg" alt="Camping spot icon" loading="lazy" />
-              <h2 class="home-programs-title">Excursiones diarias</h2>
+              <h2 class="home-programs-title"><a href="/es/programs/#daily_trip">Excursiones diarias</a></h2>
             </div>
             <p class="text--grey">Pesque en los mejores ambientes de los parques nacionales Nahuel Huapi y Lanín</p>
           </div>
@@ -70,7 +70,7 @@ import NewsletterForm from "../../components/NewsletterForm.astro";
             <img src="/images/01_home/home_programs_02.jpg" alt="Pescador con trucha" class="img-responsive" loading="lazy" />
             <div class="programs-title">  
               <img class="icon-programs-home" src="/images/01_home/icons/overnigt_dorado.svg" alt="Camping spot icon" loading="lazy" />
-              <h2 class="home-programs-title">Expediciones</h2>
+              <h2 class="home-programs-title"><a href="/es/programs/#overnight_trip">Expediciones</a></h2>
             </div>
             <p class="text--grey">Pesque en los mejores ambientes de los parques nacionales Nahuel Huapi y Lanín</p>
           </div>
@@ -80,13 +80,13 @@ import NewsletterForm from "../../components/NewsletterForm.astro";
             <img src="/images/01_home/home_programs_03.jpg" alt="Lodge en Patagonia" class="img-responsive" loading="lazy" />
             <div class="programs-title">
               <img class="icon-programs-home" src="/images/01_home/icons/lodges_dorado.svg" alt="Camping spot icon" loading="lazy" />
-              <h2 class="home-programs-title">Excursiones All Inclusive</h2>
+              <h2 class="home-programs-title"><a href="/es/programs/#allinclusive_trip">Excursiones All Inclusive</a></h2>
             </div>
             <p class="text--grey">Pesque en los mejores ambientes de los parques nacionales Nahuel Huapi y Lanín</p>
           </div>
         </div>
       </div>
-      <a class="btn btn--full btn--oval" href="/es/programs/" role="button" title="Visit Our Blog">Conozca mas</a>
+      <a class="btn btn--full btn--oval" href="/es/booking/" role="button" title="Book your trip">Reservá tu viaje</a>
     </div>
   </section>
 
@@ -102,17 +102,17 @@ import NewsletterForm from "../../components/NewsletterForm.astro";
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="derivadores" id="derivador-1">
-            <h2 class="heading_home_best">Pescando en los mejores ríos y lagos</h2>
-            <p class="text--best">Pesque en los mejores ambientes de los parques nacionales Nahuel Huapi y Lanín</p>
-            <a class="btn btn--full btn--oval btn_best" href="/es/destinations/" role="button" title="Conozca los ambientes">Conozca los ambientes</a>
-          </div>
-        </div>
-        <div class="col-md-6">
           <div class="derivadores" id="derivador-2">
             <h2 class="heading_home_best">Pesque con guías <br /> profesionales</h2>
             <p class="text--best">Tiene poco tiempo, pero quiere disfrutar una excursión de pesca por un día? Consulte aqui!</p>
-            <a class="btn btn--full btn--oval btn_best" href="/es/about/" role="button" title="Nuestro equipo">Nuestro equipo</a>
+            <a class="btn btn--full btn--oval btn_best" href="/es/programs/" role="button" title="Nuestro equipo">Explorar Programas</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="derivadores" id="derivador-1">
+            <h2 class="heading_home_best">Pescando en los mejores ríos y lagos</h2>
+            <p class="text--best">Pesque en los mejores ambientes de los parques nacionales Nahuel Huapi y Lanín</p>
+            <a class="btn btn--full btn--oval btn_best" href="/es/destinations/" role="button" title="Conozca los ambientes">Descubre Destinos</a>
           </div>
         </div>
       </div>
@@ -207,3 +207,12 @@ import NewsletterForm from "../../components/NewsletterForm.astro";
     </div>
   </section>
 </Layout>
+
+<script>
+  document.querySelectorAll('a[href="#intro"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>

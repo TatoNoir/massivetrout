@@ -32,8 +32,7 @@ import NewsletterForm from "../components/NewsletterForm.astro";
           <div class="col-md-12 text--center">
             <a class="btn btn--full btn--oval" href="#intro" role="button">Begin your trip</a>
           </div>
-        </div>
-      </div>
+        </div>      </div>
     </div>
   </section>
 
@@ -61,9 +60,9 @@ import NewsletterForm from "../components/NewsletterForm.astro";
         <div class="col-md-4">
           <div class="card--info">
             <img src="/images/01_home/home_programs_01.jpg" alt="Fishing Drift" class="img-responsive" loading="lazy" />
-            <div class="programs-title">
+            <div class="programs-title" >
               <img class="icon-programs-home" src="/images/01_home/icons/daytrip_dorado.svg" alt="Daily programs icon" loading="lazy" />
-              <h2 class="home-programs-title">Daily Programs</h2>
+              <a class="home-programs-title" href="/programs/#daily_trip">Daily Programs</a>
               </div>
             <p class="text--grey text--center">Fish in the best environments of Nahuel Huapi National Park and Lanin National Park</p>
           </div>
@@ -72,9 +71,9 @@ import NewsletterForm from "../components/NewsletterForm.astro";
           <div class="card--info">
             <img src="/images/01_home/home_programs_02.jpg" alt="Fisherman with Trout" class="img-responsive" loading="lazy" />
             <div class="programs-title">
-              <img class="icon-programs-home" src="/images/01_home/icons/overnigt_dorado.svg" alt="Overnight programs icon" loading="lazy" />
-              <h2 class="home-programs-title">Overnight Programs</h2>
-            </div>    
+              <img class="icon-programs-home" src="/images/01_home/icons/lodges_dorado.svg" alt="Camping spot icon" loading="lazy" />
+              <h2 class="home-programs-title"><a href="/programs/#allinclusive_trip">All Inclusive Programs</a></h2>
+            </div>
             <p class="text--grey text--center">Float &amp; Camp covering large distances of water, fishing in the wildest part of North Patagonia.</p>
           </div>
         </div>
@@ -82,14 +81,14 @@ import NewsletterForm from "../components/NewsletterForm.astro";
           <div class="card--info">
             <img src="/images/01_home/home_programs_03.jpg" alt="Patagonian Lodge" class="img-responsive" loading="lazy" />
             <div class="programs-title">
-              <img class="icon-programs-home" src="/images/01_home/icons/lodges_dorado.svg" alt="Camping spot icon" loading="lazy" />
-              <h2 class="home-programs-title">All Inclusive Programs</h2>
-            </div>
+              <img class="icon-programs-home" src="/images/01_home/icons/overnigt_dorado.svg" alt="Overnight programs icon" loading="lazy" />
+              <h2 class="home-programs-title"><a href="/programs/#overnight_trip">Overnight Programs</a></h2>
+            </div>    
             <p class="text--grey text--center">MTFF is in charge of everything you can customize your all inclusive program.</p>
           </div>
         </div>
       </div>
-      <a class="btn btn--full btn--oval" href="/programs/" role="button" title="Visit Our Blog">MORE ABOUT PROGRAMS</a>
+      <a class="btn btn--full btn--oval" href="/booking/" role="button" title="Book your trip">Book your trip</a>
     </div>
   </section>
 
@@ -105,17 +104,17 @@ import NewsletterForm from "../components/NewsletterForm.astro";
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="derivadores" id="derivador-1">
-            <h2 class="heading_home_best">Fishing in <br /> the best waters</h2>
-            <p class="text--best text--center">Fish in the best environments of North Patagonia region. Nahuel Huapi &amp; Lanin National parks.</p>
-            <a class="btn btn--full btn--oval btn_best" href="/destinations/" role="button" title="Visit Our Blog">Learn More</a>
-          </div>
-        </div>
-        <div class="col-md-6">
           <div class="derivadores" id="derivador-2">
             <h2 class="heading_home_best">Fishing with <br /> experienced guides</h2>
             <p class="text--best text--center">Live your best fishing experience with professional guides.</p>
-            <a class="btn btn--full btn--oval btn_best" href="/about/" role="button" title="Visit Our Blog">Learn More</a>
+            <a class="btn btn--full btn--oval btn_best" href="/programs/" role="button" title="programs">Explore our programs</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="derivadores" id="derivador-1">
+            <h2 class="heading_home_best">Fishing in <br /> the best waters</h2>
+            <p class="text--best text--center">Fish in the best environments of North Patagonia region. Nahuel Huapi &amp; Lanin National parks.</p>
+            <a class="btn btn--full btn--oval btn_best" href="/destinations/" role="button" title="destinations">Discover our destinations</a>
           </div>
         </div>
       </div>
@@ -210,3 +209,12 @@ import NewsletterForm from "../components/NewsletterForm.astro";
     </div>
   </section>
 </Layout>
+
+<script>
+  document.querySelectorAll('a[href="#intro"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>

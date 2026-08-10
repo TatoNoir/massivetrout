@@ -45,18 +45,18 @@ const navItems = [
       <input id="nav_checkbox" class="nav_checkbox" type="checkbox" />
 
       <ul class="nav-list">
-        {navItems.map((item) => (
-          <li class="subnav__parent">
-            <a class="show-mobile" href={item.href}>{item.label}</a>
-            <a class="hide-mobile" href={item.href}>{item.label}</a>
-          </li>
-        ))}
-
         <li class="subnav__parent nav-cta">
           <a class="nav-cta__link" href={`${prefix}/booking/`}>
             {t["nav.book"]}
           </a>
         </li>
+
+        {navItems.map((item) => (
+          <li class="subnav__parent">
+            <a class="show-mobile" href={item.href}>{item.label}</a>
+            <a class="hide-mobile" href={item.href}>{item.label}</a>
+          </li>
+        ))}        
 
         <li class="subnav__parent">
           <a class="show-mobile" href={langSwitchHref}>{t["nav.language"]}</a>
@@ -85,6 +85,7 @@ const navItems = [
     letter-spacing: 0.04em;
     margin-left: 0.5rem;
     transition: background 0.2s ease;
+    margin-top: 12%;
   }
 
   .nav-cta__link:hover {

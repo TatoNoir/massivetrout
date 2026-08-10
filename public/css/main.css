@@ -3240,45 +3240,22 @@ footer {
 
 
 
-
-
-
-
-/**
-
- * Modules
-
- */
-
 /* Buttons */
 
 .btn {
-
   display: block;
-
-  padding-top: .618rem;
-
-  padding-bottom: .618rem;
-
+  padding: 15px 25px;
   margin-right: auto;
-
   margin-left: auto;
-
   width: 100%;
-
-  max-width: 11.25rem;
-
-  font-size: 0.7rem;
-
+  max-width: 18rem;
+  font-size: 0.9rem;
   font-weight: bold;
-
   text-align: center;
-
   text-transform: uppercase;
-
   cursor: pointer;
-
-  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1); }
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1); 
+}
 
   @media screen and (min-width: 768px) {
 
