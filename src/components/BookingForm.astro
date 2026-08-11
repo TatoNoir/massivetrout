@@ -276,6 +276,8 @@ const programsJson = JSON.stringify({
 
   .card-programs {
     text-align: center;
+    border: 0.2px solid #d7d7d7;
+    border-radius: 25px;
   }
 
   .booking-step-title {
@@ -301,7 +303,7 @@ const programsJson = JSON.stringify({
   }
 
   .booking-category__title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-top: 0;
   }
 
@@ -314,7 +316,9 @@ const programsJson = JSON.stringify({
 
   .booking-step[data-step="1"] .card-programs img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 425 / 522;
+    object-fit: cover;
+    border-radius: 15px
   }
 
   .booking-step[data-step="1"] .card-programs h2 {
