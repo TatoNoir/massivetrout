@@ -18,7 +18,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     mtff_fail(400, 'Please enter a valid email address.');
 }
 
-$to = mtff_env('MTFF_RECIPIENT', 'marianopainefil@gmail.com');
+$to = mtff_env('MTFF_RECIPIENT', 'mtroutff@gmail.com');
 $from = mtff_env('MTFF_FROM', 'contact@massivetroutflyfishing.com');
 
 $html = '<p>Hello!</p>'

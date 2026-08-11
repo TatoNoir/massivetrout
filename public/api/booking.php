@@ -41,7 +41,7 @@ if ($passengers === '' || (int) $passengers < 1 || (int) $passengers > 8) {
     mtff_fail(400, 'Please enter a valid number of passengers (1-8).');
 }
 
-$to = mtff_env('MTFF_RECIPIENT', 'marianopainefil@gmail.com');
+$to = mtff_env('MTFF_RECIPIENT', 'mtroutff@gmail.com');
 $from = mtff_env('MTFF_FROM', 'contact@massivetroutflyfishing.com');
 
 $html = '<h3>[Massive Trout] Booking Request</h3>'

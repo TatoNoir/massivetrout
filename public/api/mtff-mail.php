@@ -6,7 +6,7 @@
  * All settings are read from environment variables — no credentials in the repo.
  *
  * Environment variables:
- *   MTFF_RECIPIENT   - destination address         (default: marianopainefil@gmail.com)
+ *   MTFF_RECIPIENT   - destination address         (default: mtroutff@gmail.com)
  *   MTFF_FROM        - sender address              (default: contact@massivetroutflyfishing.com)
  *   MTFF_SMTP_HOST   - SMTP host; empty => mail()  (Hostinger: e.g. smtp.hostinger.com)
  *   MTFF_SMTP_PORT   - SMTP port                   (default 465)
