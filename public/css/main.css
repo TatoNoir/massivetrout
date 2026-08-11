@@ -7192,22 +7192,23 @@ margin-bottom: 2%;
 
 
 
-/* Booking category banner (temporal: fondo newsletter) */
+/* Booking banner (temporal: fondo newsletter) */
 
-.booking-category__header{
-  background-image: url(../images/01_home/fondo_newsletter.svg);
+.booking-banner{
+  background-image: url("../images/08- booking/fondo_newsletter.svg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 4px;
-  padding: 0.5rem 1.25rem;
+  padding: 1.5rem 1.25rem;
   margin-bottom: 1.5rem;
 }
 
 
 
-.booking-category__header .booking-category__title{
+.booking-banner .booking-step-title{
   color: #ffffff;
   margin: 0;
+  text-align: center;
 }
 
 

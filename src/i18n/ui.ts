@@ -195,6 +195,21 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       ],
     },
     {
+      id: "wyoming",
+      title: "Fly fishing in Wyoming",
+      img: "",
+      programs: [
+        {
+          id: "wyoming-daily",
+          title: "Daily Trip",
+          img: "/images/08- booking/wyoming-daily-trip.jpeg",
+          icon: "/images/02_programs/icons/daytrip_blue.svg",
+          detail:
+            "Daily or half day excursions, no more than 40 minutes from Bariloche downtown, on rivers and lakes of the Nahuel Huapi National Park with plenty of wild trout. Best bilingual guides, full and hot lunch with the best Red Wine.",
+        },
+      ],
+    },
+    {
       id: "dorado",
       title: "Dorado Fly Fishing",
       img: "",
@@ -214,21 +229,6 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
           icon: "/images/02_programs/icons/lodges_blue.svg",
           detail:
             "Fishing lodging, meals and services in one rate. We recommend places to stay depending on the needs of each group: luxurious fishing lodges, cabins or hotels. The best of each destination at your fingertips.",
-        },
-      ],
-    },
-    {
-      id: "wyoming",
-      title: "Fly fishing in Wyoming",
-      img: "",
-      programs: [
-        {
-          id: "wyoming-daily",
-          title: "Daily Trip",
-          img: "/images/08- booking/wyoming-daily-trip.jpeg",
-          icon: "/images/02_programs/icons/daytrip_blue.svg",
-          detail:
-            "Daily or half day excursions, no more than 40 minutes from Bariloche downtown, on rivers and lakes of the Nahuel Huapi National Park with plenty of wild trout. Best bilingual guides, full and hot lunch with the best Red Wine.",
         },
       ],
     },
@@ -266,6 +266,21 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       ],
     },
     {
+      id: "wyoming",
+      title: "Pesca con mosca en Wyoming",
+      img: "",
+      programs: [
+        {
+          id: "wyoming-daily",
+          title: "Excursión de Día",
+          img: "/images/08- booking/wyoming-daily-trip.jpeg",
+          icon: "/images/02_programs/icons/daytrip_blue.svg",
+          detail:
+            "Excursiones diarias o de medio día, a no más de 40 minutos del centro de Bariloche, en ríos y lagos del Parque Nacional Nahuel Huapi repletos de truchas salvajes. Los mejores guías bilingües, almuerzo completo y caliente con el mejor vino tinto.",
+        },
+      ],
+    },
+    {
       id: "dorado",
       title: "Pesca del Dorado",
       img: "",
@@ -285,21 +300,6 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
           icon: "/images/02_programs/icons/lodges_blue.svg",
           detail:
             "Alojamiento, comidas y servicios de pesca en una sola tarifa. Recomendamos dónde hospedarse según las necesidades de cada grupo: lodges de pesca de lujo, cabañas u hoteles. Lo mejor de cada destino a tu alcance.",
-        },
-      ],
-    },
-    {
-      id: "wyoming",
-      title: "Pesca con mosca en Wyoming",
-      img: "",
-      programs: [
-        {
-          id: "wyoming-daily",
-          title: "Excursión de Día",
-          img: "/images/08- booking/wyoming-daily-trip.jpeg",
-          icon: "/images/02_programs/icons/daytrip_blue.svg",
-          detail:
-            "Excursiones diarias o de medio día, a no más de 40 minutos del centro de Bariloche, en ríos y lagos del Parque Nacional Nahuel Huapi repletos de truchas salvajes. Los mejores guías bilingües, almuerzo completo y caliente con el mejor vino tinto.",
         },
       ],
     },

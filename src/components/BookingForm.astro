@@ -28,10 +28,25 @@ const programsJson = JSON.stringify({
 <section class="sec__booking" id="booking">
   <div class="container">
     <div class="booking-step" data-step="1" data-step-panel>
-      <h2 class="heading--small booking-step-title">{t["booking.step1Title"]}</h2>
+      <div class="booking-banner">
+        <h2 class="heading--small booking-step-title">{t["booking.step1Title"]}</h2>
+
+        <div class="row booking-category-nav">
+          {activeCategories.map((cat) => (
+            <div class="col-md-4">
+              <a
+                class="btn btn--oval btn--booking-category"
+                href={`#booking-cat-${cat.id}`}
+              >
+                {cat.title}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {activeCategories.map((cat) => (
-        <div class="booking-category" data-category={cat.id}>
+        <div class="booking-category" data-category={cat.id} id={`booking-cat-${cat.id}`}>
           <div class="row booking-category__header">
             <div class="col-md-12">
               <h2 class="booking-category__title">{cat.title}</h2>
@@ -287,6 +302,29 @@ const programsJson = JSON.stringify({
 
   .booking-category {
     margin-bottom: 2.5rem;
+    scroll-margin-top: 6rem;
+  }
+
+  .booking-category-nav {
+    margin-bottom: 1rem;
+  }
+
+  .btn--booking-category {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    background: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #db5328;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    margin-bottom: 5%
+  }
+
+  .btn--booking-category:hover {
+    
+    color: #db5328;
+    border-color: #939393;
   }
 
   .booking-category__header {
@@ -305,6 +343,9 @@ const programsJson = JSON.stringify({
   .booking-category__title {
     font-size: 1.7rem;
     margin-top: 0;
+    background: #dcdcdc;
+    padding: 2%;
+    text-align: center;
   }
 
   .booking-category-label {
