@@ -7192,6 +7192,38 @@ margin-bottom: 2%;
 
 
 
+/* Booking category banner (temporal: fondo newsletter) */
+
+.booking-category__header{
+
+  background-image: url(../images/01_home/fondo_newsletter.svg);
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  border-radius: 4px;
+
+  padding: 0.75rem 1.25rem;
+
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+.booking-category__header .booking-category__title{
+
+  color: #ffffff;
+
+  text-align: center;
+
+  margin: 0;
+
+}
+
+
+
 .newsletter h2{
 
   font-family: 'Domine', serif;

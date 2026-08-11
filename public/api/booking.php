@@ -21,6 +21,7 @@ if (!empty($input['company_website'])) {
 
 $programId = mtff_clean($input['program_id'] ?? '');
 $program = mtff_clean($input['program'] ?? '');
+$category = mtff_clean($input['category'] ?? '');
 $name = mtff_clean($input['name'] ?? '');
 $email = mtff_clean($input['email'] ?? '');
 $phone = mtff_clean((string) ($input['phone'] ?? ''));
@@ -44,8 +45,14 @@ if ($passengers === '' || (int) $passengers < 1 || (int) $passengers > 8) {
 $to = mtff_env('MTFF_RECIPIENT', 'mtroutff@gmail.com');
 $from = mtff_env('MTFF_FROM', 'contact@massivetroutflyfishing.com');
 
+$subject = '[Massive Trout] Booking Request'
+    . ($category !== '' ? ' - ' . $category : '')
+    . ($program !== '' ? ' - ' . $program : '');
+
 $html = '<h3>[Massive Trout] Booking Request</h3>'
-    . '<p><strong>Program:</strong> ' . htmlspecialchars($program)
+    . '<p>'
+    . ($category !== '' ? '<strong>Category:</strong> ' . htmlspecialchars($category) . '<br>' : '')
+    . '<strong>Program:</strong> ' . htmlspecialchars($program)
     . ' (' . htmlspecialchars($programId) . ')<br>'
     . '<strong>Name:</strong> ' . htmlspecialchars($name) . '<br>'
     . '<strong>E-mail:</strong> ' . htmlspecialchars($email) . '<br>'
@@ -54,7 +61,7 @@ $html = '<h3>[Massive Trout] Booking Request</h3>'
     . '<strong>Travel season:</strong> ' . htmlspecialchars($season) . '<br>'
     . '<strong>Travel dates:</strong> ' . htmlspecialchars($dates) . '</p>';
 
-$ok = mtff_send($to, $email, '[Massive Trout] Booking Request - ' . $program, $html);
+$ok = mtff_send($to, $email, $subject, $html);
 
 if (!$ok) {
     mtff_fail(500, 'Error sending message. Please try again.');

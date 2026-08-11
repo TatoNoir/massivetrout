@@ -1,17 +1,25 @@
 ---
 import type { Lang } from "../i18n/ui";
-import { getUi, bookingPrograms, travelSeasons } from "../i18n/ui";
+import { getUi, bookingCategories, travelSeasons } from "../i18n/ui";
 
 interface Props {
   lang: Lang;
 }
 const { lang } = Astro.props;
 const t = getUi(lang);
-const programs = bookingPrograms[lang];
+const categories = bookingCategories[lang];
+const activeCategories = categories.filter((c) => c.programs.length > 0);
 const seasons = travelSeasons[lang];
 const siteBase = import.meta.env.PUBLIC_SITE_BASE ?? "";
 const programsJson = JSON.stringify({
-  programs: programs.map((p) => ({ ...p, img: siteBase + p.img })),
+  programs: categories.flatMap((cat) =>
+    cat.programs.map((p) => ({
+      ...p,
+      img: siteBase + p.img,
+      categoryId: cat.id,
+      category: cat.title,
+    }))
+  ),
 });
 ---
 
@@ -21,25 +29,35 @@ const programsJson = JSON.stringify({
   <div class="container">
     <div class="booking-step" data-step="1" data-step-panel>
       <h2 class="heading--small booking-step-title">{t["booking.step1Title"]}</h2>
-      
-      <div class="row">
-        {programs.map((p, i) => (
-          <div class="col-md-4">
-            <div class="card-programs">
-              <img src={p.img} alt={p.title} class="img-responsive" loading="lazy" />
-              <h2 class="home-programs-title programs-title">{p.title}</h2>
-              <button
-                type="button"
-                class="btn btn--oval btn--booking-select"
-                data-program-select
-                data-program-id={p.id}
-              >
-                {t["booking.select"]}
-              </button>
-            </div>
+
+      {activeCategories.map((cat) => (
+        <div class="booking-category" data-category={cat.id}>
+          <div class="row booking-category__header">
+            <div class="col-md-12">
+              <h2 class="booking-category__title">{cat.title}</h2>
+            </div>         
           </div>
-        ))}
-      </div>
+
+          <div class="row">
+            {cat.programs.map((p) => (
+              <div class="col-md-4">
+                <div class="card-programs">
+                  <img src={p.img} alt={p.title} class="img-responsive" loading="lazy" />
+                  <h2 class="home-programs-title programs-title">{p.title}</h2>
+                  <button
+                    type="button"
+                    class="btn btn--oval btn--booking-select"
+                    data-program-select
+                    data-program-id={p.id}
+                  >
+                    {t["booking.select"]}
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
 
     <div class="booking-step" data-step="2" data-step-panel hidden>
@@ -47,6 +65,7 @@ const programsJson = JSON.stringify({
         <div class="col-md-5">
           <div class="card--info">
             <img src="" alt="" class="img-responsive booking-program-img" data-program-img />
+            <h4 class="booking-category-label" data-program-category></h4>
             <h2 class="heading--small" data-program-title></h2>
             <p class="text--grey" data-program-detail></p>
           </div>
@@ -65,6 +84,7 @@ const programsJson = JSON.stringify({
             >
               <input type="hidden" name="program_id" data-program-id-input />
               <input type="hidden" name="program" data-program-title-input />
+              <input type="hidden" name="category" data-category-input />
 
               <div class="row">
                 <div class="col-md-6">
@@ -263,6 +283,35 @@ const programsJson = JSON.stringify({
     font-size: 1.8rem;
   }
 
+  .booking-category {
+    margin-bottom: 2.5rem;
+  }
+
+  .booking-category__header {
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .booking-category__img {
+    border-radius: 50%;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .booking-category__title {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .booking-category-label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #db5328;
+    margin-bottom: 0.25rem;
+  }
+
   .booking-step[data-step="1"] .card-programs img {
     width: 100%;
     height: auto;
@@ -301,7 +350,9 @@ const programsJson = JSON.stringify({
 
   const hiddenIdInput = document.querySelector("[data-program-id-input]");
   const hiddenTitleInput = document.querySelector("[data-program-title-input]");
+  const hiddenCategoryInput = document.querySelector("[data-category-input]");
   const detailImg = document.querySelector("[data-program-img]");
+  const detailCategory = document.querySelector("[data-program-category]");
   const detailTitle = document.querySelector("[data-program-title]");
   const detailText = document.querySelector("[data-program-detail]");
 
@@ -325,6 +376,7 @@ const programsJson = JSON.stringify({
         title: string;
         img: string;
         detail: string;
+        category: string;
       }> = JSON.parse(
         document.querySelector("[data-programs]")?.textContent ?? "{}"
       ).programs;
@@ -333,8 +385,10 @@ const programsJson = JSON.stringify({
 
       hiddenIdInput?.setAttribute("value", program.id);
       hiddenTitleInput?.setAttribute("value", program.title);
+      hiddenCategoryInput?.setAttribute("value", program.category);
       detailImg?.setAttribute("src", program.img);
       detailImg?.setAttribute("alt", program.title);
+      detailCategory!.textContent = program.category;
       detailTitle!.textContent = program.title;
       detailText!.textContent = program.detail;
 
