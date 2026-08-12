@@ -45,16 +45,17 @@ const programsJson = JSON.stringify({
         </div>
       </div>
 
-      {activeCategories.map((cat) => (
-        <div class="booking-category" data-category={cat.id} id={`booking-cat-${cat.id}`}>
-          <div class="row booking-category__header">
-            <div class="col-md-12">
-              <div class="booking-category__heading">
-                <h2 class="booking-category__title">{cat.title}</h2>
-                {cat.subtitle && <p class="booking-category__subtitle">{cat.subtitle}</p>}
-              </div>
-            </div>         
-          </div>
+      <div class="booking-category-panels">
+        {activeCategories.map((cat) => (
+          <div class="booking-category" data-category={cat.id} id={`booking-cat-${cat.id}`}>
+            <div class="row booking-category__header">
+              <div class="col-md-12">
+                <div class="booking-category__heading">
+                  <h2 class="booking-category__title">{cat.title}</h2>
+                  {cat.subtitle && <p class="booking-category__subtitle">{cat.subtitle}</p>}
+                </div>
+              </div>         
+            </div>
 
           <div class="row">
             {cat.programs.map((p) => (
@@ -75,7 +76,8 @@ const programsJson = JSON.stringify({
             ))}
           </div>
         </div>
-      ))}
+        ))}
+      </div>
     </div>
 
     <div class="booking-step" data-step="2" data-step-panel hidden>
@@ -309,6 +311,22 @@ const programsJson = JSON.stringify({
     scroll-margin-top: 6rem;
   }
 
+  @media screen and (max-width: 767px) {
+    .booking-category-panels .booking-category {
+      display: none;
+    }
+
+    .booking-category-panels .booking-category.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .booking-category-panels .booking-category {
+      display: block;
+    }
+  }
+
   .booking-category-nav {
     margin-bottom: 1rem;
   }
@@ -458,6 +476,34 @@ const programsJson = JSON.stringify({
 
   backButton?.addEventListener("click", () => {
     showStep(1);
+  });
+
+  const navButtons = Array.from(
+    document.querySelectorAll<HTMLElement>(".btn--booking-category")
+  );
+  const categoryPanels = Array.from(
+    document.querySelectorAll<HTMLElement>(".booking-category-panels .booking-category")
+  );
+  const panelsWrap = document.querySelector<HTMLElement>(".booking-category-panels");
+
+  navButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      if (window.matchMedia("(min-width: 768px)").matches) return;
+
+      e.preventDefault();
+      const catId = btn
+        .getAttribute("href")
+        ?.replace("#booking-cat-", "");
+      const panel = categoryPanels.find((p) => p.dataset.category === catId);
+      const isOpen = panel?.classList.contains("is-open");
+
+      categoryPanels.forEach((p) => p.classList.remove("is-open"));
+      if (!isOpen) panel?.classList.add("is-open");
+
+      if (panelsWrap) {
+        panelsWrap.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
   });
 
   const form = document.getElementById("booking-form") as HTMLFormElement;
