@@ -160,6 +160,7 @@ export interface BookingCategory {
   subtitle?: string;
   img: string;
   season: "nov-may" | "may-oct" | "all";
+  seasons: string[];
   programs: BookingProgram[];
 }
 
@@ -171,6 +172,12 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       subtitle: "Season runs November to May.",
       img: "/images/03_destinations/circles/fonck_destinations.png",
       season: "nov-may",
+      seasons: [
+        "November – December (Spring)",
+        "January – February (Summer)",
+        "March – April (Autumn)",
+        "May (Late season)",
+      ],
       programs: [
         {
           id: "daily",
@@ -204,6 +211,11 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       subtitle: "Season runs November to May.",
       img: "",
       season: "may-oct",
+      seasons: [
+        "May – June (Spring)",
+        "July – August (Summer)",
+        "September – October (Autumn)",
+      ],
       programs: [
         {
           id: "wyoming-grey-reef",
@@ -228,6 +240,12 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       title: "Dorado Fly Fishing",
       img: "",
       season: "all",
+      seasons: [
+        "September – November (Spring)",
+        "December – February (Summer)",
+        "March – May (Autumn)",
+        "June – August (Winter)",
+      ],
       programs: [
         {
           id: "dorado-lodging",
@@ -247,6 +265,12 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       subtitle: "Temporada de noviembre a mayo.",
       img: "/images/03_destinations/circles/fonck_destinations.png",
       season: "nov-may",
+      seasons: [
+        "Noviembre – Diciembre (Primavera)",
+        "Enero – Febrero (Verano)",
+        "Marzo – Abril (Otoño)",
+        "Mayo (Fin de temporada)",
+      ],
       programs: [
         {
           id: "daily",
@@ -280,6 +304,11 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       subtitle: "Temporada de noviembre a mayo.",
       img: "",
       season: "may-oct",
+      seasons: [
+        "Mayo – Junio (Primavera)",
+        "Julio – Agosto (Verano)",
+        "Septiembre – Octubre (Otoño)",
+      ],
       programs: [
         {
           id: "wyoming-grey-reef",
@@ -304,6 +333,12 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       title: "Pesca del Dorado",
       img: "",
       season: "all",
+      seasons: [
+        "Septiembre – Noviembre (Primavera)",
+        "Diciembre – Febrero (Verano)",
+        "Marzo – Mayo (Otoño)",
+        "Junio – Agosto (Invierno)",
+      ],
       programs: [
         {
           id: "dorado-lodging",
@@ -315,20 +350,5 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         },
       ],
     },
-  ],
-};
-
-export const travelSeasons: Record<Lang, string[]> = {
-  en: [
-    "November – December (Spring)",
-    "January – February (Summer)",
-    "March – April (Autumn)",
-    "May (Late season)",
-  ],
-  es: [
-    "Noviembre – Diciembre (Primavera)",
-    "Enero – Febrero (Verano)",
-    "Marzo – Abril (Otoño)",
-    "Mayo (Fin de temporada)",
   ],
 };

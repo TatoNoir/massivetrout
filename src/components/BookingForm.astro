@@ -1,6 +1,6 @@
 ---
 import type { Lang } from "../i18n/ui";
-import { getUi, bookingCategories, travelSeasons } from "../i18n/ui";
+import { getUi, bookingCategories } from "../i18n/ui";
 
 interface Props {
   lang: Lang;
@@ -9,7 +9,6 @@ const { lang } = Astro.props;
 const t = getUi(lang);
 const categories = bookingCategories[lang];
 const activeCategories = categories.filter((c) => c.programs.length > 0);
-const seasons = travelSeasons[lang];
 const siteBase = import.meta.env.PUBLIC_SITE_BASE ?? "";
 const programsJson = JSON.stringify({
   programs: categories.flatMap((cat) =>
@@ -19,6 +18,7 @@ const programsJson = JSON.stringify({
       categoryId: cat.id,
       category: cat.title,
       season: cat.season,
+      seasons: cat.seasons,
     }))
   ),
 });
@@ -159,8 +159,8 @@ const programsJson = JSON.stringify({
                 <div class="col-md-12">
                   <label for="bookingSeasonInput">{t["booking.season"]}</label>
                   <small class="booking-dates-hint">{t["booking.datesHint"]}</small>
-                  <select id="bookingSeasonInput" name="season" required>
-                    {seasons.map((s) => (
+                  <select id="bookingSeasonInput" name="season" required data-season-select>
+                    {activeCategories[0]?.seasons.map((s) => (
                       <option value={s}>{s}</option>
                     ))}
                   </select>
@@ -299,6 +299,7 @@ const programsJson = JSON.stringify({
     text-align: center;
     border: 0.2px solid #d7d7d7;
     border-radius: 25px;
+    margin-bottom: 5%;
   }
 
   .booking-step-title {
@@ -448,6 +449,20 @@ const programsJson = JSON.stringify({
     });
   }
 
+  function applySeasonsForCategory(seasonOptions: string[] | undefined) {
+    const seasonSelect = document.querySelector<HTMLSelectElement>(
+      "[data-season-select]"
+    );
+    if (!seasonSelect) return;
+    seasonSelect.innerHTML = "";
+    (seasonOptions ?? []).forEach((s) => {
+      const opt = document.createElement("option");
+      opt.value = s;
+      opt.textContent = s;
+      seasonSelect.appendChild(opt);
+    });
+  }
+
   function applySeasonForCategory(season: string | undefined) {
     if (!fp || !datesInput) return;
 
@@ -500,6 +515,7 @@ const programsJson = JSON.stringify({
         detail: string;
         category: string;
         season: string;
+        seasons: string[];
       }> = JSON.parse(
         document.querySelector("[data-programs]")?.textContent ?? "{}"
       ).programs;
@@ -516,6 +532,7 @@ const programsJson = JSON.stringify({
       detailText!.textContent = program.detail;
 
       applySeasonForCategory(program.season);
+      applySeasonsForCategory(program.seasons);
 
       showStep(2);
     });
