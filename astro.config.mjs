@@ -71,7 +71,7 @@ export default defineConfig({
   trailingSlash: "ignore",
   devToolbar: { enabled: false },
   build: {
-    inlineStylesheets: "auto",
+    inlineStylesheets: "always",
   },
   integrations: [prefixSubdirIntegration],
 });
