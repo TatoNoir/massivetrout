@@ -157,6 +157,7 @@ export interface BookingProgram {
 export interface BookingCategory {
   id: string;
   title: string;
+  subtitle?: string;
   img: string;
   programs: BookingProgram[];
 }
@@ -166,11 +167,12 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
     {
       id: "patagonia",
       title: "Fly fishing in Patagonia",
+      subtitle: "Season runs November to May.",
       img: "/images/03_destinations/circles/fonck_destinations.png",
       programs: [
         {
           id: "daily",
-          title: "Daily Programs",
+          title: "Daily Trips",
           img: "/images/02_programs/programs_01.jpg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -197,6 +199,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
     {
       id: "wyoming",
       title: "Fly fishing in Wyoming",
+      subtitle: "Season runs November to May.",
       img: "",
       programs: [
         {
@@ -237,11 +240,12 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
     {
       id: "patagonia",
       title: "Pesca con mosca en Patagonia",
+      subtitle: "Temporada de noviembre a mayo.",
       img: "/images/03_destinations/circles/fonck_destinations.png",
       programs: [
         {
           id: "daily",
-          title: "Programas Diarios",
+          title: "Excursiones diarias",
           img: "/images/02_programs/programs_01.jpg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -249,7 +253,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         },
         {
           id: "overnight",
-          title: "Programas con Campamento",
+          title: "Expediciones",
           img: "/images/02_programs/programs_02.jpg",
           icon: "/images/02_programs/icons/overnight_blue.svg",
           detail:
@@ -257,7 +261,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         },
         {
           id: "allinclusive",
-          title: "Programas Todo Incluido",
+          title: "Excursiones All Inclusive",
           img: "/images/02_programs/programs_03.jpg",
           icon: "/images/02_programs/icons/lodges_blue.svg",
           detail:
@@ -268,11 +272,12 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
     {
       id: "wyoming",
       title: "Pesca con mosca en Wyoming",
+      subtitle: "Temporada de noviembre a mayo.",
       img: "",
       programs: [
         {
           id: "wyoming-daily",
-          title: "Excursión de Día",
+          title: "Excursiones diarias",
           img: "/images/08- booking/wyoming-daily-trip.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -287,7 +292,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       programs: [
         {
           id: "dorado-daily",
-          title: "Excursión de Día",
+          title: "Excursiones diarias",
           img: "/images/08- booking/dorado-daily-trip.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -295,7 +300,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         },
         {
           id: "dorado-lodging",
-          title: "Pesca y Alojamiento",
+          title: "Excursiones All Inclusive",
           img: "/images/08- booking/dorado-lodging-trip.jpg",
           icon: "/images/02_programs/icons/lodges_blue.svg",
           detail:
