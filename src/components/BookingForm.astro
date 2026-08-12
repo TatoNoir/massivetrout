@@ -18,6 +18,7 @@ const programsJson = JSON.stringify({
       img: siteBase + p.img,
       categoryId: cat.id,
       category: cat.title,
+      season: cat.season,
     }))
   ),
 });
@@ -419,6 +420,14 @@ const programsJson = JSON.stringify({
   const step1 = document.querySelector('[data-step-panel][data-step="1"]');
   const step2 = document.querySelector('[data-step-panel][data-step="2"]');
 
+  const today = new Date();
+  const now = new Date(
+    today.getFullYear(),
+    today.getMonth(),
+    today.getDate()
+  );
+  let fp: any = null;
+
   const hiddenIdInput = document.querySelector("[data-program-id-input]");
   const hiddenTitleInput = document.querySelector("[data-program-title-input]");
   const hiddenCategoryInput = document.querySelector("[data-category-input]");
@@ -439,6 +448,48 @@ const programsJson = JSON.stringify({
     });
   }
 
+  function applySeasonForCategory(season: string | undefined) {
+    if (!fp || !datesInput) return;
+
+    let disable: Array<(d: Date) => boolean>;
+    let firstAvailable: Date;
+
+    if (season === "all") {
+      disable = [];
+      firstAvailable = now;
+    } else if (season === "may-oct") {
+      const inSeason = now.getMonth() >= 4 && now.getMonth() <= 9;
+      firstAvailable = inSeason
+        ? now
+        : new Date(
+            now.getMonth() < 4 ? now.getFullYear() : now.getFullYear() + 1,
+            4,
+            1
+          );
+      disable = [
+        (d: Date) => {
+          const m = d.getMonth();
+          return m >= 10 || m <= 3;
+        },
+      ];
+    } else {
+      const inSeason = now.getMonth() < 5 || now.getMonth() > 9;
+      firstAvailable = inSeason ? now : new Date(now.getFullYear(), 10, 1);
+      disable = [
+        (d: Date) => {
+          const m = d.getMonth();
+          return m >= 5 && m <= 9;
+        },
+      ];
+    }
+
+    fp.set("disable", disable);
+    fp.set("minDate", firstAvailable);
+    fp.set("defaultDate", firstAvailable);
+    fp.clear();
+    fp.setDate(fp.config.defaultDate, false);
+  }
+
   selectButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const programId = (btn as HTMLElement).dataset.programId;
@@ -448,6 +499,7 @@ const programsJson = JSON.stringify({
         img: string;
         detail: string;
         category: string;
+        season: string;
       }> = JSON.parse(
         document.querySelector("[data-programs]")?.textContent ?? "{}"
       ).programs;
@@ -462,6 +514,8 @@ const programsJson = JSON.stringify({
       detailCategory!.textContent = program.category;
       detailTitle!.textContent = program.title;
       detailText!.textContent = program.detail;
+
+      applySeasonForCategory(program.season);
 
       showStep(2);
     });
@@ -510,16 +564,10 @@ const programsJson = JSON.stringify({
   if (datesInput && typeof window.flatpickr === "function") {
     const esLocale = (window as any).flatpickr?.l10ns?.es;
 
-    const today = new Date();
-    const now = new Date(
-      today.getFullYear(),
-      today.getMonth(),
-      today.getDate()
-    );
     const inSeason = now.getMonth() < 5 || now.getMonth() > 9;
     const firstAvailable = inSeason ? now : new Date(now.getFullYear(), 10, 1);
 
-    window.flatpickr(datesInput, {
+    fp = window.flatpickr(datesInput, {
       mode: "range",
       dateFormat: "M j, Y",
       minDate: firstAvailable,
