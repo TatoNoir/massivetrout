@@ -86,8 +86,11 @@ const programsJson = JSON.stringify({
         <div class="col-md-5">
           <div class="card--info">
             <img src="" alt="" class="img-responsive booking-program-img" data-program-img />
-            <h4 class="booking-category-label" data-program-category></h4>
-            <h2 class="heading--small" data-program-title></h2>
+            <h4 class="booking-selected-label"> {t["booking.programSelected"]}: </h4>
+            <h3 class="booking-category-label">
+              <span data-program-category></span>
+            </h3>
+            <h3 class="booking-program-label" data-program-title></h3>
             <p class="text--grey" data-program-detail></p>
           </div>
         </div>
@@ -376,11 +379,29 @@ const programsJson = JSON.stringify({
     margin-bottom: 0;
   }
 
-  .booking-category-label {
+  .booking-selected-label {
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    color: #db5328;    
+    margin-top: 2rem;
+  }
+
+  .booking-category-label {
+    color: #db5328;    
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .booking-category-label::before,
+  .booking-program-label::before {
+    content: "• ";
+  }
+
+  .booking-program-label {
     color: #db5328;
-    margin-bottom: 0.25rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    font-weight: 600;
   }
 
   .booking-step[data-step="1"] .card-programs img {
