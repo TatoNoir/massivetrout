@@ -42,7 +42,7 @@ export const ui = {
     "nav.book": "Book your trip",
     "booking.heroTitle": "Book your trip",
     "booking.subtitle": "REQUEST YOUR TRIP",
-    "booking.step1Title": "Choose your program",
+    "booking.step1Title": "Choose your adventure",
     "booking.step2Title": "Program details",
     "booking.select": "Select",
     "booking.selected": "Selected",
@@ -97,7 +97,7 @@ export const ui = {
     "nav.book": "Reservá tu viaje",
     "booking.heroTitle": "Reservá tu viaje",
     "booking.subtitle": "SOLICITÁ TU VIAJE",
-    "booking.step1Title": "Elegí tu programa",
+    "booking.step1Title": "Elegí tu aventura",
     "booking.step2Title": "Detalle del programa",
     "booking.select": "Seleccionar",
     "booking.selected": "Seleccionado",
@@ -208,7 +208,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
     {
       id: "wyoming",
       title: "Fly fishing in Wyoming",
-      subtitle: "Season runs November to May.",
+      subtitle: "Season runs May to October.",
       img: "",
       season: "may-oct",
       seasons: [
@@ -301,7 +301,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
     {
       id: "wyoming",
       title: "Pesca con mosca en Wyoming",
-      subtitle: "Temporada de noviembre a mayo.",
+      subtitle: "Temporada de mayo a octubre.",
       img: "",
       season: "may-oct",
       seasons: [
