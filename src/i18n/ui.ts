@@ -162,6 +162,7 @@ export interface BookingCategory {
   subtitle?: string;
   img: string;
   season: "nov-may" | "may-oct" | "all";
+  datesHint: string;
   seasons: string[];
   programs: BookingProgram[];
 }
@@ -174,6 +175,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       subtitle: "Season runs November to May.",
       img: "/images/03_destinations/circles/fonck_destinations.png",
       season: "nov-may",
+      datesHint: "Season runs November to May.",
       seasons: [
         "November – December (Spring)",
         "January – February (Summer)",
@@ -183,7 +185,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       programs: [
         {
           id: "daily",
-          title: "Daily Trips",
+          title: "Daily Programs",
           img: "/images/02_programs/programs_01.jpg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -213,6 +215,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       subtitle: "Season runs May to October.",
       img: "",
       season: "may-oct",
+      datesHint: "Season runs May to October.",
       seasons: [
         "May – June (Spring)",
         "July – August (Summer)",
@@ -221,7 +224,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       programs: [
         {
           id: "wyoming-grey-reef",
-          title: "Grey Reef",
+          title: "Grey Reef Daily Trip",
           img: "/images/08- booking/wyoming-gray-reef.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -229,7 +232,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         },
         {
           id: "wyoming-miracle-mile",
-          title: "Miracle Mile",
+          title: "Miracle Mile Daily Trip",
           img: "/images/08- booking/wyoming-miracle-mile.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -242,6 +245,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       title: "Dorado Fly Fishing",
       img: "",
       season: "all",
+      datesHint: "Season runs annually.",
       seasons: [
         "September – November (Spring)",
         "December – February (Summer)",
@@ -267,6 +271,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       subtitle: "Temporada de noviembre a mayo.",
       img: "/images/03_destinations/circles/fonck_destinations.png",
       season: "nov-may",
+      datesHint: "La temporada va de noviembre a mayo.",
       seasons: [
         "Noviembre – Diciembre (Primavera)",
         "Enero – Febrero (Verano)",
@@ -276,7 +281,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       programs: [
         {
           id: "daily",
-          title: "Excursiones diarias",
+          title: "Programas diarios",
           img: "/images/02_programs/programs_01.jpg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -306,6 +311,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       subtitle: "Temporada de mayo a octubre.",
       img: "",
       season: "may-oct",
+      datesHint: "La temporada va de mayo a octubre.",
       seasons: [
         "Mayo – Junio (Primavera)",
         "Julio – Agosto (Verano)",
@@ -314,7 +320,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       programs: [
         {
           id: "wyoming-grey-reef",
-          title: "Grey Reef",
+          title: "Grey Reef Excursión Diaria",
           img: "/images/08- booking/wyoming-gray-reef.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -322,7 +328,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         },
         {
           id: "wyoming-miracle-mile",
-          title: "Miracle Mile",
+          title: "Miracle Mile Excursión Diaria",
           img: "/images/08- booking/wyoming-miracle-mile.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
@@ -335,6 +341,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       title: "Pesca del Dorado",
       img: "",
       season: "all",
+      datesHint: "La temporada es todo el año.",
       seasons: [
         "Septiembre – Noviembre (Primavera)",
         "Diciembre – Febrero (Verano)",

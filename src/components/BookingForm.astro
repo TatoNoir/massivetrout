@@ -19,6 +19,7 @@ const programsJson = JSON.stringify({
       category: cat.title,
       season: cat.season,
       seasons: cat.seasons,
+      datesHint: cat.datesHint,
     }))
   ),
 });
@@ -161,7 +162,7 @@ const programsJson = JSON.stringify({
               <div class="row">
                 <div class="col-md-12">
                   <label for="bookingSeasonInput">{t["booking.season"]}</label>
-                  <small class="booking-dates-hint">{t["booking.datesHint"]}</small>
+                  <small class="booking-dates-hint" data-dates-hint>{t["booking.datesHint"]}</small>
                   <select id="bookingSeasonInput" name="season" required data-season-select>
                     {activeCategories[0]?.seasons.map((s) => (
                       <option value={s}>{s}</option>
@@ -537,6 +538,7 @@ const programsJson = JSON.stringify({
         category: string;
         season: string;
         seasons: string[];
+        datesHint: string;
       }> = JSON.parse(
         document.querySelector("[data-programs]")?.textContent ?? "{}"
       ).programs;
@@ -554,6 +556,8 @@ const programsJson = JSON.stringify({
 
       applySeasonForCategory(program.season);
       applySeasonsForCategory(program.seasons);
+      const datesHint = document.querySelector<HTMLElement>("[data-dates-hint]");
+      if (datesHint) datesHint.textContent = program.datesHint;
 
       showStep(2);
     });
