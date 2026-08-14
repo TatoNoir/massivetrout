@@ -59,7 +59,7 @@ const programsJson = JSON.stringify({
               </div>         
             </div>
 
-          <div class="row">
+          <div class="row booking-cards-row">
             {cat.programs.map((p) => (
               <div class="col-md-4">
                 <div class="card-programs">
@@ -306,6 +306,16 @@ const programsJson = JSON.stringify({
     margin-bottom: 5%;
   }
 
+  .booking-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .booking-cards-row > .col-md-4 {
+    float: none;
+  }
+
   .booking-step-title {
     text-align: center;
     font-size: 1.8rem;
@@ -378,6 +388,7 @@ const programsJson = JSON.stringify({
     color: #6b6b6b;
     margin-top: 0.25rem;
     margin-bottom: 0;
+    font-weight: 600;
   }
 
   .booking-selected-label {

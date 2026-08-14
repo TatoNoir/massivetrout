@@ -171,7 +171,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
   en: [
     {
       id: "patagonia",
-      title: "Fly fishing in Patagonia",
+      title: "Fly Fishing in Patagonia",
       subtitle: "Season runs November to May.",
       img: "/images/03_destinations/circles/fonck_destinations.png",
       season: "nov-may",
@@ -211,7 +211,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
     },
     {
       id: "wyoming",
-      title: "Fly fishing in Wyoming",
+      title: "Fly Fishing in Wyoming",
       subtitle: "Season runs May to October.",
       img: "",
       season: "may-oct",
@@ -243,6 +243,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
     {
       id: "dorado",
       title: "Dorado Fly Fishing",
+      subtitle: "All year",
       img: "",
       season: "all",
       datesHint: "Season runs annually.",
