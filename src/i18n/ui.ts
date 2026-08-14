@@ -229,7 +229,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
           img: "/images/08-booking/wyoming-gray-reef.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
-            "Daily or half day excursions, no more than 40 minutes from Bariloche downtown, on rivers and lakes of the Nahuel Huapi National Park with plenty of wild trout. Best bilingual guides, full and hot lunch with the best Red Wine.",
+            "Spend a full day exploring Grey Reef on Wyoming’s North Platte River with an experienced fishing guide. Drift through miles of renowned trout water while enjoying productive fishing, peaceful river scenery, and the vast Wyoming landscape.",
         },
         {
           id: "wyoming-miracle-mile",
@@ -237,7 +237,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
           img: "/images/08-booking/wyoming-miracle-mile.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
-            "Daily or half day excursions, no more than 40 minutes from Bariloche downtown, on rivers and lakes of the Nahuel Huapi National Park with plenty of wild trout. Best bilingual guides, full and hot lunch with the best Red Wine.",
+            "Enjoy a full day on the Miracle Mile, one of Wyoming’s most renowned sections of the North Platte River. Fish for wild trout while drifting through expansive waters, changing river conditions, and spectacular open landscapes.",
         },
       ],
     },
@@ -262,7 +262,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
           img: "/images/08-booking/dorado-daily-trip.jpeg",
           icon: "/images/02_programs/icons/lodges_blue.svg",
           detail:
-            "Fishing lodging, meals and services in one rate. We recommend places to stay depending on the needs of each group: luxurious fishing lodges, cabins or hotels. The best of each destination at your fingertips.",
+            "Located in northern Argentina, Upper Paraná River flows through a lush jungle environment, forming a natural border between Argentina and Paraguay. Its clear, powerful waters are home to an impressive variety of species, including Golden Dorado, Pacú, and Pirá Pytá.",
         },
       ],
     },
@@ -327,7 +327,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
           img: "/images/08-booking/wyoming-gray-reef.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
-            "Excursiones diarias o de medio día, a no más de 40 minutos del centro de Bariloche, en ríos y lagos del Parque Nacional Nahuel Huapi repletos de truchas salvajes. Los mejores guías bilingües, almuerzo completo y caliente con el mejor vino tinto.",
+            "Pasá un día completo explorando Grey Reef en el río North Platte de Wyoming con un guía de pesca experimentado. Navegá por kilómetros de aguas reconocidas por sus truchas mientras disfrutás de una pesca productiva, paisajes fluviales tranquilos y la vasta extensión de Wyoming.",
         },
         {
           id: "wyoming-miracle-mile",
@@ -335,7 +335,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
           img: "/images/08-booking/wyoming-miracle-mile.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
-            "Excursiones diarias o de medio día, a no más de 40 minutos del centro de Bariloche, en ríos y lagos del Parque Nacional Nahuel Huapi repletos de truchas salvajes. Los mejores guías bilingües, almuerzo completo y caliente con el mejor vino tinto.",
+            "Disfrutá de un día completo en el Miracle Mile, uno de los tramos más reconocidos del río North Platte en Wyoming. Pesca truchas salvajes mientras navegás por aguas extensas, condiciones cambiantes del río y paisajes abiertos espectaculares.",
         },
       ],
     },
@@ -359,7 +359,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
           img: "/images/08-booking/dorado-daily-trip.jpeg",
           icon: "/images/02_programs/icons/lodges_blue.svg",
           detail:
-            "Alojamiento, comidas y servicios de pesca en una sola tarifa. Recomendamos dónde hospedarse según las necesidades de cada grupo: lodges de pesca de lujo, cabañas u hoteles. Lo mejor de cada destino a tu alcance.",
+            "Ubicado en el norte de Argentina, el río Alto Paraná fluye a través de un entorno selvático exuberante, formando una frontera natural entre Argentina y Paraguay. Sus aguas claras y poderosas albergan una impresionante variedad de especies, incluyendo dorado, pacú y pirá pytá.",
         },
       ],
     },
