@@ -226,7 +226,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "wyoming-grey-reef",
           title: "Grey Reef Daily Trip",
-          img: "/images/08- booking/wyoming-gray-reef.jpeg",
+          img: "/images/08-booking/wyoming-gray-reef.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
             "Daily or half day excursions, no more than 40 minutes from Bariloche downtown, on rivers and lakes of the Nahuel Huapi National Park with plenty of wild trout. Best bilingual guides, full and hot lunch with the best Red Wine.",
@@ -234,7 +234,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "wyoming-miracle-mile",
           title: "Miracle Mile Daily Trip",
-          img: "/images/08- booking/wyoming-miracle-mile.jpeg",
+          img: "/images/08-booking/wyoming-miracle-mile.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
             "Daily or half day excursions, no more than 40 minutes from Bariloche downtown, on rivers and lakes of the Nahuel Huapi National Park with plenty of wild trout. Best bilingual guides, full and hot lunch with the best Red Wine.",
@@ -259,7 +259,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "dorado-lodging",
           title: "Fishing and Lodging",
-          img: "/images/08- booking/dorado-daily-trip.jpeg",
+          img: "/images/08-booking/dorado-daily-trip.jpeg",
           icon: "/images/02_programs/icons/lodges_blue.svg",
           detail:
             "Fishing lodging, meals and services in one rate. We recommend places to stay depending on the needs of each group: luxurious fishing lodges, cabins or hotels. The best of each destination at your fingertips.",
@@ -324,7 +324,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "wyoming-grey-reef",
           title: "Grey Reef Excursión Diaria",
-          img: "/images/08- booking/wyoming-gray-reef.jpeg",
+          img: "/images/08-booking/wyoming-gray-reef.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
             "Excursiones diarias o de medio día, a no más de 40 minutos del centro de Bariloche, en ríos y lagos del Parque Nacional Nahuel Huapi repletos de truchas salvajes. Los mejores guías bilingües, almuerzo completo y caliente con el mejor vino tinto.",
@@ -332,7 +332,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "wyoming-miracle-mile",
           title: "Miracle Mile Excursión Diaria",
-          img: "/images/08- booking/wyoming-miracle-mile.jpeg",
+          img: "/images/08-booking/wyoming-miracle-mile.jpeg",
           icon: "/images/02_programs/icons/daytrip_blue.svg",
           detail:
             "Excursiones diarias o de medio día, a no más de 40 minutos del centro de Bariloche, en ríos y lagos del Parque Nacional Nahuel Huapi repletos de truchas salvajes. Los mejores guías bilingües, almuerzo completo y caliente con el mejor vino tinto.",
@@ -356,7 +356,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "dorado-lodging",
           title: "Excursiones All Inclusive",
-          img: "/images/08- booking/dorado-daily-trip.jpeg",
+          img: "/images/08-booking/dorado-daily-trip.jpeg",
           icon: "/images/02_programs/icons/lodges_blue.svg",
           detail:
             "Alojamiento, comidas y servicios de pesca en una sola tarifa. Recomendamos dónde hospedarse según las necesidades de cada grupo: lodges de pesca de lujo, cabañas u hoteles. Lo mejor de cada destino a tu alcance.",
