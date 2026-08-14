@@ -20,6 +20,7 @@ const programsJson = JSON.stringify({
       season: cat.season,
       seasons: cat.seasons,
       datesHint: cat.datesHint,
+      hideSeasonSelect: cat.hideSeasonSelect ?? false,
     }))
   ),
 });
@@ -161,6 +162,7 @@ const programsJson = JSON.stringify({
 
               <div class="row">
                 <div class="col-md-12">
+                <div data-season-field>
                   <label for="bookingSeasonInput">{t["booking.season"]}</label>
                   <small class="booking-dates-hint" data-dates-hint>{t["booking.datesHint"]}</small>
                   <select id="bookingSeasonInput" name="season" required data-season-select>
@@ -168,8 +170,9 @@ const programsJson = JSON.stringify({
                       <option value={s}>{s}</option>
                     ))}
                   </select>
-                  
                 </div>
+                
+              </div>
               </div>
 
               <div class="row">
@@ -496,6 +499,12 @@ const programsJson = JSON.stringify({
     });
   }
 
+  function applySeasonFieldVisibility(hide: boolean) {
+    const seasonField = document.querySelector<HTMLElement>("[data-season-field]");
+    if (!seasonField) return;
+    seasonField.hidden = hide;
+  }
+
   function applySeasonForCategory(season: string | undefined) {
     if (!fp || !datesInput) return;
 
@@ -550,6 +559,7 @@ const programsJson = JSON.stringify({
         season: string;
         seasons: string[];
         datesHint: string;
+        hideSeasonSelect: boolean;
       }> = JSON.parse(
         document.querySelector("[data-programs]")?.textContent ?? "{}"
       ).programs;
@@ -567,6 +577,7 @@ const programsJson = JSON.stringify({
 
       applySeasonForCategory(program.season);
       applySeasonsForCategory(program.seasons);
+      applySeasonFieldVisibility(program.hideSeasonSelect);
       const datesHint = document.querySelector<HTMLElement>("[data-dates-hint]");
       if (datesHint) datesHint.textContent = program.datesHint;
 

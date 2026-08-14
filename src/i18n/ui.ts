@@ -163,6 +163,7 @@ export interface BookingCategory {
   img: string;
   season: "nov-may" | "may-oct" | "all";
   datesHint: string;
+  hideSeasonSelect?: boolean;
   seasons: string[];
   programs: BookingProgram[];
 }
@@ -247,6 +248,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       img: "",
       season: "all",
       datesHint: "Season runs annually.",
+      hideSeasonSelect: true,
       seasons: [
         "September – November (Spring)",
         "December – February (Summer)",
@@ -343,6 +345,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       img: "",
       season: "all",
       datesHint: "La temporada es todo el año.",
+      hideSeasonSelect: true,
       seasons: [
         "Septiembre – Noviembre (Primavera)",
         "Diciembre – Febrero (Verano)",
