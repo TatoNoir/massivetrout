@@ -88,18 +88,22 @@ const programsJson = JSON.stringify({
         <div class="col-md-5">
           <div class="card--info">
             <img src="" alt="" class="img-responsive booking-program-img" data-program-img />
-            <h4 class="booking-selected-label"> {t["booking.programSelected"]}: </h4>
-            <h3 class="booking-category-label">
-              <span data-program-category></span>
-            </h3>
-            <h3 class="booking-program-label" data-program-title></h3>
+            <div class="booking-banner">
+              <h4 class="booking-selected-label"> {t["booking.programSelected"]}: </h4>
+              <h3 class="booking-category-label">
+                <span data-program-category></span>
+              </h3>
+              <h3 class="booking-program-label" data-program-title></h3>
+            </div>
             <p class="text--grey" data-program-detail></p>
           </div>
         </div>
 
         <div class="col-md-7">
           <div class="card--info">
-            <h2 class="heading--small">{t["booking.yourData"]}</h2>
+            <div class="booking-banner">
+              <h2 class="heading--small booking-step-title">{t["booking.yourData"]}</h2>
+            </div>
             <form
               id="booking-form"
               class="contact-form"
@@ -396,13 +400,12 @@ const programsJson = JSON.stringify({
 
   .booking-selected-label {
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #db5328;    
-    margin-top: 2rem;
+    color: #ffffff;    
+    text-align: center;
   }
 
   .booking-category-label {
-    color: #db5328;    
+    color: #ffffff;    
     margin-top: 0;
     font-weight: 600;
   }
@@ -413,7 +416,7 @@ const programsJson = JSON.stringify({
   }
 
   .booking-program-label {
-    color: #db5328;
+    color: #ffffff;
     margin-bottom: 1.5rem;
     margin-top: 0;
     font-weight: 600;
