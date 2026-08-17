@@ -10849,3 +10849,12 @@ margin-bottom: 2%;
 
 /*# sourceMappingURL=main.css.map */
 
+/* TripAdvisor widget logo constraint */
+.TA_cdsratingsonlynarrow img[alt="TripAdvisor"],
+.TA_cdsratingsonlynarrow .logo,
+.cdsROW .cdsComponent.logo img {
+  max-width: 264px !important;
+  width: 264px !important;
+  height: auto !important;
+}
+

@@ -88,6 +88,9 @@ export const ui = {
     "footer.outsideArg": "Outside Arg.",
     "footer.brandsHeading": "We are supported by the following brands",
     "footer.brandsSubheading": "Fish with the best",
+    "reviews.title": "Reviews",
+    "reviews.readMore": "Read more on TripAdvisor",
+    "reviews.tripadvisorAlt": "TripAdvisor rating",
   },
   es: {
     "nav.programs": "Programas",
@@ -145,6 +148,9 @@ export const ui = {
     "footer.outsideArg": "Desde el extranjero",
     "footer.brandsHeading": "Nos acompañan las siguientes marcas",
     "footer.brandsSubheading": "Pesque con lo mejor",
+    "reviews.title": "Reseñas",
+    "reviews.readMore": "Leer más en TripAdvisor",
+    "reviews.tripadvisorAlt": "Calificación en TripAdvisor",
   },
 } as const;
 
