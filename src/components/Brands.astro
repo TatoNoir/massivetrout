@@ -7,22 +7,17 @@ interface Props {
 const { heading, subheading, className = "" } = Astro.props;
 
 const brands = [
-  "logo_01.jpg",
-  "logo_02.jpg",
-  "logo_03.jpg",
-  "logo_04.jpg",
-  "logo_05.jpg",
-  "logo_06.jpg",
-  "logo_07.jpg",
-  "logo_08.jpg",
-  "logo_09.jpg",
-  "logo_10.jpg",
-  "logo_11.jpg",
-  "logo_12.jpg",
-  "logo_13.jpg",
-  "logo_15.jpg",
-  "logo_14.jpg",
-  "logo_16.jpg",
+  "logo_orvis.jpg",
+  "logo_scientific_anglers.jpg",
+  "logo_rio_products.jpg",
+  "logo_redington.jpg",
+  "logo_simms.jpg",
+  "logo_nrs.jpg",
+  "logo_tfo.jpg",
+  "logo_coleman.jpg",
+  "logo_eureka.jpg",
+  "logo_iridium.jpg",
+  "logo_botes_del_limay.jpg",
 ];
 ---
 
@@ -34,7 +29,7 @@ const brands = [
   <div class="row">
     <div class="col-12">
       {
-        brands.slice(0, 8).map((b) => (
+        brands.slice(0, 6).map((b) => (
           <img src={`/images/01_home/brands/${b}`} alt="" class="img-responsive brand-logo" loading="lazy" />
         ))
       }
