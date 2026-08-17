@@ -10,19 +10,19 @@ const t = ui[lang];
 
 const reviews = [
   {
-    name: "Mark Johnson",
-    textEn: "If you want to experience world class fly fishing and learn the best tactics to be successful then look no further and reach out to Massive Trout Fly Fishing.com.! Your host and personal guide Julian Cabral will not disappoint. After 6 days of fabulous fly fishing in a variety of environments I cant wait to get back and do it again.",
+    name: "Paul C",
+    textEn: "I spent 5 days fishing with MTFF. I have fished with many excellent guides in the U.S. and abroad. MTFF is among the best. Julian is a true angler's guide. Where other guides might be content to fish the same way all day, and certainly catch fish, Julian goes the extra mile (literally) ferrying back forth across the river to find the best lies, rowing upstream to re-float a promising run or whatever else it takes to maximize the experience. In a relaxed way he keeps you engaged while constantly scanning, adjusting and coaching you to the best of your abilities. The streamside lunches were very nice and relaxed and Julian just a wonderful person to be with for a day (or more) on a river. I caught many fish learned a lot with him. I can't wait to go back.",
     textEs: "Si querés vivir la pesca con mosca de clase mundial y aprender las mejores tácticas para tener éxito, no busques más y contactá a Massive Trout Fly Fishing.com. ! Tu anfitrión y guía personal Julian Cabral no te va a decepcionar. Después de 6 días de pesca fabulosa en una variedad de ambientes, no puedo esperar a volver y hacerlo de nuevo.",
   },
   {
-    name: "Gustavo C (ARG)",
-    textEn: "Es de los mejores guías de pesca de zona, conoce muy bien los lugares y en todo momento hace sentir a la persona como en su casa. Siempre prima la prudencia y la seguridad del cliente. Es de esas excursiones que si uno no tiene una pesca muy fructífera, siente que valió la pena cada momento.",
-    textEs: "Es de los mejores guías de pesca de zona, conoce muy bien los lugares y en todo momento hace sentir a la persona como en su casa. Siempre prima la prudencia y la seguridad del cliente. Es de esas excursiones que si uno no tiene una pesca muy fructífera, siente que valió la pena cada momento.",
+    name: "Aidan C (ARG)",
+    textEn: "Massive Trout has some of the best guides in the region! Super knowledgeable and great customer service! Highly recommend them!",
+    textEs: "Massive Trout tiene algunos de los mejores guías de la región! Muy conocedores y excelente atención al cliente! Los recomiendo ampliamente!",
   },
   {
-    name: "Michael B",
-    textEn: "Julián is a fantastic guide, his knowledge of the rivers and fly fishing techniques is outstanding. He put us on fish every day and made the trip truly unforgettable. Highly recommended!",
-    textEs: "Julián es un guía fantástico, su conocimiento de los ríos y técnicas de pesca con mosca es excepcional. Nos puso peces cada día y hizo que el viaje fuera verdaderamente inolvidable. ¡Muy recomendable!",
+    name: "Ron K",
+    textEn: "The team at Massive Trout provided a seamless experience from the day we arrived, friendly and attentive staff, awesome meals, great tips in fly fishing techniques and patience with the lesser experienced. Particularly enjoyed the overnight float, camping, as much fishing as you want and enjoying the Patagonian wilderness and wildlife.",
+    textEs: "El equipo de Massive Trout nos brindó una experiencia impecable desde el día que llegamos. Personal amable y atento, comidas excelentes, grandes consejos en técnicas de pesca con mosca y paciencia con los menos experimentados. Disutamos especialmente del flotado nocturno, el camping, tanta pesca como quisieras y disfrutar de la naturaleza y fauna de la Patagonia.",
   },
 ];
 ---
@@ -30,12 +30,12 @@ const reviews = [
 <section class="reviews-section" id="reviews">
   <div class="container">
     <h2 class="heading--big text--center">{t["reviews.title"]}</h2>
-    <img class="separador img-responsive" src="/imagenes/body/separador.png" alt="separador" />
-
+    
     <div class="row reviews-grid">
       <!-- Left column: Video + Photo -->
       <div class="col-md-5">
         <div class="reviews-media">
+          <h3 class="reviews-video-title" set:html={t["reviews.videoTitle"]} />
           <div class="reviews-video">
             <div class="video-wrapper">
               <!-- TODO: Replace with actual video embed URL -->
@@ -47,15 +47,6 @@ const reviews = [
                 allowfullscreen
               ></iframe>
             </div>
-          </div>
-          <div class="reviews-photo">
-            <!-- TODO: Replace with actual photo path -->
-            <img
-              src="/images/01_home/brands/logo_orvis.jpg"
-              alt="Massive Trout Fly Fishing experience"
-              class="img-responsive"
-              loading="lazy"
-            />
           </div>
         </div>
       </div>
@@ -135,12 +126,28 @@ const reviews = [
   .reviews-media {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+
+  @media (max-width: 991px) {
+    .reviews-media {
+      padding-top: 0;
+    }
+  }
+
+  .reviews-video-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    line-height: 1.3;
   }
 
   .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 133%; /* 3:4 vertical */
     height: 0;
     overflow: hidden;
     border-radius: 8px;
@@ -154,14 +161,6 @@ const reviews = [
     width: 100%;
     height: 100%;
     border-radius: 8px;
-  }
-
-  .reviews-photo img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-    object-fit: cover;
-    aspect-ratio: 4 / 3;
   }
 
   .reviews-right {
