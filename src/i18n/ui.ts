@@ -86,6 +86,8 @@ export const ui = {
     "footer.phone": "Phone",
     "footer.mobile": "Mobile",
     "footer.outsideArg": "Outside Arg.",
+    "footer.brandsHeading": "We are supported by the following brands",
+    "footer.brandsSubheading": "Fish with the best",
   },
   es: {
     "nav.programs": "Programas",
@@ -141,6 +143,8 @@ export const ui = {
     "footer.phone": "Teléfono",
     "footer.mobile": "Móvil",
     "footer.outsideArg": "Desde el extranjero",
+    "footer.brandsHeading": "Nos acompañan las siguientes marcas",
+    "footer.brandsSubheading": "Pesque con lo mejor",
   },
 } as const;
 

@@ -9,6 +9,18 @@ const { lang } = Astro.props;
 const t = getUi(lang);
 
 const year = new Date().getFullYear();
+
+const brands = [
+  "logo_orvis.jpg",
+  "logo_scientific_anglers.jpg",
+  "logo_rio_products.jpg",
+  "logo_redington.jpg",
+  "logo_simms.jpg",
+  "logo_nrs.jpg",
+  "logo_tfo.jpg",
+  "logo_coleman.jpg",
+  "logo_eureka.jpg",
+];
 ---
 
 <footer>
@@ -16,7 +28,7 @@ const year = new Date().getFullYear();
 
     <div class="row footer-main">
       <!-- Col 1: Logo + Datos + Redes -->
-      <div class="col-md-4 footer-col">
+      <div class="col-md-6 footer-col">
         <div class="row">
           <div class="col-md-5">
             <img
@@ -27,7 +39,8 @@ const year = new Date().getFullYear();
           </div>
           <div class="col-md-7">
             <div class="datos_footer">
-              <h2 class="heading--small">{siteConfig.owner.name} ({siteConfig.owner.roleEn})</h2>
+              <h2 class="margin-reset">{siteConfig.owner.name} </h2>
+              <h3 class="heading--small margin-reset">({siteConfig.owner.roleEn}) </h3>
               <p>
                 {t["footer.mobile"]}: {siteConfig.phoneDisplay} <br />
                 {siteConfig.phone2Display}
@@ -43,17 +56,28 @@ const year = new Date().getFullYear();
         </div>
       </div>
 
-      <!-- Col 2: Vacía -->
-      <div class="col-md-4"></div>
-
-      <!-- Col 3: Logos asociaciones -->
-      <div class="col-md-4 footer-col">
+      <!-- Col 2: Logos asociaciones + Brands -->
+      <div class="col-md-6 footer-col footer-col--right">
         <ul class="logos_asoc">
           <li><img src="/imagenes/footer/logos_footer_01.png" alt="Logo Guias Patagonicos" class="img-responsive" /></li>
           <li><img src="/imagenes/footer/logos_footer_02.png" alt="Logo Parque Nacional Nahuel Huapi" /></li>
           <li><img src="/imagenes/footer/logos_footer_03.png" alt="Logo Parque nacional Lanin" /></li>
           <li><img src="/imagenes/footer/logos_footer_04.png" alt="Logo Prefectura Naval Argentina" /></li>
         </ul>
+        <div class="footer-brands">
+          <h4 class="footer-brands__title">{t["footer.brandsHeading"]}</h4>
+
+          <div class="footer-brands__row">
+            {brands.slice(0, 5).map((b) => (
+              <img src={`/images/01_home/brands/${b}`} alt="" class="footer-brand-logo" loading="lazy" />
+            ))}
+          </div>
+          <div class="footer-brands__row">
+            {brands.slice(5).map((b) => (
+              <img src={`/images/01_home/brands/${b}`} alt="" class="footer-brand-logo" loading="lazy" />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
 
