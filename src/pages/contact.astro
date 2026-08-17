@@ -1,36 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Brands from "../components/Brands.astro";
-import { siteConfig } from "../i18n/ui";
+import ContactForm from "../components/ContactForm.astro";
 ---
 
 <Layout lang="en" title="Contact Us - Massive Trout Fly Fishing, Bariloche, Patagonia Argentina" description="Massive Trout Fly Fishing" bodyClass="no-js">
   <section class="sec__hero hero--small" id="hero_contact">
     <div class="container">
       <div class="hero__content">
-        <h1 class="heading--big text--center">Contact Us</h1>
+        <h1 class="heading--big text--center">Send us a message</h1>
       </div>
     </div>
   </section>
 
   <section class="sec__contact">
-    <h3 class="text--grey text--center">FOR A SALUTATION OR INFORMATION!</h3>
-
-    <div class="text--center">
-      <h2 class="heading--small">{siteConfig.owner.name} ({siteConfig.owner.roleEn})</h2>
-      <p>
-        Argentinean Contact <br />
-        Phone: Outside Arg.: +54 9 294 4442020<br />
-        Mobile: Outside Arg.: +54 9 2944 574963 or <br />
-        +54 9 2944 66 55 88<br />
-        Email: <a href={`mailto:${siteConfig.owner.email}`}>{siteConfig.owner.email}</a><br />
-      </p>
+    <div class="container">
+      <h2 class="heading--big text--center">Contact Us</h2>
+      <h3 class="text--grey text--center">FOR A SALUTATION OR FOR INFORMATION!</h3>
+      <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+      <ContactForm lang="en" />
     </div>
   </section>
-
-  <Brands
-    className="contact-brands"
-    heading="We are supported by the following brands"
-    subheading="Fish with the best"
-  />
 </Layout>
