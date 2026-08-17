@@ -48,7 +48,7 @@ export const ui = {
     "booking.select": "Select",
     "booking.selected": "Selected",
     "booking.back": "Back to programs",
-    "booking.yourData": "Your details",
+    "booking.yourData": "Your Contact Details",
     "booking.fullName": "Full name",
     "booking.email": "Email",
     "booking.phone": "Phone",
