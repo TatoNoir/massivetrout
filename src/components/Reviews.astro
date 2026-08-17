@@ -30,12 +30,26 @@ const reviews = [
 <section class="reviews-section" id="reviews">
   <div class="container">
     <h2 class="heading--big text--center reviews-main-title">{t["reviews.title"]}</h2>
-    
-    <div class="row reviews-grid">
-      <!-- Left column: Video + Photo -->
+
+    <!-- Row 1: Video + Photo -->
+    <div class="row reviews-media-row">
+      
       <div class="col-md-6">
-        <div class="reviews-media">
-          <h3 class="reviews-video-title" set:html={t["reviews.videoTitle"]} />
+        <div class="reviews-media-col">
+          <div class="reviews-photo">
+            <img
+              src="/images/01_home/home_reviews.jpeg"
+              alt="Massive Trout Fly Fishing experience"
+              class=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="reviews-media-col">
+          
           <div class="reviews-video-card">
             <div class="reviews-video">
               <div class="video-wrapper">
@@ -47,71 +61,84 @@ const reviews = [
                   allowfullscreen
                 ></iframe>
               </div>
+              <h3 class="reviews-video-title" set:html={t["reviews.videoTitle"]} />
             </div>
-          </div>
-          <div class="reviews-photo">
-            <img
-              src="/images/01_home/home_reviews.jpeg"
-              alt="Massive Trout Fly Fishing experience"
-              class="img-responsive"
-              loading="lazy"
-            />
+            
           </div>
         </div>
       </div>
 
-      <!-- Right column: TripAdvisor + Reviews -->
+    </div>
+
+
+
+    <!-- Row 2: TripAdvisor Rating -->
+    <div class="reviews-tripadvisor-wrapper">
+      <a
+        href="https://www.tripadvisor.com.ar/Attraction_Review-g312848-d15098716-Reviews-Massive_Trout_Fly_Fishing-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagoni.html"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        class="reviews-tripadvisor-link-wrapper"
+      >
+        <div class="reviews-tripadvisor-static">
+          <img src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg" alt="TripAdvisor" class="tripadvisor-logo" />
+          <div class="tripadvisor-rating">
+            <span class="tripadvisor-stars">★★★★★</span>
+            <span class="tripadvisor-count">43 reviews</span>
+          </div>
+        </div>
+      </a>
+       <!-- TripAdvisor link -->
+      
+        <a
+          href="https://www.tripadvisor.com.ar/Attraction_Review-g312848-d15098716-Reviews-Massive_Trout_Fly_Fishing-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagoni.html"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          class=" btn-primary"
+        >
+          {t["reviews.readMore"]} <i class="fa fa-long-arrow-right"></i>
+        </a>
+      
+    </div>
+
+    <!-- Row 3: Reviews -->
+    <div class="row reviews-list">
       <div class="col-md-6">
-        <div class="reviews-right">
-          <!-- TripAdvisor Rating (estático) -->
-          <div class="reviews-tripadvisor-wrapper">
-            <a
-              href="https://www.tripadvisor.com.ar/Attraction_Review-g312848-d15098716-Reviews-Massive_Trout_Fly_Fishing-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagoni.html"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="reviews-tripadvisor-link-wrapper"
-            >
-              <div class="reviews-tripadvisor-static">
-                <img src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg" alt="TripAdvisor" class="tripadvisor-logo" />
-                <div class="tripadvisor-rating">
-                  <span class="tripadvisor-stars">★★★★★</span>
-                  <span class="tripadvisor-count">43 reviews</span>
-                </div>
-              </div>
-            </a>
+        <div class="review-card review-card--featured">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            <span class="review-quote">&ldquo;</span>
+            {lang === "es" ? reviews[0].textEs : reviews[0].textEn}
+            <span class="review-quote">&rdquo;</span>
+          </p>
+          <p class="review-author">— {reviews[0].name}</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="reviews-column">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              <span class="review-quote">&ldquo;</span>
+              {lang === "es" ? reviews[1].textEs : reviews[1].textEn}
+              <span class="review-quote">&rdquo;</span>
+            </p>
+            <p class="review-author">— {reviews[1].name}</p>
           </div>
-
-          <!-- Reviews list -->
-          <div class="reviews-list">
-            {
-              reviews.map((review) => (
-                <div class="review-card">
-                  <div class="review-stars">★★★★★</div>
-                  <p class="review-text">
-                    <span class="review-quote">&ldquo;</span>
-                    {lang === "es" ? review.textEs : review.textEn}
-                    <span class="review-quote">&rdquo;</span>
-                  </p>
-                  <p class="review-author">— {review.name}</p>
-                </div>
-              ))
-            }
-          </div>
-
-          <!-- TripAdvisor link -->
-          <div class="reviews-tripadvisor-link">
-            <a
-              href="https://www.tripadvisor.com.ar/Attraction_Review-g312848-d15098716-Reviews-Massive_Trout_Fly_Fishing-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagoni.html"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="btn btn-primary"
-            >
-              {t["reviews.readMore"]} <i class="fa fa-long-arrow-right"></i>
-            </a>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              <span class="review-quote">&ldquo;</span>
+              {lang === "es" ? reviews[2].textEs : reviews[2].textEn}
+              <span class="review-quote">&rdquo;</span>
+            </p>
+            <p class="review-author">— {reviews[2].name}</p>
           </div>
         </div>
       </div>
     </div>
+
+   
 
     <!-- Book your trip CTA -->
     <div class="reviews-book-cta">
@@ -138,32 +165,23 @@ const reviews = [
 
   .reviews-main-title {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 
-  .reviews-section .reviews-grid {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .reviews-grid {
+  /* Row 1: Video + Photo */
+  .reviews-media-row {
     display: flex;
-    align-items: flex-start;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: stretch;
   }
 
-  .reviews-media {
+  .reviews-media-col {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding-top: 2rem;
     align-items: center;
-  }
-
-  @media (max-width: 991px) {
-    .reviews-media {
-      padding-top: 0;
-    }
+    gap: 1rem;
+    flex: 1;
   }
 
   .reviews-video-title {
@@ -176,22 +194,21 @@ const reviews = [
   }
 
   .reviews-video-card {
-    width: 520px;
-    max-width: 100%;
-    background: url(/imagenes/body/fondo_topo.svg) no-repeat center center / cover;
-    border-radius: 8px;
+    width: 100%;
+    max-width: 520px;
     padding: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    
   }
 
   .reviews-video {
-    width: 360px;
+    width: 100%;
+    max-width: 420px;
     margin: 0 auto;
   }
 
   .video-wrapper {
     position: relative;
-    padding-bottom: 133%; /* 3:4 vertical */
+    padding-bottom: 133%;
     height: 0;
     overflow: hidden;
     border-radius: 4px;
@@ -207,27 +224,23 @@ const reviews = [
   }
 
   .reviews-photo {
-    width: 520px;
-    max-width: 100%;
+    padding-top: 1.5rem;
   }
 
   .reviews-photo img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    width: 120%;
     object-fit: cover;
   }
 
-  .reviews-right {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
+  /* Row 2: TripAdvisor */
   .reviews-tripadvisor-wrapper {
-    max-width: 100%;
+        max-width: 100%;
     overflow: hidden;
-    padding: 1rem 4rem;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .reviews-tripadvisor-link-wrapper {
@@ -241,6 +254,7 @@ const reviews = [
     align-items: center;
     gap: 1rem;
     justify-content: space-around;
+    padding: 0 5rem;
   }
 
   .tripadvisor-logo {
@@ -272,8 +286,18 @@ const reviews = [
 
   .reviews-list {
     display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .reviews-column {
+    display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .review-card--featured {
+    height: 100%;
   }
 
   .review-card {
@@ -361,17 +385,13 @@ const reviews = [
       padding-right: 15px !important;
     }
 
-    .reviews-grid {
+    .reviews-media-row {
       flex-direction: column;
+      gap: 1.5rem;
     }
 
-    .reviews-media {
-      order: 2;
+    .reviews-media-col {
       padding-top: 0;
-    }
-
-    .reviews-right {
-      order: 1;
     }
 
     .reviews-video-card {
@@ -380,6 +400,11 @@ const reviews = [
 
     .reviews-photo {
       max-width: 100%;
+    }
+
+    .reviews-tripadvisor-static {
+      flex-direction: column;
+      gap: 0.5rem;
     }
   }
 
