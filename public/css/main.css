@@ -2925,318 +2925,125 @@ color: #686868;
 /* Footer */
 
 footer {
-
   padding-top: 4.0625rem;
-
   padding-bottom: 4.0625rem;
+  background-color: #F4F4F4;
+}
 
-  background-color: #F4F4F4; }
+.footer-main {
+  margin-bottom: 2rem;
+}
 
+.footer-col {
+  display: flex;
+  align-items: center;
+}
 
+.logo_footer {
+  width: 100%;
+  max-width: 150px;
+}
+
+.datos_footer {
+  margin-bottom: 1rem;
+}
+
+.datos_footer h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.datos_footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0.25rem;
+}
+
+.datos_footer a {
+  color: #6f6f6f;
+  text-decoration: none;
+}
+
+.datos_footer a:hover {
+  color: #333;
+}
+
+.footer__links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links .fa {
+  font-size: 24px;
+  color: #6f6f6f;
+}
+
+.footer__links a:hover {
+  color: #333;
+}
+
+.logos_asoc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logos_asoc li {
+  display: flex;
+  align-items: center;
+}
+
+.logos_asoc img {
+  height: 40px;
+  width: auto;
+}
 
 .copy {
-
-  float: left;
-
-  font-size: .9rem; }
-
-  @media screen and (max-width: 768px) {
-
-    .copy {
-
-      float: none;
-
-      margin-bottom: 2rem;
-
-      text-align: center; } }
-
-  @media only print {
-
-    .copy {
-
-      float: none;
-
-      text-align: center; } }
-
-
-
-.logo_footer{
-
-  float: left;
-
-  padding-top: 30px;
-
-}
-
-
-
-.datos_footer{
-
-  float: left;
-
-  margin-left: 50px;
-
-
-
-}
-
-
-
-.copy{
-
-  clear: both;
-
-  float: left;
-
-  padding: 0;
-
-  padding-top: 0px;
-
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1.5rem 0 0;
   margin: 0;
-
-  margin-left: 1%
-
+  border-top: 1px solid #ddd;
 }
 
-.copy a,
+.copy a {
+  color: #6f6f6f;
+  text-decoration: none;
+}
 
-.footer__links a,
+.copy a:hover {
+  color: #333;
+}
 
-.social-btn {
-
-  color: #6f6f6f; }
-
-  .copy a:focus, .copy a:hover,
-
-  .footer__links a:focus,
-
-  .footer__links a:hover,
-
-  .social-btn:focus,
-
-  .social-btn:hover {
-
-    color: #333; }
-
-  .copy a:active,
-
-  .footer__links a:active,
-
-  .social-btn:active {
-
-    color: #212121; }
-
-
-
-
-
-
-
-  .logos_asoc{
-
-    display: -webkit-flex;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -webkit-justify-content: flex-end;
-
-    -ms-flex-pack: end;
-
-    justify-content: flex-end; 
-
-    clear: both;
-
-    float: right;
-
-    margin-top: -18%;
-
-
-
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-col {
+    justify-content: center;
+    margin-bottom: 2rem;
   }
 
-
-
-  @media screen and (max-width: 800px){
-
-    .logos_asoc{
-
-      clear: none;
-
-      float: none;
-
-      margin-top: 4%;
-
-    }
-
+  .logo_footer {
+    margin: 0 auto 1rem;
   }
 
-
-
-
-
-  #siteseal{
-
-    display: flex;
-
-    float: right;
-
-    margin-top: -10%;
-
+  .datos_footer {
+    text-align: center;
   }
-
-
-
-  @media screen and (max-width: 800px){
-
-    #siteseal{
-
-      margin-top: -18%;
-
-    }
-
-  }
-
-
-
-  @media screen and (max-width: 480px){
-
-    .logo_footer{
-
-      float: left;
-
-      padding-top: 0px;
-
-      padding-left: 22%;
-
-     }
-
-
-
-    .logos_asoc{
-
-      padding-top:20%;
-
-    }
-
-
-
-    .logos_asoc img{
-
-      width: 100%;
-
-    }
-
-
-
-    .footer__links{
-
-      padding-top:20%;
-
-    }
-
-
-
-    .copy{
-
-      display: block;
-
-    }
-
-
-
-    #siteseal{
-
-      margin-top: 6%;
-
-      margin-right: 8%;
-
-    }
-
-
-
-  }
-
-   @media screen and (max-width: 768px) {
-
-      .logos_asoc img{
-
-          width: 100%;
-
-      }
-
-    }
-
-
 
   .footer__links {
-
-    display: -webkit-flex;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -webkit-justify-content: flex-end;
-
-    -ms-flex-pack: end;
-
-    justify-content: flex-end; 
-
-    clear: both;
-
-    float: right;
-
-    margin-top: -1.5%;
-
-    margin-right: 1%;
-
-
-
+    justify-content: center;
   }
 
-
-
-  .footer__links .fa{
-
-    font-size: 30px;
-
-
-
+  .logos_asoc {
+    justify-content: center;
   }
-
-
-
-  @media screen and (max-width: 768px) {
-
-      .footer__links {
-
-        -webkit-justify-content: center;
-
-        -ms-flex-pack: center;
-
-        justify-content: center;
-
-        width: 100%;
-
-        margin-top: 2%;
-
-     } 
-
-  }
-
-    @media only print {
-
-      .footer__links {
-
-        display: none; } }
-
-
-
-  .footer__links li:not(:last-child) {
-
-    margin-right: 1rem; }
+}
 
 
 

@@ -8,7 +8,7 @@ export const langLabels: Record<Lang, string> = {
 export const siteConfig = {
   name: "Massive Trout Fly Fishing",
   domain: "massivetroutflyfishing.com",
-  email: "info@massivetroutflyfishing.com",
+  email: "mtroutff@gmail.com",
   emailAlt: "mtroutff@gmail.com",
   phoneInternational: "+5492944574963",
   phoneDisplay: "+54 9 2944 57 49 63",
