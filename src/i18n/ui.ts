@@ -92,6 +92,7 @@ export const ui = {
     "reviews.videoTitle": "Nick Warren<br>DJ and Producer",
     "reviews.readMore": "Read more on TripAdvisor",
     "reviews.tripadvisorAlt": "TripAdvisor rating",
+    "reviews.bookCta": "Book your trip",
   },
   es: {
     "nav.programs": "Programas",
@@ -153,6 +154,7 @@ export const ui = {
     "reviews.videoTitle": "Nick Warren<br>DJ y Productor",
     "reviews.readMore": "Leer más en TripAdvisor",
     "reviews.tripadvisorAlt": "Calificación en TripAdvisor",
+    "reviews.bookCta": "Reservá tu viaje",
   },
 } as const;
 

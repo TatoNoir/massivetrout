@@ -63,7 +63,7 @@ const reviews = [
       <!-- Right column: TripAdvisor + Reviews -->
       <div class="col-md-6">
         <div class="reviews-right">
-          <!-- TripAdvisor Rating Widget -->
+          <!-- TripAdvisor Rating (estático) -->
           <div class="reviews-tripadvisor-wrapper">
             <a
               href="https://www.tripadvisor.com.ar/Attraction_Review-g312848-d15098716-Reviews-Massive_Trout_Fly_Fishing-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagoni.html"
@@ -71,23 +71,12 @@ const reviews = [
               rel="nofollow noopener noreferrer"
               class="reviews-tripadvisor-link-wrapper"
             >
-              <div class="reviews-tripadvisor-widget">
-                <div id="TA_cdsratingsonlynarrow" class="TA_cdsratingsonlynarrow">
-                  <ul id="TA_linksdss" class="TA_links mE4BAE">
-                    <li id="2jBbNI" class="aWtKBjB9S">
-                      <a href="https://www.tripadvisor.com.ar/Attraction_Review-g312848-d15098716-Reviews-Massive_Trout_Fly_Fishing-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagoni.html" target="_blank" rel="nofollow noopener noreferrer">
-                        <img src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg" alt="TripAdvisor" />
-                      </a>
-                    </li>
-                  </ul>
+              <div class="reviews-tripadvisor-static">
+                <img src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg" alt="TripAdvisor" class="tripadvisor-logo" />
+                <div class="tripadvisor-rating">
+                  <span class="tripadvisor-stars">★★★★★</span>
+                  <span class="tripadvisor-count">43 reviews</span>
                 </div>
-                <script
-                  is:inline
-                  async
-                  src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=18034&amp;locationId=15098716&amp;lang=en_US&amp;border=true&amp;display_version=2"
-                  data-loadtrk
-                  onload="this.loadtrk=true"
-                ></script>
               </div>
             </a>
           </div>
@@ -122,6 +111,13 @@ const reviews = [
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Book your trip CTA -->
+    <div class="reviews-book-cta">
+      <a href="/booking/" class="btn btn--full btn--oval">
+        {t["reviews.bookCta"]}
+      </a>
     </div>
   </div>
 </section>
@@ -231,14 +227,42 @@ const reviews = [
   .reviews-tripadvisor-wrapper {
     max-width: 100%;
     overflow: hidden;
-    margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1rem 4rem;
   }
 
   .reviews-tripadvisor-link-wrapper {
     display: block;
     text-decoration: none;
     color: inherit;
+  }
+
+  .reviews-tripadvisor-static {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+  .tripadvisor-logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .tripadvisor-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tripadvisor-stars {
+    color: #00aa6c;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .tripadvisor-count {
+    font-size: 0.8rem;
+    color: #666;
   }
 
   .reviews-tripadvisor-widget {
@@ -320,6 +344,12 @@ const reviews = [
 
   .reviews-tripadvisor-link .btn i {
     margin-left: 0.5rem;
+  }
+
+  .reviews-book-cta {
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-top: 1.5rem;
   }
 
   /* Mobile */
