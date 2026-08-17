@@ -2941,20 +2941,21 @@ footer {
 
 .logo_footer {
   width: 100%;
-  max-width: 150px;
+  max-width: 180px;
 }
 
 .datos_footer {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .datos_footer h2 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .datos_footer p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 0.25rem;
 }
@@ -2979,6 +2980,7 @@ footer {
 .footer__links .fa {
   font-size: 24px;
   color: #6f6f6f;
+  transition: color 0.2s ease;
 }
 
 .footer__links a:hover {
@@ -3002,6 +3004,12 @@ footer {
 .logos_asoc img {
   height: 40px;
   width: auto;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.logos_asoc img:hover {
+  opacity: 1;
 }
 
 .copy {
@@ -3009,7 +3017,7 @@ footer {
   text-align: center;
   padding: 1.5rem 0 0;
   margin: 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e0e0e0;
 }
 
 .copy a {
