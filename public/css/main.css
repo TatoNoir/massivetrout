@@ -10852,6 +10852,13 @@ margin-bottom: 2%;
 .cdsROW .cdsComponent.logo img {
   max-width: 264px !important;
   width: 264px !important;
+}
+
+/* Story Book CTA */
+.story-book-cta {
+  text-align: center;
+  padding: 2rem 0;
+}
   height: auto !important;
 }
 
