@@ -5890,11 +5890,8 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 
 .story-brands{
-
-  margin-top: 8%;
-
-  margin-bottom: 0;
-
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 
