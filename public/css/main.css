@@ -10859,6 +10859,23 @@ margin-bottom: 2%;
   text-align: center;
   padding: 2rem 0;
 }
+
+/* Story Hero Image */
+.story-hero {
+  padding: 2rem 0;
+}
+
+.story-hero-img {
+  width: 100%;
+  max-width: 1000px;
+  height: 520px;
+  object-fit: cover;
+  object-position: center 70%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
   height: auto !important;
 }
 
