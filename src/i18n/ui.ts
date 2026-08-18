@@ -33,6 +33,8 @@ export const siteConfig = {
 export const ui = {
   en: {
     "nav.programs": "Programs",
+    "nav.programs.argentina": "Argentina",
+    "nav.programs.usa": "USA",
     "nav.destinations": "Destinations",
     "nav.story": "Story",
     "nav.lodges": "Lodges & Lodging",
@@ -96,6 +98,8 @@ export const ui = {
   },
   es: {
     "nav.programs": "Programas",
+    "nav.programs.argentina": "Argentina",
+    "nav.programs.usa": "USA",
     "nav.destinations": "Destinos",
     "nav.story": "Quiénes somos",
     "nav.lodges": "Lodges y Alojamiento",

@@ -17,7 +17,10 @@ const langSwitchHref =
 
 const prefix = isEs ? "/es" : "";
 const navItems = [
-  { href: `${prefix}/programs/`, label: t["nav.programs"] },
+  { href: `${prefix}/programs/`, label: t["nav.programs"], dropdown: [
+    { href: `${prefix}/programs/#argentina`, label: t["nav.programs.argentina"] },
+    { href: `${prefix}/programs/`, label: t["nav.programs.usa"] },
+  ]},
   { href: `${prefix}/destinations/`, label: t["nav.destinations"] },
   { href: `${prefix}/about/`, label: t["nav.story"] },
   { href: `${prefix}/lodges/`, label: t["nav.lodges"] },
@@ -52,9 +55,23 @@ const navItems = [
         </li>
 
         {navItems.map((item) => (
-          <li class="subnav__parent">
-            <a class="show-mobile" href={item.href}>{item.label}</a>
-            <a class="hide-mobile" href={item.href}>{item.label}</a>
+          <li class={`subnav__parent${item.dropdown ? ' has-dropdown' : ''}`}>
+            {item.dropdown ? (
+              <>
+                <span class="hide-mobile nav-dropdown-trigger">{item.label} <i class="fa fa-caret-down"></i></span>
+                <a class="show-mobile" href={item.href}>{item.label}</a>
+                <ul class="nav-dropdown hide-mobile">
+                  {item.dropdown.map((sub) => (
+                    <li><a href={sub.href}>{sub.label}</a></li>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <>
+                <a class="show-mobile" href={item.href}>{item.label}</a>
+                <a class="hide-mobile" href={item.href}>{item.label}</a>
+              </>
+            )}
           </li>
         ))}        
 
@@ -90,6 +107,66 @@ const navItems = [
 
   .nav-cta__link:hover {
     background: #8f241e;
+  }
+
+  /* Dropdown */
+  .has-dropdown {
+    position: relative;
+  }
+
+  .nav-dropdown-trigger {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #fff;
+  }
+
+  .nav-dropdown-trigger .fa-caret-down {
+    font-size: 0.7em;
+    transition: transform 0.2s ease;
+  }
+
+  .has-dropdown:hover .fa-caret-down {
+    transform: rotate(180deg);
+  }
+
+  .nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    min-width: 140px;
+    z-index: 1000;
+  }
+
+  .has-dropdown:hover .nav-dropdown {
+    display: block;
+  }
+
+  .nav-dropdown li a {
+    display: block;
+    padding: 0.5rem 1.2rem;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+  }
+
+  .nav-dropdown li a:hover {
+    background: #f5f5f5;
+    color: #b5312a;
   }
 
   @media (max-width: 47.99em) {
