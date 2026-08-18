@@ -1,0 +1,53 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import RiverItem from "../../../components/RiverItem.astro";
+---
+
+<Layout lang="es" title="Destinos Dorado - Massive Trout Fly Fishing, Corrientes" description="Pesca con Mosca de Dorado en Corrientes, Argentina" bodyClass="no-js">
+  <section class="sec__hero hero--small">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="heading--big text--center">Río Paraná Superior - Corrientes, Norte de Argentina</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__intro intro_sinback">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="heading--big text--center">Una de las principales pesquerías de Dorado de Argentina</h2>
+          <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+          <p class="text--grey text--center">
+            [Placeholder - contenido pendiente]
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <RiverItem
+    topPadding={true}
+    name="Río Paraná Superior"
+    subt="Pesca con mosca de Dorado en Corrientes"
+    image="/images/03_destinations/dorado/dorado_destinations.png"
+    details={[
+      { label: "Temporada: ", value: "Todo el año" },
+      { label: "Especies: ", value: "Dorado / Pirá Pitá / Pacú" },
+      { label: "Principales zonas de pesca: ", value: "Provincia de Corrientes / Río Paraná Superior" },
+      { label: "Tipo de pesca: ", value: "Pesca con mosca / Sight fishing / Streamers" },
+      { label: "Opciones de viaje: ", value: "Jornada completa / Multi-día" },
+    ]}
+    paras={[
+      "[Placeholder - párrafo 1 pendiente]",
+      "[Placeholder - párrafo 2 pendiente]",
+      "[Placeholder - párrafo 3 pendiente]",
+    ]}
+  />
+
+  <section class="sec__destinations_but">
+    <div class="container">
+      <a class="btn btn--full btn--oval" href="/es/booking/" role="button" title="Book your trip">Reservá tu viaje</a>
+    </div>
+  </section>
+</Layout>
