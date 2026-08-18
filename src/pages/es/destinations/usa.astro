@@ -1,0 +1,55 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import RiverItem from "../../../components/RiverItem.astro";
+---
+
+<Layout lang="es" title="Destinos USA - Massive Trout Fly Fishing, Wyoming" description="Destinos de Pesca con Mosca en Wyoming, USA" bodyClass="no-js">
+  <section class="sec__hero hero--small">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="heading--big text--center">Río North Platte</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__intro intro_sinback">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="heading--big text--center">Pesca con Mosca en Wyoming</h2>
+          <h3 class="heading--small text--center">La mejor pesca con mosca del Oeste de Estados Unidos.</h3>
+          <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+          <p class="text--grey text--center">
+            Massive Trout Fly Fishing opera en Casper, Wyoming, brindando acceso a algunas de las mejores aguas para trucha del Oeste Americano. Desde pesca técnica con mosca seca en el North Platte hasta aventuras de varios días explorando las aguas más remotas de Wyoming, ofrecemos experiencias guiadas de pesca con mosca adaptadas a los objetivos, nivel de experiencia y presupuesto de cada pescador.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <RiverItem
+    topPadding={true}
+    name="Río North Platte"
+    subt="Una de las pesquerías de trucha más destacadas de Wyoming"
+    image="/images/03_destinations/circles/eeuu/north_platte_destinations.png"
+    details={[
+      { label: "Temporada: ", value: "Desde Mayo a Octubre" },
+      { label: "Especies de Truchas: ", value: "Truchas Arcoíris, Marrón y Cutthroat" },
+      { label: "Longitud del río: ", value: "Aprox. 1,150 km / 716 millas" },
+      { label: "Tipo de programas: ", value: "Diarios / Multi-día" },
+      { label: "Principales Zonas de Pesca: ", value: "Grey Reef / Fremont Canyon / Miracle Mile" },
+      { label: "Distancia desde Casper: ", value: "25 millas a Grey Reef - 35 millas a Fremont Canyon - 50 millas a Miracle Mile" },
+    ]}
+    paras={[
+      "El río North Platte es una de las pesquerías de trucha más reconocidas de Wyoming, ofreciendo una combinación excepcional de aguas diversas, caudales constantes y la amplia escenografía del Oeste Americano. Sus diferentes secciones presentan correderas, pozones profundos, bordes y estructura que brindan una amplia variedad de oportunidades para pescadores con mosca a lo largo de la temporada.",
+      "Para el pescador con mosca, el North Platte recompensa la observación cuidadosa y la comprensión de cómo las truchas utilizan el río. Las líneas de corriente, los cambios de profundidad, la estructura sumergida y las aguas más tranquilas pueden convertirse en áreas de refugio importantes. Dependiendo de las condiciones y la sección que se pesque, los pescadores pueden trabajar desde aguas moving y correderas someras hasta pozones profundos y áreas productivas, adaptando su enfoque durante el día.",
+      "Más allá de sus oportunidades de pesca, el North Platte ofrece una experiencia auténtica de río en Wyoming. El amplio paisaje, los cielos abiertos y el movimiento constante del río crean un entorno donde la pesca se convierte en parte de una experiencia mucho mayor. Para quienes disfrutan de la pesca con mosca, el North Platte combina agua técnica, trucha de calidad y el carácter inconfundible del Oeste Americano.",
+    ]}
+  />
+
+  <section class="sec__destinations_but">
+    <div class="container">
+      <a class="btn btn--full btn--oval" href="/es/booking/" role="button" title="Book your trip">Reservá tu viaje</a>
+    </div>
+  </section>
+</Layout>

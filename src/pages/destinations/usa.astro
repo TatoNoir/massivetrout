@@ -1,0 +1,55 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import RiverItem from "../../components/RiverItem.astro";
+---
+
+<Layout lang="en" title="Destinations USA - Massive Trout Fly Fishing, Wyoming" description="Fly Fishing Destinations in Wyoming, USA" bodyClass="no-js">
+  <section class="sec__hero hero--small">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="heading--big text--center">North Platte River</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec__intro intro_sinback">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="heading--big text--center">Fly Fishing in Wyoming</h2>
+          <h3 class="heading--small text--center">The best fly fishing in the West of United States.</h3>
+          <img class="separador" src="/imagenes/body/separador.png" alt="separador" />
+          <p class="text--grey text--center">
+            Massive Trout Fly Fishing operates in Casper, Wyoming, offering access to some of the finest trout water in the American West. From technical dry-fly fishing on the North Platte to multi-day adventures exploring Wyoming's most remote waters, we provide guided fly-fishing experiences tailored to every angler's goals, experience level, and budget.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <RiverItem
+    topPadding={true}
+    name="North Platte River"
+    subt="One of Wyoming's premier trout fisheries"
+    image="/images/03_destinations/circles/eeuu/north_platte_destinations.png"
+    details={[
+      { label: "Season: ", value: "From May to October" },
+      { label: "Trout Species: ", value: "Rainbow, Brown and Cutthroat Trout" },
+      { label: "River length: ", value: "Approx. 1,150 km / 716 miles" },
+      { label: "Type of trips: ", value: "Daily / Multi-day" },
+      { label: "Main Fishing Areas: ", value: "Grey Reef / Fremont Canyon / Miracle Mile" },
+      { label: "Distance from Casper: ", value: "25 miles to Grey Reef - 35 miles to Fremont Canyon - 50 miles to Miracle Mile" },
+    ]}
+    paras={[
+      "The North Platte River is one of Wyoming's most renowned trout fisheries, offering a remarkable combination of diverse water, consistent flows, and expansive Western scenery. Its different sections feature riffles, deep runs, pools, banks, and structure that provide a wide range of opportunities for fly anglers throughout the season.",
+      "For the fly fisherman, the North Platte rewards careful observation and an understanding of how trout use the river. Current seams, changes in depth, submerged structure, and slower water can all become important holding areas. Depending on the conditions and the section being fished, anglers may work everything from moving water and shallow riffles to deeper runs and productive pools, adapting their approach throughout the day.",
+      "Beyond its fishing opportunities, the North Platte offers a true Wyoming river experience. The broad landscape, open skies, and constant movement of the river create a setting where the fishing becomes part of a much larger experience. For those who enjoy fly fishing, the North Platte combines technical water, quality trout, and the unmistakable character of the American West.",
+    ]}
+  />
+
+  <section class="sec__destinations_but">
+    <div class="container">
+      <a class="btn btn--full btn--oval" href="/booking/" role="button" title="Book your trip">Book your trip</a>
+    </div>
+  </section>
+</Layout>
