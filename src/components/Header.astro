@@ -19,9 +19,13 @@ const prefix = isEs ? "/es" : "";
 const navItems = [
   { href: `${prefix}/programs/`, label: t["nav.programs"], dropdown: [
     { href: `${prefix}/programs/#argentina`, label: t["nav.programs.argentina"] },
-    { href: `${prefix}/programs/`, label: t["nav.programs.usa"] },
+    { href: `${prefix}/programs/usa/`, label: t["nav.programs.usa"] },
   ]},
-  { href: `${prefix}/destinations/`, label: t["nav.destinations"] },
+  { href: `${prefix}/destinations/`, label: t["nav.destinations"], dropdown: [
+    { href: `${prefix}/destinations/#patagonia`, label: t["nav.destinations.patagonia"] },
+    { href: `${prefix}/destinations/#corrientes`, label: t["nav.destinations.corrientes"] },
+    { href: `${prefix}/destinations/#wyoming`, label: t["nav.destinations.wyoming"] },
+  ]},
   { href: `${prefix}/about/`, label: t["nav.story"] },
   { href: `${prefix}/lodges/`, label: t["nav.lodges"] },
   { href: `${prefix}/contact/`, label: t["nav.contact"] },

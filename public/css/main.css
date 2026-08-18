@@ -5842,6 +5842,18 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   margin: 2% 0;
 }
 
+.eeuu-programs-title{
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: 2.5rem;
+}
+
+.eeuu-program-image{
+  max-width: 480px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
 
 .home-programs .home-programs-title
 
@@ -10860,6 +10872,11 @@ margin-bottom: 2%;
   padding: 2rem 0;
 }
 
+/* USA Programs Parallax */
+.sec__vacation--usa {
+  background: url(../images/02_programs/EEUU/north_plate_parallax.jpeg) no-repeat center center/cover fixed !important;
+}
+
 /* Story Hero Image */
 .story-hero {
   padding: 2rem 0;
@@ -10876,6 +10893,4 @@ margin-bottom: 2%;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
-  height: auto !important;
-}
-
+  
