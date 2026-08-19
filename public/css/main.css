@@ -5864,7 +5864,14 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 }
 
 
-
+.dorado-programs-title{
+  font-family: 'Domine', serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
 
 
 .brands{
@@ -10875,6 +10882,18 @@ margin-bottom: 2%;
 /* USA Programs Parallax */
 .sec__vacation--usa {
   background: url(../images/02_programs/EEUU/north_plate_parallax.jpeg) no-repeat center center/cover fixed !important;
+}
+
+/* Programs Dorado Row */
+.programs-dorado-row {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Dorado Programs Parallax */
+.sec__vacation--dorado {
+  background: url(../imagenes/body/parallax/dorado_parallax_1.jpg) no-repeat center center/cover fixed !important;
 }
 
 /* Story Hero Image */
