@@ -10886,6 +10886,11 @@ margin-bottom: 2%;
   background: url(../imagenes/body/parallax/dorado_parallax_1.jpg) no-repeat center center/cover fixed !important;
 }
 
+/* Dorado Hero */
+.hero--dorado {
+  background: url(../images/03_destinations/dorado_hero_destinations.jpg) no-repeat center center/cover !important;
+}
+
 /* Story Hero Image */
 .story-hero {
   padding: 2rem 0;
