@@ -5786,13 +5786,12 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   font-family: 'Domine', serif;
   font-weight: bold;
   display: inline-block;
-  height: 35px;
   font-size: 1.5rem;
   margin: 0;
   vertical-align: bottom;
-  margin-left: 2%;
+  vertical-align: 0;
+  font-size: 1.5rem; 
 }
-
 
 
 .home-programs .programs-title:hover{
@@ -5852,15 +5851,6 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   max-width: 480px;
   height: auto;
   margin-bottom: 1.5rem;
-}
-
-
-.home-programs .home-programs-title
-
-{
-  vertical-align: 0;
-  font-size: 1.5rem;    
-
 }
 
 
