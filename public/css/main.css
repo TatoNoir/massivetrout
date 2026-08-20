@@ -5908,6 +5908,10 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
    PROGRAMS PAGE - DORADO CARD
    ======================================== */
 
+/* Dorado Destinations Parallax */
+.sec__vacation--dorado-dest {
+  background: url(../images/03_destinations/dorado-parallax-2.jpeg) no-repeat center center/cover fixed !important;
+}
 
 .brands{
 
