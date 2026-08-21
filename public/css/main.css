@@ -5913,6 +5913,18 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   background: url(../images/03_destinations/dorado-parallax-2.jpeg) no-repeat center center/cover fixed !important;
 }
 
+/* Dorado Intro Title */
+.dorado-intro-title {
+  font-size: 1.8rem;
+  color: #DB5328;
+  font-family: 'Domine', serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 1.5rem;
+  margin: 0;
+}
+
 .brands{
 
   display: grid;
