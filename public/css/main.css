@@ -5131,13 +5131,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     color: #fff;
 
-  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/mobile/header-mobile_contact.jpg) no-repeat center center/cover fixed; }
+  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/mobile/header-mobile_contact.jpg) no-repeat center center/cover fixed; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/mobile/header-mobile_contact.jpg) no-repeat center center/cover;
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/mobile/header-mobile_contact.jpg) no-repeat center center/cover;
 
      } /* sin fixed */
 
@@ -5147,7 +5147,7 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ;
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ;
 
      } /* sin fixed */
 
@@ -5157,7 +5157,7 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/header_dos-desktop_contact.jpg) no-repeat center center/cover;
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/header_dos-desktop_contact.jpg) no-repeat center center/cover;
 
      }/* sin fixed */
 
@@ -5167,13 +5167,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ; } } /*sin fixed*/
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ; } } /*sin fixed*/
 
   @media only screen and (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min-resolution: 192dpi), only screen and (min-width: 750px) and (min-resolution: 2dppx) {
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ; } /* sin fixed */
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ; } /* sin fixed */
 
   }
 
@@ -5183,13 +5183,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ; } } /*sin fixed*/
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ; } } /*sin fixed*/
 
   @media only screen and (min-width: 1020px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-resolution: 192dpi), only screen and (min-width: 1020px) and (min-resolution: 2dppx) {
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ; } /* sin fixed */
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/header_dos-desktop_contact.jpg) no-repeat center center/cover ; } /* sin fixed */
 
   }
 
@@ -5199,13 +5199,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/header_dos-desktop_contact.jpg) no-repeat center center/cover fixed; } } /*sin fixed*/
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/header_dos-desktop_contact.jpg) no-repeat center center/cover fixed; } } /*sin fixed*/
 
   @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
     #hero_contact {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/06_contact/header_dos-desktop_contact.jpg) no-repeat center center/cover fixed; } /* sin fixed */
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/contact/header_dos-desktop_contact.jpg) no-repeat center center/cover fixed; } /* sin fixed */
 
   }
 
