@@ -250,7 +250,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "wyoming-grey-reef",
           title: "Grey Reef Daily Trip",
-          img: "/images/08-booking/wyoming-gray-reef.jpeg",
+          img: "/images/booking/wyoming-gray-reef.jpeg",
           icon: "/images/programs/icons/daytrip_blue.svg",
           detail:
             "Spend a full day exploring Grey Reef on Wyoming’s North Platte River with an experienced fishing guide. Drift through miles of renowned trout water while enjoying productive fishing, peaceful river scenery, and the vast Wyoming landscape.",
@@ -258,7 +258,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "wyoming-miracle-mile",
           title: "Miracle Mile Daily Trip",
-          img: "/images/08-booking/wyoming-miracle-mile.jpeg",
+          img: "/images/booking/wyoming-miracle-mile.jpeg",
           icon: "/images/programs/icons/daytrip_blue.svg",
           detail:
             "Enjoy a full day on the Miracle Mile, one of Wyoming’s most renowned sections of the North Platte River. Fish for wild trout while drifting through expansive waters, changing river conditions, and spectacular open landscapes.",
@@ -283,7 +283,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "dorado-lodging",
           title: "Fishing and Lodging",
-          img: "/images/08-booking/dorado-daily-trip.jpeg",
+          img: "/images/booking/dorado-daily-trip.jpeg",
           icon: "/images/programs/icons/lodges_blue.svg",
           detail:
             "Located in northern Argentina, Upper Paraná River flows through a lush jungle environment, forming a natural border between Argentina and Paraguay. Its clear, powerful waters are home to an impressive variety of species, including Golden Dorado, Pacú, and Pirá Pytá.",
@@ -348,7 +348,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "wyoming-grey-reef",
           title: "Grey Reef Excursión Diaria",
-          img: "/images/08-booking/wyoming-gray-reef.jpeg",
+          img: "/images/booking/wyoming-gray-reef.jpeg",
           icon: "/images/programs/icons/daytrip_blue.svg",
           detail:
             "Pasá un día completo explorando Grey Reef en el río North Platte de Wyoming con un guía de pesca experimentado. Navegá por kilómetros de aguas reconocidas por sus truchas mientras disfrutás de una pesca productiva, paisajes fluviales tranquilos y la vasta extensión de Wyoming.",
@@ -356,7 +356,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "wyoming-miracle-mile",
           title: "Miracle Mile Excursión Diaria",
-          img: "/images/08-booking/wyoming-miracle-mile.jpeg",
+          img: "/images/booking/wyoming-miracle-mile.jpeg",
           icon: "/images/programs/icons/daytrip_blue.svg",
           detail:
             "Disfrutá de un día completo en el Miracle Mile, uno de los tramos más reconocidos del río North Platte en Wyoming. Pesca truchas salvajes mientras navegás por aguas extensas, condiciones cambiantes del río y paisajes abiertos espectaculares.",
@@ -380,7 +380,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
         {
           id: "dorado-lodging",
           title: "Excursiones All Inclusive",
-          img: "/images/08-booking/dorado-daily-trip.jpeg",
+          img: "/images/booking/dorado-daily-trip.jpeg",
           icon: "/images/programs/icons/lodges_blue.svg",
           detail:
             "Ubicado en el norte de Argentina, el río Alto Paraná fluye a través de un entorno selvático exuberante, formando una frontera natural entre Argentina y Paraguay. Sus aguas claras y poderosas albergan una impresionante variedad de especies, incluyendo dorado, pacú y pirá pytá.",
