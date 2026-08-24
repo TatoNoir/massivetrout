@@ -5923,6 +5923,10 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   margin: 0;
 }
 
+.sec__intro .intro-title-margin {
+  margin-bottom: 2rem;
+}
+
 .brands{
 
   display: grid;
