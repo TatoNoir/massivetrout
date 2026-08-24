@@ -4841,13 +4841,13 @@ label > .label-body {
 
     color: #fff;
 
-  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/mobile/hader_dos_mobile-story.jpg) no-repeat center center/cover fixed; }
+  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/mobile/hader_dos_mobile-story.jpg) no-repeat center center/cover fixed; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/mobile/hader_dos_mobile-story.jpg) no-repeat center center/cover ;
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/mobile/hader_dos_mobile-story.jpg) no-repeat center center/cover ;
 
      } /* sin fixed */
 
@@ -4857,13 +4857,13 @@ label > .label-body {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 400px) and (min-resolution: 192dpi), only screen and (min-width: 400px) and (min-resolution: 2dppx) {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover ;
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover ;
 
      } /* sin fixed */
 
@@ -4873,13 +4873,13 @@ label > .label-body {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min-resolution: 192dpi), only screen and (min-width: 750px) and (min-resolution: 2dppx) {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover ; } /* sin fixed */
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover ; } /* sin fixed */
 
   }
 
@@ -4889,7 +4889,7 @@ label > .label-body {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; } 
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; } 
 
   }
 
@@ -4899,13 +4899,13 @@ label > .label-body {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover ; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover ; } }
 
   @media only screen and (min-width: 1020px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-resolution: 192dpi), only screen and (min-width: 1020px) and (min-resolution: 2dppx) {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover ; }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover ; }
 
   }
 
@@ -4915,13 +4915,13 @@ label > .label-body {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
     #hero_about {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/04_story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/story/hader_dos-desktop-story.jpg) no-repeat center center/cover fixed; }
 
   }
 
@@ -7196,7 +7196,7 @@ margin-bottom: 2%;
 
 #parallax_team{
 
-  background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover ;
+  background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover ;
 
  } /* sin fixed */
 
@@ -7204,7 +7204,7 @@ margin-bottom: 2%;
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover;
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover;
 
      } /* sin fixed */
 
@@ -7214,7 +7214,7 @@ margin-bottom: 2%;
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover ;
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover ;
 
      }  /* sin fixed */
 
@@ -7224,7 +7224,7 @@ margin-bottom: 2%;
 
     #parallax_team{
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover ;
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover ;
 
      } /* sin fixed */
 
@@ -7236,7 +7236,7 @@ margin-bottom: 2%;
 
       height: 40rem;
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat top center/cover fixed; } }
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat top center/cover fixed; } }
 
   @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
@@ -7244,19 +7244,19 @@ margin-bottom: 2%;
 
       
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
 
   @media (min-width: 1400px) {
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
 
 
 
@@ -7272,13 +7272,13 @@ margin-bottom: 2%;
 
   #parallax_team{
 
-  background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover fixed; }
+  background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover fixed; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover ;
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover ;
 
      } /* sin fixed */
 
@@ -7288,7 +7288,7 @@ margin-bottom: 2%;
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover;
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover;
 
      } /* sin fixed */
 
@@ -7298,7 +7298,7 @@ margin-bottom: 2%;
 
     #parallax_team{
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover;
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover;
 
      } /* sin fixed */
 
@@ -7310,7 +7310,7 @@ margin-bottom: 2%;
 
       height: 40rem;
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat top center/cover fixed; } }
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat top center/cover fixed; } }
 
   @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
@@ -7318,7 +7318,7 @@ margin-bottom: 2%;
 
       
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
 
 
 
@@ -7326,7 +7326,7 @@ margin-bottom: 2%;
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover; 
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover; 
 
     } /* sin fixed */
 
@@ -7336,13 +7336,13 @@ margin-bottom: 2%;
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
 
     #parallax_team {
 
-      background: url(../images/04_story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover fixed; } }
 
 
 
