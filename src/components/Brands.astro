@@ -24,13 +24,13 @@ const brands = [
 <section class={`brands ${className}`}>
   <h2 class="heading--big text--center">{heading}</h2>
   <h3 class="heading--small text--center">{subheading}</h3>
-  <img class="separador img-responsive" src="/imagenes/body/separador.png" alt="separador" />
+  <img class="separador img-responsive" src="/images/shared/separators/separador.png" alt="separador" />
 
   <div class="row">
     <div class="col-12">
       {
         brands.slice(0, 6).map((b) => (
-          <img src={`/images/01_home/brands/${b}`} alt="" class="img-responsive brand-logo" loading="lazy" />
+          <img src={`/images/home/brands/${b}`} alt="" class="img-responsive brand-logo" loading="lazy" />
         ))
       }
     </div>
@@ -39,7 +39,7 @@ const brands = [
     <div class="col-12">
       {
         brands.slice(6).map((b) => (
-          <img src={`/images/01_home/brands/${b}`} alt="" class="img-responsive brand-logo" loading="lazy" />
+          <img src={`/images/home/brands/${b}`} alt="" class="img-responsive brand-logo" loading="lazy" />
         ))
       }
     </div>

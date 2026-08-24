@@ -5463,7 +5463,7 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 {
 
-  background: url(../imagenes/body/fondo_topografia-01.png);
+  background: url(../images/shared/separators/fondo_topografia-01.png);
 
 }
 
@@ -5471,7 +5471,7 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 .sec__activities, footer, .sec__intro{
 
-  background: url(../imagenes/body/fondo_topo.svg);
+  background: url(../images/shared/separators/fondo_topo.svg);
 
 }
 
@@ -5529,12 +5529,12 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 
 #derivador-1{
-  background: url(../images/01_home/rivers-card.jpeg);
+  background: url(../images/home/cards/rivers-card.jpeg);
   background-position: center;
 }
 
 #derivador-2{
-  background: url(../images/01_home/card_guides.jpg) right;
+  background: url(../images/home/cards/card_guides.jpg) right;
 
 }
 
@@ -6138,19 +6138,19 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 .sec__photo {
 
-  background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; }
+  background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover ; } }/*sin fixed */
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover ; } }/*sin fixed */
 
   @media (min-width: 768px) {
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover;
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover;
 
      } /*sin fixed */
 
@@ -6160,7 +6160,7 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover;
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover;
 
      } /* sin fixed */
 
@@ -6170,13 +6170,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; } }
 
 
 
@@ -6184,13 +6184,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover ; } }
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover ; } }
 
   @media only screen and (min-width: 1020px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-resolution: 192dpi), only screen and (min-width: 1020px) and (min-resolution: 2dppx) {
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover ; } 
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover ; } 
 
   }
 
@@ -6198,13 +6198,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 12000px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
     .sec__photo {
 
-      background: url(../imagenes/body/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/home_parallax_refe2.jpg) no-repeat center center/cover fixed; } }
 
 
 
@@ -6332,13 +6332,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
   /*.sec__productos{
 
-  background: url(../imagenes/body/fondo_topografia-01.png);
+  background: url(../images/shared/separators/fondo_topografia-01.png);
 
     }*/
 
   .sec__productos #daily {
 
-      background: url('../imagenes/body/programs/seccion_daily.jpg');
+      background: url('../images/home/programs-bg/seccion_daily.jpg');
 
       background-position: center;
 
@@ -6350,7 +6350,7 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
   .sec__productos #night {
 
-      background: url('../imagenes/body/programs/seccion_overnight.jpg');
+      background: url('../images/home/programs-bg/seccion_overnight.jpg');
 
       background-position: center;
 
@@ -6362,7 +6362,7 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
   .sec__productos #all {
 
-      background: url('../imagenes/body/programs/seccion_allinclusive.jpg');
+      background: url('../images/home/programs-bg/seccion_allinclusive.jpg');
 
       background-position: center;
 
@@ -7039,7 +7039,7 @@ margin-bottom: 2%;
 
 .newsletter{
 
-  background-image: url(../images/01_home/fondo_newsletter.svg);
+  background-image: url(../images/home/newsletter/fondo_newsletter.svg);
 
   background-size: cover;
 
@@ -7230,37 +7230,37 @@ margin-bottom: 2%;
 
     .sec__vacation {
 
-      background: url(../imagenes/body/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
     .sec__vacation {
 
-      background: url(../imagenes/body/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
 
   @media (min-width: 1400px) {
 
     .sec__vacation {
 
-      background: url(../imagenes/body/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
 
     .sec__vacation {
 
-      background: url(../imagenes/body/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
 
 
 
 #parallax_home{
 
-  background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover; }
+  background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     #parallax_home {
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover;
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover;
 
      } /* sin fixed */
 
@@ -7270,13 +7270,13 @@ margin-bottom: 2%;
 
     #parallax_home {
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
     #parallax_home{
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover; } } /* sin fixed */
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover; } } /* sin fixed */
 
   @media (min-width: 992px) {
 
@@ -7284,13 +7284,13 @@ margin-bottom: 2%;
 
       height: 36rem;
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
     #parallax_home {
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
 
   
 
@@ -7300,7 +7300,7 @@ margin-bottom: 2%;
 
       height: 36rem;
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover;
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover;
 
      } /* sin fixed */
 
@@ -7310,7 +7310,7 @@ margin-bottom: 2%;
 
     #parallax_home {
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover; 
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover; 
 
     } /* sin fixed */
 
@@ -7324,13 +7324,13 @@ margin-bottom: 2%;
 
     #parallax_home {
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
 
     #parallax_home {
 
-      background: url(../images/01_home/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_home_trucha.png) no-repeat center center/cover fixed; } }
 
 
 
@@ -7616,7 +7616,7 @@ margin-bottom: 2%;
 
     .sec__destination_PNNH {
 
-      background: url(../imagenes/body/parallax_nhnp.jpg) no-repeat center center/cover fixed; 
+      background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; 
 
       height: 414px;
 
@@ -7626,7 +7626,7 @@ margin-bottom: 2%;
 
     .sec__destination_PNNH {
 
-      background: url(../imagenes/body/parallax_nhnp2.jpg) no-repeat center center/cover fixed;
+      background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed;
 
       height: 414px;
 
@@ -7636,25 +7636,25 @@ margin-bottom: 2%;
 
     .sec__destination_PNNH {
 
-      background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
 
     .sec__destination_PNNH {
 
-      background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; } }
 
 
 
   #PN_nahuel_huapi{
 
-      background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; }
+      background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; }
 
       @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
         #PN_nahuel_huapi {
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover;
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover;
 
          } /* sin fixed */
 
@@ -7664,13 +7664,13 @@ margin-bottom: 2%;
 
         #PN_nahuel_huapi{
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; } }
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; } }
 
       @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
         #PN_nahuel_huapi{
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover ;
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover ;
 
          } /* sin fixed */
 
@@ -7680,7 +7680,7 @@ margin-bottom: 2%;
 
         #PN_nahuel_huapi {
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; 
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; 
 
           height: 414px;
 
@@ -7690,7 +7690,7 @@ margin-bottom: 2%;
 
         #PN_nahuel_huapi{
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed;
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed;
 
           height: 414px;
 
@@ -7704,7 +7704,7 @@ margin-bottom: 2%;
 
         #PN_nahuel_huapi {
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover ; 
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover ; 
 
           height: 414px;
 
@@ -7714,7 +7714,7 @@ margin-bottom: 2%;
 
         #PN_nahuel_huapi{
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover ;
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover ;
 
           height: 414px;
 
@@ -7728,13 +7728,13 @@ margin-bottom: 2%;
 
         #PN_nahuel_huapi {
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; } }
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; } }
 
       @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
         #PN_nahuel_huapi{
 
-          background: url(../imagenes/body/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; }
+          background: url(../images/home/parallax/parallax_nhnp.jpg) no-repeat center center/cover fixed; }
 
 
 
@@ -7744,13 +7744,13 @@ margin-bottom: 2%;
 
   #PN_lanin{
 
-      background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; }
+      background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; }
 
       @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
         #PN_lanin {
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover;
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover;
 
          } /* sin fixed */
 
@@ -7760,13 +7760,13 @@ margin-bottom: 2%;
 
         #PN_lanin {
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; } }
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; } }
 
       @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
         #PN_lanin{
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover; 
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover; 
 
         } /* sin fixed */
 
@@ -7776,7 +7776,7 @@ margin-bottom: 2%;
 
         #PN_lanin {
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; 
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; 
 
           height: 414px;
 
@@ -7788,7 +7788,7 @@ margin-bottom: 2%;
 
         #PN_lanin{
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed;
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed;
 
           height: 414px;
 
@@ -7802,7 +7802,7 @@ margin-bottom: 2%;
 
         #PN_lanin {
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover ; 
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover ; 
 
           height: 414px;
 
@@ -7814,7 +7814,7 @@ margin-bottom: 2%;
 
         #PN_lanin{
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover ;
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover ;
 
           height: 414px;
 
@@ -7832,13 +7832,13 @@ margin-bottom: 2%;
 
         #PN_lanin {
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; } }
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; } }
 
       @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
         #PN_lanin {
 
-          background: url(../imagenes/body/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; }
+          background: url(../images/home/parallax/parallax_lnp.jpg) no-repeat center center/cover fixed; }
 
 
 
@@ -7850,7 +7850,7 @@ margin-bottom: 2%;
 
 #daily_trip{
 
-  background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover;
+  background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover;
 
 } /* sin fixed */
 
@@ -7860,13 +7860,13 @@ margin-bottom: 2%;
 
   #daily_trip {
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; } }
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; } }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
   #daily_trip{
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover; 
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover; 
 
   } /* sin fixed */
 
@@ -7876,7 +7876,7 @@ margin-bottom: 2%;
 
   #daily_trip {
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; 
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; 
 
     height: 414px;
 
@@ -7888,7 +7888,7 @@ margin-bottom: 2%;
 
   #daily_trip{
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover fixed;
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover fixed;
 
     height: 414px;
 
@@ -7898,7 +7898,7 @@ margin-bottom: 2%;
 
   #daily_trip {
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; 
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; 
 
     height: 414px;
 
@@ -7910,7 +7910,7 @@ margin-bottom: 2%;
 
   #daily_trip{
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover fixed;
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover fixed;
 
     height: 414px;
 
@@ -7922,7 +7922,7 @@ margin-bottom: 2%;
 
   #daily_trip {
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover; 
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover; 
 
         height: 414px;
 
@@ -7934,7 +7934,7 @@ margin-bottom: 2%;
 
   #daily_trip{
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover;
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover;
 
     height: 414px;
 
@@ -7948,13 +7948,13 @@ margin-bottom: 2%;
 
   #daily_trip {
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; } }
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; } }
 
 @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
   #daily_trip {
 
-    background: url(../imagenes/body/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; }
+    background: url(../images/home/parallax/parallax_daily.jpg) no-repeat center center/cover fixed; }
 
   }
 
@@ -7964,7 +7964,7 @@ margin-bottom: 2%;
 
 #overnight_trip{
 
-  background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover;
+  background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover;
 
 } /* sin fixed */
 
@@ -7974,13 +7974,13 @@ margin-bottom: 2%;
 
   #overnight_trip {
 
-    background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed; } }
+    background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed; } }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
   #overnight_trip{
 
-    background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover; 
+    background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover; 
 
   } /* sin fixed */
 
@@ -7990,7 +7990,7 @@ margin-bottom: 2%;
 
   #overnight_trip {
 
-    background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed; 
+    background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed; 
 
     height: 414px;
 
@@ -8002,7 +8002,7 @@ margin-bottom: 2%;
 
   #overnight_trip{
 
-    background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed;
+    background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed;
 
     height: 414px;
 
@@ -8016,7 +8016,7 @@ margin-bottom: 2%;
 
   #overnight_trip {
 
-    background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover ; 
+    background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover ; 
 
     height: 414px;
 
@@ -8028,7 +8028,7 @@ margin-bottom: 2%;
 
   #overnight_trip{
 
-    background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover ;
+    background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover ;
 
     height: 414px;
 
@@ -8042,13 +8042,13 @@ margin-bottom: 2%;
 
   #overnight_trip {
 
-    background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed; } }
+    background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed; } }
 
 @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
   #overnight_trip {
 
-    background: url(../imagenes/body/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed; }
+    background: url(../images/home/parallax/parallax_ovenight.jpg) no-repeat center center/cover fixed; }
 
 }
 
@@ -8058,7 +8058,7 @@ margin-bottom: 2%;
 
 #allinclusive_trip{
 
-  background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover ;
+  background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover ;
 
 }/* sin fixed */
 
@@ -8068,13 +8068,13 @@ margin-bottom: 2%;
 
   #allinclusive_trip {
 
-    background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed; } }
+    background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed; } }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
   #allinclusive_trip{
 
-    background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover; 
+    background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover; 
 
   } /* sin fixed */
 
@@ -8084,7 +8084,7 @@ margin-bottom: 2%;
 
   #allinclusive_trip {
 
-    background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed; 
+    background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed; 
 
     height: 414px;
 
@@ -8096,7 +8096,7 @@ margin-bottom: 2%;
 
   #allinclusive_trip{
 
-    background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed;
+    background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed;
 
     height: 414px;
 
@@ -8110,7 +8110,7 @@ margin-bottom: 2%;
 
   #allinclusive_trip {
 
-    background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover; 
+    background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover; 
 
     height: 414px;
 
@@ -8122,7 +8122,7 @@ margin-bottom: 2%;
 
   #allinclusive_trip{
 
-    background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover;
+    background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover;
 
     height: 414px;
 
@@ -8138,13 +8138,13 @@ margin-bottom: 2%;
 
   #allinclusive_trip {
 
-    background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed; } }
+    background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed; } }
 
 @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
   #allinclusive_trip {
 
-    background: url(../imagenes/body/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed; }
+    background: url(../images/home/parallax/parallax_all_inclusive.jpg) no-repeat center center/cover fixed; }
 
 }
 
@@ -8610,37 +8610,37 @@ margin-bottom: 2%;
 
 .slides-container .slide-1 {
 
-  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/mobile/uno_slide_mobile-juli.jpg) center center/cover; }
+  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/mobile/uno_slide_mobile-juli.jpg) center center/cover; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     .slides-container .slide-1 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/mobile/uno_slide_mobile-juli.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/mobile/uno_slide_mobile-juli.jpg) center center/cover; } }
 
 
 
 .slides-container .slide-2 {
 
-  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/mobile/dos_slide_mobile-flyfish.jpg) center center/cover; }
+  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/mobile/dos_slide_mobile-flyfish.jpg) center center/cover; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     .slides-container .slide-2 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/mobile/dos_slide_mobile-flyfish.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/mobile/dos_slide_mobile-flyfish.jpg) center center/cover; } }
 
 
 
 .slides-container .slide-3 {
 
-  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/mobile/tres_slide_mobile-drift.jpg) center center/cover; }
+  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/mobile/tres_slide_mobile-drift.jpg) center center/cover; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     .slides-container .slide-3 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/mobile/tres_slide_mobile-drift.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/mobile/tres_slide_mobile-drift.jpg) center center/cover; } }
 
 
 
@@ -8686,13 +8686,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-1 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
 
   @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-1 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
 
 
 
@@ -8700,13 +8700,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-2 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
 
   @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-2 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
 
 
 
@@ -8714,13 +8714,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-3 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
 
   @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-3 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
 
 
 
@@ -8772,13 +8772,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-1 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
 
   @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-1 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
 
 
 
@@ -8786,13 +8786,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-2 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
 
   @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-2 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
 
 
 
@@ -8800,13 +8800,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-3 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
 
   @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-3 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
 
 
 
@@ -8858,13 +8858,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-1 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
 
   @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-1 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/01_slide_desktop-juli_.jpg) center center/cover; } }
 
 
 
@@ -8872,13 +8872,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-2 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
 
   @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-2 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/02_slide_desktop-flyfish.jpg) center center/cover; } }
 
 
 
@@ -8886,13 +8886,13 @@ margin-bottom: 2%;
 
   .slides-container .slide-3 {
 
-    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
+    background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
 
   @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
 
     .slides-container .slide-3 {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/01_home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/slides/03_slide_desktop-drift.jpg) center center/cover; } }
 
 
 
@@ -9082,7 +9082,7 @@ margin-bottom: 2%;
 
   color: #fff;
 
-  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../imagenes/body/parallax_chose.jpg) no-repeat center/cover; }
+  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/parallax/parallax_chose.jpg) no-repeat center/cover; }
 
 
 
@@ -9094,7 +9094,7 @@ margin-bottom: 2%;
 
       color: #fff;
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../imagenes/body/parallax_chose.jpg) no-repeat center/cover fixed; }  
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/parallax/parallax_chose.jpg) no-repeat center/cover fixed; }  
 
   }
 
@@ -9106,7 +9106,7 @@ margin-bottom: 2%;
 
       color: #fff;
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../imagenes/body/parallax_chose.jpg) no-repeat center/cover fixed; }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/parallax/parallax_chose.jpg) no-repeat center/cover fixed; }
 
   }
 
@@ -9120,7 +9120,7 @@ margin-bottom: 2%;
 
       color: #fff;
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../imagenes/body/parallax_chose.jpg) no-repeat center/cover;
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/parallax/parallax_chose.jpg) no-repeat center/cover;
 
      }  
 
@@ -9134,7 +9134,7 @@ margin-bottom: 2%;
 
       color: #fff;
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../imagenes/body/parallax_chose.jpg) no-repeat center/cover; }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/parallax/parallax_chose.jpg) no-repeat center/cover; }
 
   }
 
@@ -9148,7 +9148,7 @@ margin-bottom: 2%;
 
       color: #fff;
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../imagenes/body/parallax_chose.jpg) no-repeat center/cover fixed; }  
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/parallax/parallax_chose.jpg) no-repeat center/cover fixed; }  
 
   }
 
@@ -9160,7 +9160,7 @@ margin-bottom: 2%;
 
       color: #fff;
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../imagenes/body/parallax_chose.jpg) no-repeat center/cover fixed; }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/home/parallax/parallax_chose.jpg) no-repeat center/cover fixed; }
 
   }
 
@@ -10913,7 +10913,7 @@ margin-bottom: 2%;
 
 /* Dorado Programs Parallax */
 .sec__vacation--dorado {
-  background: url(../imagenes/body/parallax/dorado_parallax_1.jpg) no-repeat center center/cover fixed !important;
+  background: url(../images/home/parallax/dorado_parallax_1.jpg) no-repeat center center/cover fixed !important;
 }
 
 /* Dorado Hero */
