@@ -198,7 +198,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       id: "patagonia",
       title: "Fly Fishing in Patagonia",
       subtitle: "Season runs November to May.",
-      img: "/images/03_destinations/circles/fonck_destinations.png",
+      img: "/images/destinations/circles/fonck_destinations.png",
       season: "nov-may",
       datesHint: "Season runs November to May.",
       seasons: [
@@ -296,7 +296,7 @@ export const bookingCategories: Record<Lang, BookingCategory[]> = {
       id: "patagonia",
       title: "Pesca con mosca en Patagonia",
       subtitle: "Temporada de noviembre a mayo.",
-      img: "/images/03_destinations/circles/fonck_destinations.png",
+      img: "/images/destinations/circles/fonck_destinations.png",
       season: "nov-may",
       datesHint: "La temporada va de noviembre a mayo.",
       seasons: [

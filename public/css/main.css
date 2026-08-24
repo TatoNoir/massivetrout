@@ -4695,13 +4695,13 @@ label > .label-body {
 
   color: #fff;
 
-  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/mobile/header_mobile-limay.jpg) no-repeat center center/cover fixed; }
+  background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/mobile/header_mobile-limay.jpg) no-repeat center center/cover fixed; }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/mobile/header_mobile-limay.jpg) no-repeat center center/cover ;
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/mobile/header_mobile-limay.jpg) no-repeat center center/cover ;
 
      } /* sin fixed */
 
@@ -4711,7 +4711,7 @@ label > .label-body {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/mobile/header_mobile-limay.jpg) no-repeat center center/cover;
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/mobile/header_mobile-limay.jpg) no-repeat center center/cover;
 
      } /* sin fixed */
 
@@ -4721,7 +4721,7 @@ label > .label-body {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/slide_desktop-limay.jpg) no-repeat center center/cover ; 
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/parallax/slide_desktop-limay.jpg) no-repeat center center/cover ; 
 
     }/* sin fixed */
 
@@ -4731,13 +4731,13 @@ label > .label-body {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/slide_desktop-limay.jpg) no-repeat center center/cover fixed; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/parallax/slide_desktop-limay.jpg) no-repeat center center/cover fixed; } }
 
   @media only screen and (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min-device-pixel-ratio: 2), only screen and (min-width: 750px) and (min-resolution: 192dpi), only screen and (min-width: 750px) and (min-resolution: 2dppx) {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/slide_desktop-limay.jpg) no-repeat center center/cover ; 
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/parallax/slide_desktop-limay.jpg) no-repeat center center/cover ; 
 
     } 
 
@@ -4749,7 +4749,7 @@ label > .label-body {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/slide_desktop-limay.jpg) no-repeat center center/cover fixed; 
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/parallax/slide_desktop-limay.jpg) no-repeat center center/cover fixed; 
 
     }
 
@@ -4761,13 +4761,13 @@ label > .label-body {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/slide_desktop-limay.jpg) no-repeat center center/cover ; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/parallax/slide_desktop-limay.jpg) no-repeat center center/cover ; } }
 
   @media only screen and (min-width: 1020px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-resolution: 192dpi), only screen and (min-width: 1020px) and (min-resolution: 2dppx) {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/slide_desktop-limay.jpg) no-repeat center center/cover ; 
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/parallax/slide_desktop-limay.jpg) no-repeat center center/cover ; 
 
     } /* sin fixed */
 
@@ -4779,13 +4779,13 @@ label > .label-body {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/slide_desktop-limay.jpg) no-repeat center center/cover fixed ; } }
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/parallax/slide_desktop-limay.jpg) no-repeat center center/cover fixed ; } }
 
   @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
     .sec__hero {
 
-      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/03_destinations/slide_desktop-limay.jpg) no-repeat center center/cover fixed; 
+      background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(../images/destinations/parallax/slide_desktop-limay.jpg) no-repeat center center/cover fixed; 
 
     } 
 
@@ -5908,7 +5908,7 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 /* Dorado Destinations Parallax */
 .sec__vacation--dorado-dest {
-  background: url(../images/03_destinations/dorado-parallax-2.jpeg) no-repeat center center/cover fixed !important;
+  background: url(../images/destinations/parallax/dorado-parallax-2.jpeg) no-repeat center center/cover fixed !important;
 }
 
 /* Dorado Intro Title */
@@ -7360,13 +7360,13 @@ margin-bottom: 2%;
 
     #parallax_destinations{
 
-      background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat center center/cover fixed; }
+      background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat center center/cover fixed; }
 
       @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 
         #parallax_destinations {
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat center center/cover; } /* sin fixed */
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat center center/cover; } /* sin fixed */
 
          }
 
@@ -7374,13 +7374,13 @@ margin-bottom: 2%;
 
         #parallax_destinations {
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat center center/cover fixed; } }
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat center center/cover fixed; } }
 
       @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
         #parallax_destinations{
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat center center/cover ; } } /* sin fixed */
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat center center/cover ; } } /* sin fixed */
 
       @media (min-width: 992px) {
 
@@ -7388,13 +7388,13 @@ margin-bottom: 2%;
 
           height: 40rem;
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat top center/cover fixed; } }
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat top center/cover fixed; } }
 
       @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
 
         #parallax_destinations {          
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat center center/cover fixed; 
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat center center/cover fixed; 
 
         } 
 
@@ -7406,13 +7406,13 @@ margin-bottom: 2%;
 
           height: 40rem;
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat top center/cover ; } }
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat top center/cover ; } }
 
       @media only screen and (min-width: 10202px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1020px) and (min-resolution: 192dpi), only screen and (min-width: 1020px) and (min-resolution: 2dppx) {
 
         #parallax_destinations {          
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat center center/cover ; 
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat center center/cover ; 
 
         } 
 
@@ -7424,13 +7424,13 @@ margin-bottom: 2%;
 
         #parallax_destinations {
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat center center/cover fixed; } }
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat center center/cover fixed; } }
 
       @media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
         #parallax_destinations {
 
-          background: url(../images/03_destinations/parallax_destinations.jpg) no-repeat center center/cover fixed; } }
+          background: url(../images/destinations/parallax/parallax_destinations.jpg) no-repeat center center/cover fixed; } }
 
     
 
@@ -10776,7 +10776,7 @@ margin-bottom: 2%;
 
 /* Dorado Hero */
 .hero--dorado {
-  background: url(../images/03_destinations/dorado_hero_destinations.jpg) no-repeat center center/cover !important;
+  background: url(../images/destinations/hero/dorado_hero_destinations.jpg) no-repeat center center/cover !important;
 }
 
 /* Story Hero Image */
