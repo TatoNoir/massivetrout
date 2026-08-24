@@ -7064,50 +7064,7 @@ margin-bottom: 2%;
 
 .sec__vacation {
 
-  background: url(../images/photo__raft--with-overlay--mobile.jpg) no-repeat center center/cover fixed; }
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-
-    .sec__vacation {
-
-      background: url(../images/photo__raft--with-overlay--mobile--@2.jpg) no-repeat center center/cover fixed; } }
-
-  @media (min-width: 768px) {
-
-    .sec__vacation {
-
-      background: url(../images/photo__raft--with-overlay--tablet.jpg) no-repeat center center/cover fixed; } }
-
-  @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-
-    .sec__vacation{
-
-      background: url(../images/photo__raft--with-overlay--tablet--@2.jpg) no-repeat center center/cover fixed; } }
-
-  @media (min-width: 992px) {
-
-    .sec__vacation {
-
-      background: url(../images/home/parallax/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
-
-  @media only screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-device-pixel-ratio: 2), only screen and (min-width: 992px) and (min-resolution: 192dpi), only screen and (min-width: 992px) and (min-resolution: 2dppx) {
-
-    .sec__vacation {
-
-      background: url(../images/home/parallax/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
-
-  @media (min-width: 1400px) {
-
-    .sec__vacation {
-
-      background: url(../images/home/parallax/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
-
-  @media only screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1400px) and (min-resolution: 192dpi), only screen and (min-width: 1400px) and (min-resolution: 2dppx) {
-
-    .sec__vacation {
-
-      background: url(../images/home/parallax/parallax_chose2.jpg) no-repeat center center/cover fixed; } }
-
+  }
 
 
 #parallax_home{
@@ -7450,25 +7407,7 @@ margin-bottom: 2%;
 
 .sec__destination_PNNH {
 
-  background: url(../images/photo__raft--with-overlay--mobile.jpg) no-repeat center center/cover fixed; }
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-
-    .sec__destination_PNNH {
-
-      background: url(../images/photo__raft--with-overlay--mobile--@2.jpg) no-repeat center center/cover fixed; } }
-
-  @media (min-width: 768px) {
-
-    .sec__destination_PNNH {
-
-      background: url(../images/photo__raft--with-overlay--tablet.jpg) no-repeat center center/cover fixed; } }
-
-  @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-
-    .sec__destination_PNNH{
-
-      background: url(../images/photo__raft--with-overlay--tablet--@2.jpg) no-repeat center center/cover fixed; } }
+  }
 
   @media (min-width: 992px) {
 
