@@ -10745,3 +10745,51 @@ margin-bottom: 2%;
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* Programs divider */
+.programs-divider {
+  border-bottom: 3px solid #DB5328;
+  padding-bottom: 0.5rem;
+  margin: 2rem 0;
+}
+
+/* Programs row large cards */
+.programs-row-lg {
+  margin-bottom: 2rem;
+}
+
+.card--info-home-lg {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.card--info-home-lg:hover {
+  opacity: 0.85;
+}
+
+.card--info-home-lg img.img-responsive {
+  width: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.card-heading-home-lg {
+  font-family: 'Domine', serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 1rem 0 0.5rem;
+  color: #172c33;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .card--info-home-lg img.img-responsive {
+    min-height: 250px;
+  }
+}
