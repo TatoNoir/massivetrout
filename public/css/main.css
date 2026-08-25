@@ -10765,6 +10765,31 @@ margin-bottom: 2%;
   border-radius: 8px;
   overflow: hidden;
   transition: opacity 0.3s ease;
+  position: relative;
+}
+
+.card-location-lg {
+  font-family: 'Domine', serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #DB5328;
+  padding: 0.8rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.card-location-flag {
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+.card--info-home-lg .badge-new {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
 }
 
 .card--info-home-lg:hover {
