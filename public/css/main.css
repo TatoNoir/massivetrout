@@ -5534,8 +5534,11 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 }
 
 #derivador-2{
-  background: url(../images/home/cards/card_guides.jpg) right;
-
+  background: url(../images/home/cards/card_guides.jpg);
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 
