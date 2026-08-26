@@ -10716,6 +10716,22 @@ margin-bottom: 2%;
   background: url(../images/programs/parallax/dorado_parallax_1.jpg) no-repeat center center/cover fixed !important;
 }
 
+/* Story Parallax */
+.sec__vacation--story {
+  background: url(../images/story/parallax_story_massive.jpg) no-repeat center center/cover fixed !important;
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.parallax-usa-subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-top: 0.5rem;
+  letter-spacing: 0.05rem;
+}
+
 /* Dorado Hero */
 .hero--dorado {
   background: url(../images/destinations/hero/dorado_hero_destinations.jpg) no-repeat center center/cover !important;
