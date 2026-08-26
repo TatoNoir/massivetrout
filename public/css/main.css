@@ -10820,6 +10820,16 @@ margin-bottom: 2%;
   margin: 1rem 0 0.5rem;
   color: #172c33;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card-heading-icon-lg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 767px) {
