@@ -288,10 +288,10 @@ const mapsEmbed =
       group.replaceWith(wrapper);
       const btn = document.createElement("button");
       btn.className = "learn-more-btn";
-      btn.textContent = "Learn more...";
+      btn.textContent = "Read full description ▾";
       btn.addEventListener("click", () => {
-        const expanded = wrapper.classList.toggle("is-expanded");
-        btn.textContent = expanded ? "Show less" : "Learn more...";
+        wrapper.classList.toggle("is-expanded");
+        btn.classList.toggle("is-expanded");
       });
       wrapper.parentNode?.insertBefore(btn, wrapper.nextSibling);
     });

@@ -10849,7 +10849,8 @@ margin-bottom: 2%;
   font-size: 0.95rem;
   padding: 0;
   margin-top: 0.3rem;
-  text-decoration: underline;
+  transition: none;
+  display: inline-block;
 }
 
 .learn-more-btn:hover {
