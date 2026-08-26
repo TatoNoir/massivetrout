@@ -585,7 +585,7 @@ const programsJson = JSON.stringify({
       if (datesHint) datesHint.textContent = program.datesHint;
 
       showStep(2);
-      step2?.scrollIntoView({ behavior: "smooth", block: "start" });
+      document.querySelector('main')?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
 
