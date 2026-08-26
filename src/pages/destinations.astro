@@ -290,8 +290,8 @@ const mapsEmbed =
       btn.className = "learn-more-btn";
       btn.textContent = "Read full description ▾";
       btn.addEventListener("click", () => {
-        wrapper.classList.toggle("is-expanded");
-        btn.classList.toggle("is-expanded");
+        const expanded = wrapper.classList.toggle("is-expanded");
+        btn.textContent = expanded ? "Show less ▴" : "Read full description ▾";
       });
       wrapper.parentNode?.insertBefore(btn, wrapper.nextSibling);
     });

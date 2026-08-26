@@ -287,8 +287,8 @@ const mapsEmbed =
       btn.className = "learn-more-btn";
       btn.textContent = "Ver descripción completa ▾";
       btn.addEventListener("click", () => {
-        wrapper.classList.toggle("is-expanded");
-        btn.classList.toggle("is-expanded");
+        const expanded = wrapper.classList.toggle("is-expanded");
+        btn.textContent = expanded ? "Mostrar menos ▴" : "Ver descripción completa ▾";
       });
       wrapper.parentNode?.insertBefore(btn, wrapper.nextSibling);
     });
