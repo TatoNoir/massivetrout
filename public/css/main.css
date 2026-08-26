@@ -10764,6 +10764,14 @@ margin-bottom: 2%;
   background: url(../images/destinations/hero/dorado_hero_destinations.jpg) no-repeat center center/cover !important;
 }
 
+.hero--usa {
+  background: url(../images/destinations/usa/hero-destinations-usa.jpeg) no-repeat center center/cover !important;
+}
+
+.sec__vacation--usa-dest {
+  background: url(../images/destinations/usa/parallax-destinations-usa-1.jpg) no-repeat center center/cover fixed !important;
+}
+
 /* Story Hero Image */
 .story-hero {
   padding: 2rem 0;
