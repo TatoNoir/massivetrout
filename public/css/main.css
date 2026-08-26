@@ -2809,9 +2809,13 @@ nav {
 
 
 .img_team{
-
   padding-top: 18%;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
 
+.img_team:hover {
+  filter: grayscale(0%);
 }
 
 
