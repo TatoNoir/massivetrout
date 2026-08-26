@@ -3164,11 +3164,9 @@ footer {
 
 
 .btn_best{
-
   position: relative;
-
-  top: 40%;
-
+  z-index: 1;
+  top: 28%;
   background: #DB5328;
 
 
@@ -5528,6 +5526,28 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   width: 530px;
   height: 600px;
   border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.derivador-home .derivadores::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+.derivador-home .derivadores:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.derivador-home .derivadores:hover::after {
+  background: rgba(0, 0, 0, 0.15);
 }
 
 
@@ -5548,9 +5568,9 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
 
 .derivador-home .derivadores h2{
-
-  padding-top: 12%;  
-
+  padding-top: 12%;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -6754,6 +6774,7 @@ margin-bottom: 2%;
   text-align: center;
   color: #FFFFFF;
   position: relative;
+  z-index: 1;
   padding: 0 10%;
 }
 
