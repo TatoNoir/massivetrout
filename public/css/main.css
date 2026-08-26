@@ -10766,6 +10766,10 @@ margin-bottom: 2%;
   height: 420px;
 }
 
+.programs-usa-row .card--info-programs > img:not(.badge-new-programs) {
+  height: 420px;
+}
+
 .programs-dorado-row .card-icon-programs {
   width: 6%;
   min-width: 20px;
@@ -10805,6 +10809,10 @@ margin-bottom: 2%;
 
 .sec__vacation--usa-dest {
   background: url(../images/destinations/usa/parallax-destinations-usa-1.jpg) no-repeat center center/cover fixed !important;
+}
+
+.hero--programs-usa {
+  background: url(../images/programs/usa/hero-programs-usa.jpg) no-repeat center bottom/cover fixed !important;
 }
 
 /* Story Hero Image */
