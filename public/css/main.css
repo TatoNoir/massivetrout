@@ -5753,6 +5753,13 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.card--info-home:hover {
+  opacity: 0.85;
+  text-decoration: none;
 }
 
 .card-title-home{
@@ -5762,11 +5769,6 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   justify-content: center;
   margin: 1.3rem 0;
   gap: 1rem;
-}
-
-.card-title-home:hover{
-  color: #fff;
-  opacity: .45;
 }
 
 .card-heading-home{
