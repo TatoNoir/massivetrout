@@ -272,3 +272,25 @@ const mapsEmbed =
     </div>
   </section>
 </Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const groups = document.querySelectorAll(".river__bio-group");
+    groups.forEach((group) => {
+      const text = group.textContent?.trim() || "";
+      if (text.length < 150) return;
+      const wrapper = document.createElement("div");
+      wrapper.className = "river__bio-truncated";
+      wrapper.innerHTML = group.innerHTML;
+      group.replaceWith(wrapper);
+      const btn = document.createElement("button");
+      btn.className = "learn-more-btn";
+      btn.textContent = "Leer más...";
+      btn.addEventListener("click", () => {
+        const expanded = wrapper.classList.toggle("is-expanded");
+        btn.textContent = expanded ? "Mostrar menos" : "Leer más...";
+      });
+      wrapper.parentNode?.insertBefore(btn, wrapper.nextSibling);
+    });
+  });
+</script>

@@ -10705,7 +10705,7 @@ margin-bottom: 2%;
 }
 
 .programs-dorado-row .card-icon-programs {
-  width: 8%;
+  width: 6%;
   min-width: 20px;
   border-radius: 50%;
 }
@@ -10825,5 +10825,42 @@ margin-bottom: 2%;
 @media screen and (max-width: 767px) {
   .card--info-home-lg img.img-responsive {
     min-height: 250px;
+  }
+}
+
+/* Learn more - river bio truncation */
+.river__bio-truncated {
+  max-height: 4.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.4s ease;
+}
+
+.river__bio-truncated.is-expanded {
+  max-height: none;
+}
+
+.learn-more-btn {
+  background: none;
+  border: none;
+  color: #DB5328;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 0;
+  margin-top: 0.3rem;
+  text-decoration: underline;
+}
+
+.learn-more-btn:hover {
+  color: #b5312a;
+}
+
+@media screen and (max-width: 767px) {
+  .river__bio-truncated {
+    max-height: none;
+  }
+  .learn-more-btn {
+    display: none;
   }
 }
