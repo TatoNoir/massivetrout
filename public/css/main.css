@@ -8135,9 +8135,14 @@ margin-bottom: 2%;
 
 
 .img_river{
-
+  width: 355px;
   padding-top: 22%;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
 
+.img_river:hover {
+  filter: grayscale(0%);
 }
 
 
