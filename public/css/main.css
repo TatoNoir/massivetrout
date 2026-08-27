@@ -10728,7 +10728,7 @@ margin-bottom: 2%;
 
 /* USA Programs Parallax */
 .sec__vacation--usa {
-  background: url(../images/programs/usa/parallax-programs-usa.jpg) no-repeat center center/cover fixed !important;
+  background: url(../images/programs/usa/parallax-programs-usa.jpg) no-repeat center bottom/cover fixed !important;
 }
 
 /* Parallax USA Title */
