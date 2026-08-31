@@ -5778,7 +5778,8 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   border-radius: 8px;
 }
 
-.intro-home-video .video-embed iframe{
+.intro-home-video .video-embed iframe,
+.intro-home-video .video-embed video{
   position: absolute;
   top: 0;
   left: 0;
