@@ -550,44 +550,53 @@ const programsJson = JSON.stringify({
     fp.setDate(fp.config.defaultDate, false);
   }
 
+  function selectProgram(programId: string | undefined) {
+    if (!programId) return;
+    const programs: Array<{
+      id: string;
+      title: string;
+      img: string;
+      detail: string;
+      category: string;
+      season: string;
+      seasons: string[];
+      datesHint: string;
+      hideSeasonSelect: boolean;
+    }> = JSON.parse(
+      document.querySelector("[data-programs]")?.textContent ?? "{}"
+    ).programs;
+    const program = programs.find((p) => p.id === programId);
+    if (!program) return;
+
+    hiddenIdInput?.setAttribute("value", program.id);
+    hiddenTitleInput?.setAttribute("value", program.title);
+    hiddenCategoryInput?.setAttribute("value", program.category);
+    detailImg?.setAttribute("src", program.img);
+    detailImg?.setAttribute("alt", program.title);
+    detailCategory!.textContent = program.category;
+    detailTitle!.textContent = program.title;
+    detailText!.textContent = program.detail;
+
+    applySeasonForCategory(program.season);
+    applySeasonsForCategory(program.seasons);
+    applySeasonFieldVisibility(program.hideSeasonSelect);
+    const datesHint = document.querySelector<HTMLElement>("[data-dates-hint]");
+    if (datesHint) datesHint.textContent = program.datesHint;
+
+    showStep(2);
+    document.querySelector('main')?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   selectButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const programId = (btn as HTMLElement).dataset.programId;
-      const programs: Array<{
-        id: string;
-        title: string;
-        img: string;
-        detail: string;
-        category: string;
-        season: string;
-        seasons: string[];
-        datesHint: string;
-        hideSeasonSelect: boolean;
-      }> = JSON.parse(
-        document.querySelector("[data-programs]")?.textContent ?? "{}"
-      ).programs;
-      const program = programs.find((p) => p.id === programId);
-      if (!program) return;
-
-      hiddenIdInput?.setAttribute("value", program.id);
-      hiddenTitleInput?.setAttribute("value", program.title);
-      hiddenCategoryInput?.setAttribute("value", program.category);
-      detailImg?.setAttribute("src", program.img);
-      detailImg?.setAttribute("alt", program.title);
-      detailCategory!.textContent = program.category;
-      detailTitle!.textContent = program.title;
-      detailText!.textContent = program.detail;
-
-      applySeasonForCategory(program.season);
-      applySeasonsForCategory(program.seasons);
-      applySeasonFieldVisibility(program.hideSeasonSelect);
-      const datesHint = document.querySelector<HTMLElement>("[data-dates-hint]");
-      if (datesHint) datesHint.textContent = program.datesHint;
-
-      showStep(2);
-      document.querySelector('main')?.scrollIntoView({ behavior: "smooth", block: "start" });
+      selectProgram((btn as HTMLElement).dataset.programId);
     });
   });
+
+  const urlProgram = new URLSearchParams(window.location.search).get("program");
+  if (urlProgram) {
+    selectProgram(urlProgram);
+  }
 
   backButton?.addEventListener("click", () => {
     showStep(1);
