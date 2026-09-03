@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Clean referral URLs: /go/cowboy-drifters -> /go/cowboy-drifters.php
+RewriteRule ^cowboy-drifters/?$ cowboy-drifters.php [L]
