@@ -5956,6 +5956,29 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
   margin: 1rem 0 1.5rem;
 }
 
+.programs-cta-row{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.programs-cta-row .btn{
+  flex: 1 1 auto;
+  margin: 0;
+  max-width: 19rem;
+}
+
+@media screen and (max-width: 480px) {
+  .programs-cta-row{
+    gap: 1rem;
+  }
+  .programs-cta-row .btn{
+    flex: 1 1 100%;
+  }
+}
+
 .btn--check-availability{
   display: inline-block;
   width: auto;
