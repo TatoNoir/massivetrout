@@ -27,7 +27,6 @@ const navItems = [
     { href: `${prefix}/destinations/usa/`, label: t["nav.destinations.wyoming"] },
   ]},
   { href: `${prefix}/about/`, label: t["nav.story"] },
-  { href: `${prefix}/lodges/`, label: t["nav.lodges"] },
   { href: `${prefix}/contact/`, label: t["nav.contact"] },
 ] as const;
 ---
@@ -180,6 +179,10 @@ const navItems = [
 
     .nav-cta__link {
       margin-left: 0;
+    }
+
+    .nav-dropdown-trigger {
+      display: none;
     }
   }
 </style>
