@@ -6695,6 +6695,17 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 
   }
 
+  .subt_member-link{
+    color: #DB5328;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+
+  .subt_member-link:hover{
+    color: #172c33;
+    text-decoration: underline;
+  }
+
 
 
 .sec__productos .icon_product{
