@@ -31,6 +31,16 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://massivetroutflyfishing.com/programs/usa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://massivetroutflyfishing.com/es/programs/usa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://massivetroutflyfishing.com/destinations/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -39,6 +49,26 @@
     <loc>https://massivetroutflyfishing.com/es/destinations/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://massivetroutflyfishing.com/destinations/dorado/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://massivetroutflyfishing.com/es/destinations/dorado/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://massivetroutflyfishing.com/destinations/usa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://massivetroutflyfishing.com/es/destinations/usa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://massivetroutflyfishing.com/lodges/</loc>
@@ -51,6 +81,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://massivetroutflyfishing.com/non-anglers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://massivetroutflyfishing.com/es/non-anglers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://massivetroutflyfishing.com/faqs/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -59,6 +99,16 @@
     <loc>https://massivetroutflyfishing.com/es/faqs/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://massivetroutflyfishing.com/booking/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://massivetroutflyfishing.com/es/booking/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://massivetroutflyfishing.com/contact/</loc>
