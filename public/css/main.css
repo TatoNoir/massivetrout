@@ -6034,6 +6034,16 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 }
 
 /* Card Text */
+.check-availability-title{
+  color: #b5312a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1.5rem 0 0.5rem;
+}
+
 .check-availability{
   margin: 1rem 0 1.5rem;
 }
