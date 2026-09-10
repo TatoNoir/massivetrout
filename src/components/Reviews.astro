@@ -38,7 +38,7 @@ const reviews = [
         <div class="reviews-media-col">
           <div class="reviews-photo">
             <img
-              src="/images/home/reviews/home_reviews.jpeg"
+              src="/images/home/reviews/home_reviews.webp"
               alt="Massive Trout Fly Fishing experience"
               class=""
               loading="lazy"
@@ -233,6 +233,7 @@ const reviews = [
 
   .reviews-photo img {
     width: 120%;
+    max-width: 120%;
     object-fit: cover;
     border-radius: 15px;
   }
@@ -404,6 +405,11 @@ const reviews = [
     }
 
     .reviews-photo {
+      max-width: 100%;
+    }
+
+    .reviews-photo img {
+      width: 100%;
       max-width: 100%;
     }
 
