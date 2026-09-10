@@ -84,6 +84,9 @@ const ogLocale = lang === "es" ? "es_AR" : "en_US";
       }
       gtag("js", new Date());
       gtag("config", import.meta.env.PUBLIC_GTAG_ID || "G-YFWWP1ZFFS");
+      if (import.meta.env.PUBLIC_ADS_ID) {
+        gtag("config", import.meta.env.PUBLIC_ADS_ID);
+      }
     </script>
   </head>
 

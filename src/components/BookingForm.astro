@@ -701,6 +701,11 @@ const programsJson = JSON.stringify({
       if (res.ok) {
         form.reset();
         showAlert(form.dataset.sentMsg ?? "", false);
+        if (import.meta.env.PUBLIC_ADS_SEND_TO) {
+          gtag("event", "conversion", {
+            send_to: import.meta.env.PUBLIC_ADS_SEND_TO,
+          });
+        }
       } else {
         const text = await res.text();
         showAlert(text, true);
