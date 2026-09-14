@@ -5597,8 +5597,6 @@ background: url(../images/pattern-1.png) left top repeat, linear-gradient(to bot
 /* Card Text */
 .check-availability-title{
   color: #b5312a;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
@@ -9935,7 +9933,14 @@ margin-bottom: 2%;
 }
 
 .hero--usa {
-  background: url(../images/destinations/usa/hero-destinations-usa.webp) no-repeat center center/cover !important;
+  background: url(../images/destinations/usa/hero-destinations-usa.webp) no-repeat center center/cover fixed !important;
+}
+
+/* Mobile - hero USA: imagen vertical propia + sin parallax */
+@media screen and (max-width: 767.98px) {
+  .hero--usa {
+    background: url(../images/destinations/usa/hero-destinations-usa-mobile.webp) no-repeat center center/cover scroll !important;
+  }
 }
 
 .sec__vacation--usa-dest {
@@ -10126,6 +10131,21 @@ margin-bottom: 2%;
   .hero--programs-usa,
   .sec__hero {
     background-attachment: scroll !important;
+  }
+}
+
+/* ========================================
+   HOME SLIDER - PARALLAX DESKTOP
+   Los slides usan el shorthand "background:" en sus reglas,
+   que resetea el background-attachment a scroll (por eso el
+   parallax del hero del home nunca funcionó en desktop).
+   Esta regla lo fuerza de nuevo en >= 750px.
+   ======================================== */
+@media screen and (min-width: 750px) {
+  .slides-container .slide-1,
+  .slides-container .slide-2,
+  .slides-container .slide-3 {
+    background-attachment: fixed !important;
   }
 }
 
