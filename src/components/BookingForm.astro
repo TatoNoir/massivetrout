@@ -633,7 +633,8 @@ const programsJson = JSON.stringify({
   const form = document.getElementById("booking-form") as HTMLFormElement;
   const alertEl = form?.querySelector(".contact-alert") as HTMLElement | null;
   const endpoint: string | undefined =
-    import.meta.env.PUBLIC_BOOKING_ENDPOINT as string | undefined;
+    (import.meta.env.PUBLIC_BOOKING_ENDPOINT as string | undefined) ??
+    `${import.meta.env.PUBLIC_SITE_BASE ?? ""}/api/booking.php`;
 
   const datesInput = document.getElementById(
     "bookingDatesInput"
