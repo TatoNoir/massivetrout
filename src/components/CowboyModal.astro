@@ -1,0 +1,236 @@
+---
+import type { Lang } from "../i18n/ui";
+import { getUi } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getUi(lang);
+---
+
+<div
+  class="cowboy-modal"
+  id="cowboyModal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cowboyModalTitle"
+  hidden
+>
+  <div class="cowboy-modal__backdrop" data-cowboy-close></div>
+  <div class="cowboy-modal__dialog" role="document">
+    <button
+      type="button"
+      class="cowboy-modal__close"
+      data-cowboy-close
+      aria-label={t["cowboy.close"]}
+    >
+      &times;
+    </button>
+    <h3 class="cowboy-modal__title" id="cowboyModalTitle">{t["cowboy.title"]}</h3>
+    <p class="cowboy-modal__text">{t["cowboy.text"]}</p>
+
+    <form id="cowboyForm" class="cowboy-modal__form" novalidate>
+      <input
+        type="email"
+        name="email"
+        id="cowboyEmail"
+        placeholder={t["newsletter.placeholder"]}
+        required
+      />
+      <input
+        type="text"
+        name="company_website"
+        class="hp-field"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+      />
+      <button type="submit" class="button btn btn--full btn--oval">
+        {t["cowboy.confirm"]}
+      </button>
+    </form>
+
+    <p class="cowboy-modal__alert" id="cowboyAlert" role="status" hidden></p>
+  </div>
+</div>
+
+<style>
+  .cowboy-modal[hidden] {
+    display: none;
+  }
+
+  .cowboy-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .cowboy-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .cowboy-modal__dialog {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .cowboy-modal__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    font-size: 1.75rem;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+  }
+
+  .cowboy-modal__close:hover {
+    color: #db5328;
+  }
+
+  .cowboy-modal__title {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .cowboy-modal__text {
+    margin: 0 0 1.25rem;
+    text-align: center;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .cowboy-modal__form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .cowboy-modal__form .btn {
+    width: 100%;
+  }
+
+  .cowboy-modal__alert {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .cowboy-modal__alert.is-error {
+    color: #c0392b;
+  }
+
+  .hp-field {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const modal = document.getElementById("cowboyModal") as HTMLElement;
+  const form = document.getElementById("cowboyForm") as HTMLFormElement;
+  const alertEl = document.getElementById("cowboyAlert") as HTMLElement;
+  const redirectUrl = "/go/cowboy-drifters";
+  const endpoint: string =
+    (import.meta.env.PUBLIC_NEWSLETTER_ENDPOINT as string | undefined) ??
+    `${import.meta.env.PUBLIC_SITE_BASE ?? ""}/api/newsletter.php`;
+
+  const cowboyOpen = new CustomEvent("cowboy:open");
+  const cowboySuccess = new CustomEvent("cowboy:success");
+
+  function openModal() {
+    modal.hidden = false;
+    document.body.style.overflow = "hidden";
+    modal.dispatchEvent(cowboyOpen);
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll<HTMLAnchorElement>('a[href="/go/cowboy-drifters"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  document.querySelectorAll<HTMLElement>("[data-cowboy-close]").forEach((el) => {
+    el.addEventListener("click", closeModal);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.hidden) closeModal();
+  });
+
+  form!.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const honeypot = (form!.querySelector('[name="company_website"]') as HTMLInputElement).value;
+    if (honeypot) return;
+
+    if (!form!.checkValidity()) {
+      form!.reportValidity();
+      return;
+    }
+
+    const payload: Record<string, string> = {};
+    new FormData(form!).forEach((value, key) => {
+      payload[key] = String(value);
+    });
+
+    alertEl!.hidden = false;
+    alertEl!.textContent = "…";
+    alertEl!.classList.remove("is-error");
+
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const text = await res.text();
+      if (res.ok) {
+        form!.reset();
+        alertEl!.textContent = text;
+        modal.dispatchEvent(cowboySuccess);
+        setTimeout(() => {
+          window.location.href = redirectUrl;
+        }, 600);
+      } else {
+        alertEl!.textContent = text;
+        alertEl!.classList.add("is-error");
+      }
+    } catch {
+      alertEl!.textContent = "Network error. Please try again.";
+      alertEl!.classList.add("is-error");
+    }
+  });
+</script>
