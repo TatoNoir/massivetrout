@@ -156,7 +156,7 @@ const t = getUi(lang);
   const modal = document.getElementById("cowboyModal") as HTMLElement;
   const form = document.getElementById("cowboyForm") as HTMLFormElement;
   const alertEl = document.getElementById("cowboyAlert") as HTMLElement;
-  const redirectUrl = "https://wyocowboydrifters.com/";
+  const redirectUrl = "https://wyominganglers.com/";
   const endpoint: string =
     (import.meta.env.PUBLIC_NEWSLETTER_ENDPOINT as string | undefined) ??
     `${import.meta.env.PUBLIC_SITE_BASE ?? ""}/api/newsletter.php`;
@@ -175,7 +175,7 @@ const t = getUi(lang);
     document.body.style.overflow = "";
   }
 
-  document.querySelectorAll<HTMLAnchorElement>('a[href="/go/cowboy-drifters"]').forEach((link) => {
+  document.querySelectorAll<HTMLAnchorElement>('a[href="/go/wyoming-anglers"]').forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       openModal();
