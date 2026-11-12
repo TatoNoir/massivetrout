@@ -111,6 +111,9 @@ const programsJson = JSON.stringify({
               novalidate
               data-sent-msg={t["booking.sent"]}
               data-error-msg={t["booking.error"]}
+              data-date-in-required-msg={t["booking.dateInRequired"]}
+              data-date-out-required-msg={t["booking.dateOutRequired"]}
+              data-date-range-msg={t["booking.dateRangeError"]}
             >
               <input type="hidden" name="program_id" data-program-id-input />
               <input type="hidden" name="program" data-program-title-input />
@@ -180,25 +183,44 @@ const programsJson = JSON.stringify({
               </div>
 
               <div class="row">
-                <div class="col-md-12">
-                  <label for="bookingDatesInput">{t["booking.dates"]}</label>
+                <div class="col-md-6">
+                  <label for="bookingCheckinInput">{t["booking.checkin"]}</label>
                   <input
                     type="text"
-                    name="dates"
-                    id="bookingDatesInput"
-                    placeholder="Nov 20 - Dec 02, 2026"
+                    name="date_in"
+                    id="bookingCheckinInput"
+                    placeholder={t["booking.checkinPlaceholder"]}
                     data-lang={lang}
+                    data-date-in
+                    autocomplete="off"
+                    readonly
+                    aria-required="true"
                   />
+                </div>
+                <div class="col-md-6">
+                  <label for="bookingCheckoutInput">{t["booking.checkout"]}</label>
                   <input
                     type="text"
-                    name="company_website"
-                    class="hp-field"
-                    tabindex="-1"
+                    name="date_out"
+                    id="bookingCheckoutInput"
+                    placeholder={t["booking.checkoutPlaceholder"]}
+                    data-lang={lang}
+                    data-date-out
                     autocomplete="off"
-                    aria-hidden="true"
+                    readonly
+                    aria-required="true"
                   />
                 </div>
               </div>
+              <input type="hidden" name="dates" data-dates-combined />
+              <input
+                type="text"
+                name="company_website"
+                class="hp-field"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
 
               <div class="booking-form-actions">
                 <input
@@ -466,7 +488,12 @@ const programsJson = JSON.stringify({
     today.getMonth(),
     today.getDate()
   );
-  let fp: any = null;
+
+  let dateFormat = "M j, Y";
+  let checkInPicker: any = null;
+  let checkOutPicker: any = null;
+  let seasonFirstAvailable = now;
+  let selectedSeason: string | undefined;
 
   const hiddenIdInput = document.querySelector("[data-program-id-input]");
   const hiddenTitleInput = document.querySelector("[data-program-title-input]");
@@ -508,9 +535,13 @@ const programsJson = JSON.stringify({
     seasonField.hidden = hide;
   }
 
-  function applySeasonForCategory(season: string | undefined) {
-    if (!fp || !datesInput) return;
+  function addDays(date: Date, days: number) {
+    const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    d.setDate(d.getDate() + days);
+    return d;
+  }
 
+  function getSeasonConfig(season: string | undefined) {
     let disable: Array<(d: Date) => boolean>;
     let firstAvailable: Date;
 
@@ -543,11 +574,51 @@ const programsJson = JSON.stringify({
       ];
     }
 
-    fp.set("disable", disable);
-    fp.set("minDate", firstAvailable);
-    fp.set("defaultDate", firstAvailable);
-    fp.clear();
-    fp.setDate(fp.config.defaultDate, false);
+    return { disable, firstAvailable };
+  }
+
+  function syncDateLimits() {
+    if (!checkInPicker || !checkOutPicker) return;
+
+    const inDate = checkInPicker.selectedDates[0];
+
+    checkInPicker.set("minDate", seasonFirstAvailable);
+    checkOutPicker.set(
+      "minDate",
+      inDate ? addDays(inDate, 1) : seasonFirstAvailable
+    );
+  }
+
+  function updateCombinedDates() {
+    const combined = document.querySelector<HTMLInputElement>(
+      "[data-dates-combined]"
+    );
+    if (!combined) return;
+
+    const inDate = checkInPicker?.selectedDates[0];
+    const outDate = checkOutPicker?.selectedDates[0];
+    combined.value =
+      inDate && outDate
+        ? `${checkInPicker.formatDate(inDate, dateFormat)} - ${checkOutPicker.formatDate(outDate, dateFormat)}`
+        : "";
+  }
+
+  function applySeasonForCategory(season: string | undefined) {
+    selectedSeason = season;
+    if (!checkInPicker || !checkOutPicker) return;
+
+    const { disable, firstAvailable } = getSeasonConfig(season);
+    seasonFirstAvailable = firstAvailable;
+
+    [checkInPicker, checkOutPicker].forEach((picker) => {
+      picker.set("disable", disable);
+      picker.set("minDate", firstAvailable);
+      picker.clear();
+    });
+
+    checkInPicker.setDate(firstAvailable, false);
+    syncDateLimits();
+    updateCombinedDates();
   }
 
   function selectProgram(programId: string | undefined) {
@@ -636,27 +707,67 @@ const programsJson = JSON.stringify({
     (import.meta.env.PUBLIC_BOOKING_ENDPOINT as string | undefined) ??
     `${import.meta.env.PUBLIC_SITE_BASE ?? ""}/api/booking.php`;
 
-  const datesInput = document.getElementById(
-    "bookingDatesInput"
-  ) as HTMLInputElement | null;
-  if (datesInput && typeof window.flatpickr === "function") {
-    const esLocale = (window as any).flatpickr?.l10ns?.es;
+  const checkInInput = document.querySelector<HTMLInputElement>(
+    "[data-date-in]"
+  );
+  const checkOutInput = document.querySelector<HTMLInputElement>(
+    "[data-date-out]"
+  );
 
-    const inSeason = now.getMonth() < 5 || now.getMonth() > 9;
-    const firstAvailable = inSeason ? now : new Date(now.getFullYear(), 10, 1);
+  const fpLib = (window as any).flatpickr;
 
-    fp = window.flatpickr(datesInput, {
-      mode: "range",
-      dateFormat: "M j, Y",
-      minDate: firstAvailable,
-      defaultDate: firstAvailable,
-      disable: [(d: Date) => {
-        const m = d.getMonth();
-        return m >= 5 && m <= 9;
-      }],
-      locale: datesInput.dataset.lang === "es" ? esLocale : undefined,
+  if (checkInInput && checkOutInput && typeof fpLib === "function") {
+    const esLocale = fpLib?.l10ns?.es;
+    const isEs = checkInInput.dataset.lang === "es";
+    const locale = isEs ? esLocale : undefined;
+    dateFormat = isEs ? "j M Y" : "M j, Y";
+
+    const initial = getSeasonConfig(selectedSeason);
+    seasonFirstAvailable = initial.firstAvailable;
+
+    checkInPicker = fpLib(checkInInput, {
+      dateFormat,
+      minDate: initial.firstAvailable,
+      defaultDate: initial.firstAvailable,
+      disable: initial.disable,
+      locale,
+      onChange: () => {
+        const inDate = checkInPicker.selectedDates[0];
+        const outDate = checkOutPicker?.selectedDates[0];
+        if (inDate && outDate && outDate <= inDate) {
+          checkOutPicker?.clear();
+        }
+        syncDateLimits();
+        updateCombinedDates();
+      },
     });
+
+    checkOutPicker = fpLib(checkOutInput, {
+      dateFormat,
+      minDate: initial.firstAvailable,
+      disable: initial.disable,
+      locale,
+      onChange: () => {
+        syncDateLimits();
+        updateCombinedDates();
+      },
+    });
+
+    syncDateLimits();
+    updateCombinedDates();
   }
+
+  function resetBookingForm() {
+    form?.reset();
+    applySeasonForCategory(selectedSeason);
+  }
+
+  const showAlert = (message: string, isError: boolean) => {
+    alertEl!.classList.remove("contact-alert__success", "contact-alert__error");
+    alertEl!.classList.add(isError ? "contact-alert__error" : "contact-alert__success");
+    alertEl!.textContent = message;
+    alertEl!.style.display = "block";
+  };
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -666,9 +777,28 @@ const programsJson = JSON.stringify({
     ) as HTMLInputElement;
     if (honeypot?.value) return;
 
+    updateCombinedDates();
+
     if (!form.checkValidity()) {
       form.reportValidity();
       return;
+    }
+
+    if (checkInInput && checkOutInput && checkInPicker && checkOutPicker) {
+      const inDate = checkInPicker.selectedDates[0];
+      const outDate = checkOutPicker.selectedDates[0];
+
+      if (!inDate || !outDate || outDate <= inDate) {
+        showAlert(
+          !inDate
+            ? (form.dataset.dateInRequiredMsg ?? "")
+            : !outDate
+              ? (form.dataset.dateOutRequiredMsg ?? "")
+              : (form.dataset.dateRangeMsg ?? ""),
+          true
+        );
+        return;
+      }
     }
 
     const payload: Record<string, string> = {};
@@ -676,19 +806,12 @@ const programsJson = JSON.stringify({
       payload[key] = String(value);
     });
 
-    const showAlert = (message: string, isError: boolean) => {
-      alertEl!.classList.remove("contact-alert__success", "contact-alert__error");
-      alertEl!.classList.add(isError ? "contact-alert__error" : "contact-alert__success");
-      alertEl!.textContent = message;
-      alertEl!.style.display = "block";
-    };
-
     alertEl!.textContent = "…";
     alertEl!.classList.remove("contact-alert__success", "contact-alert__error");
     alertEl!.style.display = "block";
 
     if (!endpoint) {
-      form.reset();
+      resetBookingForm();
       showAlert(form.dataset.sentMsg ?? "", false);
       return;
     }
@@ -700,10 +823,10 @@ const programsJson = JSON.stringify({
         body: JSON.stringify(payload),
       });
       if (res.ok) {
-        form.reset();
+        resetBookingForm();
         showAlert(form.dataset.sentMsg ?? "", false);
-        if (import.meta.env.PUBLIC_ADS_SEND_TO) {
-          gtag("event", "conversion", {
+        if (import.meta.env.PUBLIC_ADS_SEND_TO && typeof (window as any).gtag === "function") {
+          (window as any).gtag("event", "conversion", {
             send_to: import.meta.env.PUBLIC_ADS_SEND_TO,
           });
         }
